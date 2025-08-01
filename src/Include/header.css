@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0, #ffffff);
+  background-size: 300% 300%;
+  animation: whiteShimmer 12s ease infinite;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* shimmer animation for white nav */
+@keyframes whiteShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container */
+.contt {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo styling */
+.logo img {
+  height: 48px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+}
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+/* Menu */
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+ul a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  position: relative;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #0077ff;
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.2);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 99999;
+  padding: 10px 0;
+}
+.dropdown:hover .submenu {
+  display: flex;
+}
+.submenu li {
+  padding: 12px 18px;
+  color: #111;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.submenu li:hover {
+  background-color: rgba(0, 119, 255, 0.1);
+  color: #0077ff;
+}
+
+/* Hamburger Icon */
+.menu_icon {
+  display: none;
+  font-size: 30px;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.nav_side_bar {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  padding: 15px 0;
+}
+
+.nav_side_bar ul {
+  flex-direction: column;
+  gap: 8px;
+}
+.nav_side_bar li {
+  font-size: 16px;
+  color: #111;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.showw {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav .contt ul {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+.hh{
+      background: linear-gradient(to right, #e7f0ea, #f5fbf8);
+      padding:50px 0px 0px 0px ;
+}
+.boxx img{
+    height: 170px;
+    width: 255px;
+    background-size: cover;
+}
+.boxx{
+    width: 255px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 30px 5px;
+    
+}
+.boxx h2{
+    margin-top: 15px;
+        color: #2A2A2A;
+        font-size:18px;
+
+}
+.boxx p{
+    color: #6F8BA4;
+    font-size: 16px;
+    font-weight: 400;
+
+}
