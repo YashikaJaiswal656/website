@@ -4,8 +4,12 @@ import Header from './Include/header';
 import OurProduct from './Components/OurProduct';
 import Card from './Components/Card';
 import Range from './Components/Range';
-import WhoWe from './Components/WhoWe';
+
 import Mission from './Components/Mission';
+
+import WhoTh from './Components/Whoth';
+
+
 const slides = [
   {
     img: "https://img.pikbest.com/backgrounds/20241207/green-energy-background-ai-generated_11219719.jpg!sw800",
@@ -70,11 +74,9 @@ const App = () => {
           <i className="fas fa-chevron-right"></i>
         </button>
       </div>
-<WhoWe/>
-    <OurProduct/>
-    <Mission/>
-    
 
+<WhoTh/>
+<OurProduct/>
     </>
   );
 };

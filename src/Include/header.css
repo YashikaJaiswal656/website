@@ -5,7 +5,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* NAVBAR */
+
 .nav {
   position: sticky;
   top: 0;
@@ -21,7 +21,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* shimmer animation for white nav */
+
 @keyframes whiteShimmer {
   0% {
     background-position: 0% 50%;
@@ -34,7 +34,7 @@
   }
 }
 
-/* Container */
+
 .contt {
   width: 85%;
   display: flex;
@@ -44,7 +44,7 @@
   z-index: 10;
 }
 
-/* Logo styling */
+
 .logo img {
   height: 48px;
   transition: transform 0.3s ease;
@@ -54,7 +54,6 @@
   transform: scale(1.08);
 }
 
-/* Menu */
 ul {
   display: flex;
   align-items: center;
@@ -80,7 +79,6 @@ li:hover {
   box-shadow: 0 0 10px rgba(0, 119, 255, 0.2);
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -113,7 +111,6 @@ li:hover {
   color: #0077ff;
 }
 
-/* Hamburger Icon */
 .menu_icon {
   display: none;
   font-size: 30px;
@@ -121,7 +118,7 @@ li:hover {
   cursor: pointer;
 }
 
-/* Mobile Menu */
+
 .nav_side_bar {
   display: none;
   position: absolute;

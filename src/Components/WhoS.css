@@ -1,0 +1,104 @@
+/* WhoWeAltLayout.css - New Layout with Icon/Image Split Side-by-Side */
+
+.finike-alt-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.finike-alt-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.finike-alt-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.finike-alt-card:nth-child(1) .finike-alt-left {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+.finike-alt-card:nth-child(2) .finike-alt-left {
+  background: linear-gradient(to right, #6f86d6, #48c6ef);
+}
+
+.finike-alt-card:nth-child(3) .finike-alt-left {
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+}
+
+.finike-alt-left {
+  flex: 1;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.finike-alt-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.finike-alt-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.finike-alt-subtitle {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.finike-alt-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.finike-alt-right {
+  flex: 1;
+  height: auto;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.finike-alt-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .finike-alt-card {
+    flex-direction: column;
+  }
+
+  .finike-alt-right {
+    height: auto;
+    padding: 0;
+  }
+
+  .finike-alt-image {
+    max-height: 200px;
+  }
+}
+    

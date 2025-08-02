@@ -1,0 +1,80 @@
+/* WhoSArtisticLayout.css - Artistic & Unique Layout */
+
+.who-s-art-section {
+  padding: 100px 30px;
+  background: linear-gradient(to bottom right, #ffe0ec, #e0f7ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.who-s-art-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.who-s-art-card {
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.who-s-art-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+}
+
+.who-s-art-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb6c1, #add8e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.who-s-art-image img {
+  width: 80%;
+  height: auto;
+}
+
+.who-s-art-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.who-s-art-subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.who-s-art-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .who-s-art-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .who-s-art-image {
+    width: 120px;
+    height: 120px;
+  }
+}

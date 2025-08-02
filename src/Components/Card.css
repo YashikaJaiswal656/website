@@ -9,7 +9,7 @@
 }
 
  .contt {
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +35,14 @@ text-align: center;
 }
 
 
+
+.custom-tilt-box .service_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .service_box h2{
     margin-top: 15px;
 
@@ -47,14 +55,14 @@ margin-bottom: 40px;
 }
 .service_box {
     box-shadow: 0 0 38px #15285212;
-    margin: 6px;
+
     
-    width: 348px;
+    width: 300px;
 }
 .service_box img {
-    height: 224px;
-    width: 300px;
-    margin-top: 20px;
+    height: 224px !important;
+    width: 300px !important;
+border-radius: 16px 16px 0px 0px !important;
 }
 a{
     text-decoration: none;

@@ -1,0 +1,98 @@
+/* WhoSUltraUnique.css - Ultra Unique Layout with Fancy Aesthetic */
+
+.who-s-section {
+  padding: 120px 20px;
+  background: linear-gradient(120deg, #ffe5f0, #e5f2ff, #fff1e0);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.who-s-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+  align-items: stretch;
+}
+
+.who-s-card {
+  position: relative;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.who-s-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.2);
+}
+
+.who-s-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 6px solid #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.who-s-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.who-s-icon {
+  font-size: 34px;
+  color: white;
+  background: linear-gradient(135deg, #f857a6, #ff5858);
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.who-s-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.who-s-subtitle {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.who-s-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .who-s-section {
+    padding: 60px 15px;
+  }
+  .who-s-card {
+    padding: 30px 20px;
+  }
+  .who-s-image {
+    width: 100px;
+    height: 100px;
+  }
+}
