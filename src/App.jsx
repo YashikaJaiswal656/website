@@ -12,22 +12,22 @@ import WhoTh from './Components/Whoth';
 
 const slides = [
   {
-    img: "https://img.pikbest.com/backgrounds/20241207/green-energy-background-ai-generated_11219719.jpg!sw800",
+    img: "https://thumbs.dreamstime.com/b/solar-panels-bathed-pink-light-symbolize-bright-future-renewable-energy-image-conveys-clean-power-generation-379503001.jpg",
     title: "About Our Company",
     text: "Innovative Energy Solutions"
   },
   {
-    img: "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/41d8836a-a901-4de4-89f0-327a4f6f5799/d3fc8aeb-68df-40e2-8729-733dde1e10a2.png",
+    img: "https://t4.ftcdn.net/jpg/15/98/41/39/360_F_1598413914_XNraXHs6zY1XWmFQ19ffz1mYqgReNPJr.jpg",
     title: "Power with Purpose",
     text: "Renewable Energy for All"
   },
   {
-    img: "https://t4.ftcdn.net/jpg/11/19/11/71/360_F_1119117126_OeAYRB1FoqsO00BlpX2XS0TI79Qkw7qB.jpg",
+    img: "https://cdn.pixabay.com/photo/2022/01/10/15/29/wind-mills-6928590_640.jpg",
     title: "Go Green",
     text: "Clean Energy from Nature"
   },
   {
-    img: "https://www.azom.com/images/news/SocialSharingImage_62131_16995293492968496.jpg",
+    img: "https://png.pngtree.com/thumb_back/fh260/background/20230625/pngtree-scenic-sunset-with-blue-sky-showcasing-3d-rendered-solar-power-generation-image_3681955.jpg",
     title: "Future Ready",
     text: "Smart & Sustainable Power"
   }
@@ -77,6 +77,8 @@ const App = () => {
 
 <WhoTh/>
 <OurProduct/>
+<Mission/>
+
     </>
   );
 };

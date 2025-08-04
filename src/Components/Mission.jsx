@@ -1,45 +1,57 @@
-import React from 'react'
-import Tilt from 'react-parallax-tilt';
-
+import React from 'react';
+import "./Mission.css"
 const Mission = () => {
   return (
     <>
-    
-    
-     <section className="our-products-epic">
-      <div className="hero-video-bg">
-        <video autoPlay muted loop playsInline>
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-sci-fi-sphere-in-a-space-2652-large.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className="glow-circles" />
-      <div className="hero-container" style={{width:"100%", display:"flex", justifyContent:"center"}}>
-        <div className="product-container">
+      <section className="mission-container">
+        {/* Animated background elements */}
+        <div className="floating-orb orb-1"></div>
+        <div className="floating-orb orb-2"></div>
+        <div className="floating-orb orb-3"></div>
+        
+        {/* Main content with vertical layout */}
+        <div className="mission-content">
+          {/* Top section with icon and title */}
+          <div className="mission-header">
+            <div className="icon-wrapper">
+              <div className="pulse-ring"></div>
+              <div className="pulse-ring delay-1"></div>
+              <div className="pulse-ring delay-2"></div>
+              <i className="fas fa-bolt main-icon"></i>
+            </div>
+            <h1 className="main-title">Mission & Vision</h1>
+          </div>
           
-
-          <Tilt glareEnable={true} glareMaxOpacity={0.4} scale={1.05} transitionSpeed={2500}>
-            <div className="product-image neon-border" data-aos="zoom-in-up">
-              
-           <div className="product-text"  data-aos="fade-up">
-            <h2>
-              <i className="fas fa-bolt"></i>
-              <span className="gradient-title">Mission & Vission</span>
-            </h2>
-           <p className="quote-text">
-          “Partnering to deliver innovative energy solutions for a sustainable planet.”
+          {/* Quote section with elegant typography */}
+          <div className="quote-section">
+            <div className="quote-mark">"</div>
+            <p className="mission-quote">
+              Partnering to deliver innovative energy solutions 
+              <span className="highlight">for a sustainable planet</span>
             </p>
+            <div className="quote-mark closing">"</div>
+          </div>
           
-            
-            </div>
-            </div>
-          </Tilt>
+          {/* Bottom decorative elements */}
+          <div className="decorative-line">
+            <div className="line-segment"></div>
+            <div className="line-dot"></div>
+            <div className="line-segment"></div>
+          </div>
         </div>
-      </div>
-    </section>
-    
+        
+        {/* Side navigation dots */}
+        <div className="nav-dots">
+          <div className="dot active"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
+      </section>
+      
+      
     </>
-  )
-}
+  );
+};
 
-export default Mission
+export default Mission;
+
