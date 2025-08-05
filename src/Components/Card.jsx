@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
+import './Card.css';
 
 const Infrastructure = [
   {
@@ -7,7 +8,6 @@ const Infrastructure = [
     title: "Manufacturing Plant",
     location: "Rajpura Facility",
     icon: "🏭",
-    gradient: "pink-purple-indigo",
     capacity: "High Volume Production",
     status: "Active"
   },
@@ -17,7 +17,6 @@ const Infrastructure = [
     title: "Battery Testing System",
     location: "Rajpura Facility",
     icon: "🔋",
-    gradient: "blue-cyan-teal",
     capacity: "Advanced Testing",
     status: "Operational"
   },
@@ -27,7 +26,6 @@ const Infrastructure = [
     title: "Module Testing System",
     location: "Mohali Facility",
     icon: "⚡",
-    gradient: "amber-orange-red",
     capacity: "Precision Testing",
     status: "Active"
   },
@@ -37,7 +35,6 @@ const Infrastructure = [
     title: "Pack Testing System",
     location: "Rajpura Facility",
     icon: "📦",
-    gradient: "emerald-green-lime",
     capacity: "Full Scale Testing",
     status: "Operational"
   },
@@ -47,7 +44,6 @@ const Infrastructure = [
     title: "Battery Testing System",
     location: "Rajpura Facility",
     icon: "🔬",
-    gradient: "violet-purple-fuchsia",
     capacity: "Quality Assurance",
     status: "Active"
   },
@@ -57,7 +53,6 @@ const Infrastructure = [
     title: "Auto Calibration",
     location: "Mohali Facility",
     icon: "⚙️",
-    gradient: "sky-blue-indigo",
     capacity: "Automated Systems",
     status: "Operational"
   },
@@ -67,7 +62,6 @@ const Infrastructure = [
     title: "Internal Resistance Testing",
     location: "Rajpura Facility",
     icon: "🔧",
-    gradient: "rose-pink-red",
     capacity: "Resistance Analysis",
     status: "Active"
   },
@@ -77,111 +71,72 @@ const Infrastructure = [
     title: "Lithium ESS Range",
     location: "Rajpura Facility",
     icon: "🌟",
-    gradient: "cyan-teal-emerald",
     capacity: "Energy Storage",
     status: "Operational"
   }
 ];
 
 const Card = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        setMousePos({
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top
-        });
-      }
-    };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('mousemove', handleMouseMove);
-      return () => container.removeEventListener('mousemove', handleMouseMove);
-    }
-  }, []);
-
   return (
-    <>
-      
+    <section className="infrastructure-section">
+      {/* Decorative Background Elements */}
+      <div className="decorative-bg">
+        <div className="bg-circle bg-circle-1"></div>
+        <div className="bg-circle bg-circle-2"></div>
+        <div className="bg-circle bg-circle-3"></div>
+      </div>
 
-      <section className="infra-container" ref={containerRef}>
-        {/* Interactive light trail */}
-        <div 
-          className="light-trail"
-          style={{
-            left: mousePos.x - 150,
-            top: mousePos.y - 150,
-            opacity: hoveredCard ? 0.8 : 0.3
-          }}
-        />
+      {/* Gradient Border Elements */}
+      <div className="gradient-border-top"></div>
+      <div className="gradient-border-bottom"></div>
 
-        {/* Morphing background orbs */}
-        <div className="morph-orb morph-orb-1"></div>
-        <div className="morph-orb morph-orb-2"></div>
-        <div className="morph-orb morph-orb-3"></div>
-
-        {/* Floating particles */}
-        <div className="floating-elements">
-          <div className="floating-particle particle-1"></div>
-          <div className="floating-particle particle-2"></div>
-          <div className="floating-particle particle-3"></div>
-          <div className="floating-particle particle-4"></div>
-        </div>
-
-        {/* Enhanced header */}
-        <div className="infra-header">
-          <div className="header-pulse-ring">
-            <div className="pulse-ring-outer"></div>
-            <div className="pulse-ring-middle"></div>
-            <div className="header-icon-main">🏗️</div>
+      <div className="infrastructure-container">
+        {/* Header Section */}
+        <div className="infrastructure-header">
+          <div className="header-card">
+            <div className="header-icon">
+              <i className="fas fa-building"></i>
+            </div>
+            <h2 className="gradient-title">Advanced Infrastructure</h2>
           </div>
-          
-          <h2 className="infra-title">Advanced Facilities</h2>
-          <p className="infra-subtitle">
-            Cutting-edge infrastructure and precision engineering driving 
-            <span style={{background: 'linear-gradient(45deg, #6f86d6, #48c6ef)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: '700'}}> sustainable innovation</span> and 
-            <span style={{background: 'linear-gradient(45deg, #ff758c, #ffb347)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: '700'}}> energy excellence</span>
+          <p className="header-subtitle">
+            State-of-the-art facilities and precision engineering driving innovation in lithium battery technology
           </p>
         </div>
 
-        {/* Diagonal grid cards */}
-        <div className="diagonal-grid">
+        {/* Infrastructure Grid */}
+        <div className="infrastructure-grid">
           {Infrastructure.map((item) => (
-            <div 
-              key={item.id} 
-              className="infra-card"
-              onMouseEnter={() => setHoveredCard(item.id)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div className="card-glow"></div>
-              
+            <div key={item.id} className="infrastructure-card">
               <div className="card-image-container">
-                <img src={item.image} alt={item.title} className="infra-image" />
-                <div className="image-gradient-overlay"></div>
-                <div className="floating-icon">{item.icon}</div>
-                <div className="status-indicator">{item.status}</div>
+                <div className="image-glow"></div>
+                <div className="image-wrapper">
+                  <img src={item.image} alt={item.title} className="infrastructure-image" />
+                  <div className="status-badge">{item.status}</div>
+                  <div className="facility-icon">{item.icon}</div>
+                </div>
               </div>
               
               <div className="card-content">
-                <h3 className="card-title">{item.title}</h3>
+                <h3 className="facility-title">{item.title}</h3>
+                
                 <div className="location-info">
                   <div className="location-dot"></div>
                   <span className="location-text">{item.location}</span>
                 </div>
-                <div className="capacity-info">{item.capacity}</div>
-                <div className="card-shimmer"></div>
+                
+                <div className="capacity-info">
+                  <div className="capacity-icon">
+                    <i className="fas fa-cog"></i>
+                  </div>
+                  <span className="capacity-text">{item.capacity}</span>
+                </div>
               </div>
             </div>
           ))}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

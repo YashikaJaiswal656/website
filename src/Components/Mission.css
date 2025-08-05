@@ -173,3 +173,21 @@
           .nav-dots { display: none; }
           .orb-1, .orb-2, .orb-3 { width: 150px; height: 150px; }
         }
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+  
+  .mission-quote {
+          font-size: 1rem;
+          
+        }
+ 
+        .quote-mark {
+          font-size: 3rem;
+
+        }
+        
+        .quote-mark:not(.closing) { top: -17px; left: -20px; }
+        .quote-mark.closing { bottom: -17px; right: -20px; transform: rotate(180deg); } 
+}

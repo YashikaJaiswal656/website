@@ -78,6 +78,7 @@ const App = () => {
 <WhoTh/>
 <OurProduct/>
 <Mission/>
+<Card/>
 
     </>
   );

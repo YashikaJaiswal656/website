@@ -14,9 +14,6 @@ const Mission = () => {
           {/* Top section with icon and title */}
           <div className="mission-header">
             <div className="icon-wrapper">
-              <div className="pulse-ring"></div>
-              <div className="pulse-ring delay-1"></div>
-              <div className="pulse-ring delay-2"></div>
               <i className="fas fa-bolt main-icon"></i>
             </div>
             <h1 className="main-title">Mission & Vision</h1>
@@ -40,12 +37,6 @@ const Mission = () => {
           </div>
         </div>
         
-        {/* Side navigation dots */}
-        <div className="nav-dots">
-          <div className="dot active"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
       </section>
       
       

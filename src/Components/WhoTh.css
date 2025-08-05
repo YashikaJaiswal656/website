@@ -127,7 +127,8 @@
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           position: relative;
           overflow: hidden;
-          flex: 1;
+          
+          flex: 1 1 calc(33.333% - 27px);
           min-width: 280px;
           max-width: calc(33.333% - 27px);
         }
@@ -265,9 +266,13 @@
           .finike-gradient-wrapper-bg { gap: 20px; }
           .finike-gradient-card-bg { 
             padding: 25px; 
-            max-width: 100%;
+            flex: 1 1 100%; 
+    max-width: 100%;
             min-width: auto;
           }
+           
+
+    
           .card-header { flex-direction: column; align-items: center; text-align: center; gap: 15px; }
           .finike-gradient-heading-bg { font-size: 1.5rem; }
           .finike-gradient-description-bg { font-size: 0.95rem; text-align: center; }

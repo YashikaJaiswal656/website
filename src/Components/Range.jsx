@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./Range.css"
+
 const ProductRange = [
   {
     id: 1,
@@ -84,94 +85,66 @@ const ProductRange = [
 ];
 
 const Range = () => {
-  const [activeProduct, setActiveProduct] = useState(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   return (
-    <>
+    <section className="range-container">
+      
 
-      <section className="range-container">
-        {/* Cursor follower */}
-        <div 
-          className="cursor-glow" 
-          style={{
-            left: mousePosition.x,
-            top: mousePosition.y,
-            opacity: activeProduct ? 0.6 : 0.3
-          }}
-        />
-
-        {/* Dynamic floating orbs */}
-        <div className="dynamic-orb orb-dynamic-1"></div>
-        <div className="dynamic-orb orb-dynamic-2"></div>
-        <div className="dynamic-orb orb-dynamic-3"></div>
-
-        {/* Floating particles */}
-        <div className="floating-particle particle-1"></div>
-        <div className="floating-particle particle-2"></div>
-        <div className="floating-particle particle-3"></div>
-        <div className="floating-particle particle-4"></div>
-
-        {/* Header */}
-        <div className="range-header">
-          <div className="header-icon-group">
-            <div className="floating-icon">🔋</div>
-            <div className="floating-icon">⚡</div>
-            <div className="floating-icon">🌱</div>
+      <div className="products-header">
+        <div className="header-card">
+          <div className="header-icon">
+            <i className="fas fa-bolt"></i>
           </div>
-          <h2 className="range-title">Product Range</h2>
-          <p className="range-description">
-            Comprehensive lithium battery solutions engineered for 
-            <span style={{background: 'linear-gradient(45deg, #6f86d6, #48c6ef)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: '700'}}> maximum performance</span> and 
-            <span style={{background: 'linear-gradient(45deg, #ff758c, #ffb347)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: '700'}}> sustainable energy</span>
-          </p>
+          <h2 className="gradient-title">Product Range</h2>
         </div>
+        <p className="header-subtitle">
+          Comprehensive lithium battery solutions engineered for every application
+        </p>
+      </div>
 
-        {/* Hexagonal product grid */}
-        <div className="hexagon-grid">
-          {ProductRange.map((product) => (
-            <div 
-              key={product.id}
-              className="product-hexagon"
-              onMouseEnter={() => setActiveProduct(product.id)}
-              onMouseLeave={() => setActiveProduct(null)}
-            >
-              <div className="hex-image-container">
-                <img 
-                  src={product.image} 
-                  alt={product.title} 
-                  className="hex-image" 
-                />
-                <div className="hex-overlay">
-                  <div className="hex-icon">{product.icon}</div>
-                </div>
+      {/* Grid layout */}
+      <div className="products-grid">
+        {ProductRange.map((product, index) => (
+          <div key={product.id} className={`product-card card-${index + 1}`}>
+            {/* Image container */}
+            <div className="card-image-container">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="product-image"
+              />
+
+              {/* Icon overlay */}
+              <div className="icon-badge">
+                {product.icon}
               </div>
-              
-              <div className="hex-content">
-                <div className="category-badge">{product.category}</div>
-                <h3 className="hex-title">{product.title}</h3>
-                
-                <div className="energy-meter">
-                  <div className="meter-bar">
-                    <div className="meter-fill"></div>
-                  </div>
-                  <span className="meter-text">Performance</span>
-                </div>
+
+              {/* Category badge */}
+              <div className="category-badge">
+                {product.category}
               </div>
             </div>
-          ))}
-        </div>
-      </section>
-    </>
+
+            {/* Content */}
+            <div className="card-content">
+              <h3 className="product-title">{product.title}</h3>
+
+              {/* Performance meter */}
+              <div className="performance-meter">
+                <div className="meter-track">
+                  <div className="meter-fill"></div>
+                </div>
+                <span className="meter-label">Performance</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Static decorative dots */}
+      <div className="decorative-dot dot-1"></div>
+      <div className="decorative-dot dot-2"></div>
+      <div className="decorative-dot dot-3"></div>
+    </section>
   );
 };
 
