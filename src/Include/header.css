@@ -7,7 +7,7 @@
 
 
 .nav {
-  position: sticky;
+  
   top: 0;
   z-index: 9999;
   background: linear-gradient(145deg, #ffffff, #f0f0f0, #ffffff);

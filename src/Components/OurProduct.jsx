@@ -24,9 +24,7 @@ const OurProduct = () => {
         <div className="bg-circle bg-circle-3"></div>
       </div>
 
-      {/* Gradient Border Elements */}
-      <div className="gradient-border-top"></div>
-      <div className="gradient-border-bottom"></div>
+      
 
       <div className="products-container">
         {/* Header Section */}
@@ -79,6 +77,27 @@ const OurProduct = () => {
                     <div className="stat-subtitle">Zero emissions technology</div>
                   </div>
                 </div>
+                <div className="stat-card stat-card-pink">
+                  <div className="stat-icon stat-icon-pink">
+                    <i className="fas fa-bolt"></i>
+                  </div>
+                  <div className="stat-content">
+                    <div className="stat-title">Stable Power
+</div>
+                    <div className="stat-subtitle">UPS mode voltage regulation
+</div>
+                  </div>
+                </div>
+              {/* Call to Action */}
+              <div className="cta-section">
+                <div className="cta-card">
+                  <h4 className="cta-title">Ready to Experience Superior Power?</h4>
+                  <p className="cta-subtitle">Discover how Finike lithium batteries can transform your energy needs</p>
+                  <button className="cta-button">
+                    Explore Our Range
+                  </button>
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -104,16 +123,6 @@ const OurProduct = () => {
                 ))}
               </div>
 
-              {/* Call to Action */}
-              <div className="cta-section">
-                <div className="cta-card">
-                  <h4 className="cta-title">Ready to Experience Superior Power?</h4>
-                  <p className="cta-subtitle">Discover how Finike lithium batteries can transform your energy needs</p>
-                  <button className="cta-button">
-                    Explore Our Range
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>

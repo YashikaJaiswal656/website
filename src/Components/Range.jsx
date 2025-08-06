@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Range.css"
 
 const ProductRange = [
@@ -85,6 +85,15 @@ const ProductRange = [
 ];
 
 const Range = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (item) => {
+    setSelectedImage(item);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
   return (
     
     <section className="infrastructure-section">
@@ -95,10 +104,7 @@ const Range = () => {
         <div className="bg-circle bg-circle-3"></div>
       </div>
 
-      {/* Gradient Border Elements */}
-      <div className="gradient-border-top"></div>
-      <div className="gradient-border-bottom"></div>
-
+      
       <div className="products-header">
         <div className="header-card">
           <div className="header-icon">
@@ -120,7 +126,9 @@ const Range = () => {
                 <div className="image-wrapper">
                   <img src={item.image} alt={item.title}                   loading="lazy"
   decoding="async"
- className="infrastructure-image" />
+ className="infrastructure-image" 
+ onClick={() => openModal(item)}
+ />
                   <div className="status-badge">{item.status}</div>
                   
                   <div className="facility-icon">{item.icon}</div>
@@ -150,6 +158,35 @@ const Range = () => {
       <div className="decorative-dot dot-1"></div>
       <div className="decorative-dot dot-2"></div>
       <div className="decorative-dot dot-3"></div>
+      
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="modal-overlay">
+          {/* Backdrop */}
+          <div className="modal-backdrop" onClick={closeModal}></div>
+          
+          {/* Modal Content */}
+          <div className="modal-content">
+            {/* Close Button */}
+            <button className="modal-close-btn" onClick={closeModal}>
+              <svg className="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            {/* Modal Image */}
+            <div className="modal-image-container">
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                className="modal-image"
+              />
+              
+            </div>
+          </div>
+        </div>
+      )}
+
     </section>
   );
 };
