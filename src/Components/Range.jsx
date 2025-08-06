@@ -86,8 +86,18 @@ const ProductRange = [
 
 const Range = () => {
   return (
-    <section className="range-container">
-      
+    
+    <section className="infrastructure-section">
+      {/* Decorative Background Elements */}
+      <div className="decorative-bg">
+        <div className="bg-circle bg-circle-1"></div>
+        <div className="bg-circle bg-circle-2"></div>
+        <div className="bg-circle bg-circle-3"></div>
+      </div>
+
+      {/* Gradient Border Elements */}
+      <div className="gradient-border-top"></div>
+      <div className="gradient-border-bottom"></div>
 
       <div className="products-header">
         <div className="header-card">
@@ -101,44 +111,40 @@ const Range = () => {
         </p>
       </div>
 
-      {/* Grid layout */}
-      <div className="products-grid">
-        {ProductRange.map((product, index) => (
-          <div key={product.id} className={`product-card card-${index + 1}`}>
-            {/* Image container */}
-            <div className="card-image-container">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="product-image"
-              />
-
-              {/* Icon overlay */}
-              <div className="icon-badge">
-                {product.icon}
-              </div>
-
-              {/* Category badge */}
-              <div className="category-badge">
-                {product.category}
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="card-content">
-              <h3 className="product-title">{product.title}</h3>
-
-              {/* Performance meter */}
-              <div className="performance-meter">
-                <div className="meter-track">
-                  <div className="meter-fill"></div>
+        {/* Infrastructure Grid */}
+        <div className="infrastructure-grid">
+          {ProductRange.map((item) => (
+            <div key={item.id} className="infrastructure-card">
+              <div className="card-image-container">
+                <div className="image-glow"></div>
+                <div className="image-wrapper">
+                  <img src={item.image} alt={item.title}                   loading="lazy"
+  decoding="async"
+ className="infrastructure-image" />
+                  <div className="status-badge">{item.status}</div>
+                  
+                  <div className="facility-icon">{item.icon}</div>
                 </div>
-                <span className="meter-label">Performance</span>
+              </div>
+              
+              <div className="card-content">
+                <h3 className="facility-title">{item.title}</h3>
+                
+                <div className="location-info">
+                  <div className="location-dot"></div>
+                  <span className="location-text">{item.category}</span>
+                </div>
+                
+                <div className="capacity-info">
+                  <div className="capacity-icon">
+                    <i className="fas fa-cog"></i>
+                  </div>
+                  <span className="capacity-text">Performance</span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
       {/* Static decorative dots */}
       <div className="decorative-dot dot-1"></div>

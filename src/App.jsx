@@ -8,7 +8,7 @@ import Range from './Components/Range';
 import Mission from './Components/Mission';
 
 import WhoTh from './Components/Whoth';
-
+import Footer from './Include/Footer'
 
 const slides = [
   {
@@ -79,7 +79,8 @@ const App = () => {
 <OurProduct/>
 <Mission/>
 <Card/>
-
+<Range/>
+<Footer/>
     </>
   );
 };

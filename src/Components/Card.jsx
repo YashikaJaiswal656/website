@@ -111,8 +111,10 @@ const Card = () => {
               <div className="card-image-container">
                 <div className="image-glow"></div>
                 <div className="image-wrapper">
-                  <img src={item.image} alt={item.title} className="infrastructure-image" />
-                  <div className="status-badge">{item.status}</div>
+                  <img src={item.image} alt={item.title}                   loading="lazy"
+  decoding="async"
+ className="infrastructure-image" />
+                  
                   <div className="facility-icon">{item.icon}</div>
                 </div>
               </div>
