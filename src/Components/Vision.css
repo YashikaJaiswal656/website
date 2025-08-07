@@ -157,7 +157,7 @@
 }
 
 /* Image Container */
-.image-container {
+.content-wrapper .image-container {
   position: relative;
   height: 400px;
   display: flex;
@@ -453,13 +453,11 @@
   height: 100px;
   overflow: hidden;
 }
-* 
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .content-wrapper {
     gap: 60px;
-    padding: 50px 30px;
+    padding: 50px 30px ;
   }
   
   .main-title {

@@ -383,6 +383,37 @@
   font-weight: 500;
 }
 
+.footer-section,
+.footer-links,
+.contact-info {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.footer-links li,
+.contact-item {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.showcase-card,
+.feature-card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* ensures both match height */
+}
+
 .cta-button {
   background: linear-gradient(45deg, #ff758c, #ffb347);
   color: #ffffff;
@@ -413,10 +444,19 @@
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 900px) {
+  .feature-item{
+
+    padding: 2%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .our-products-section {
     padding: 60px 16px;
+  }
+  .feature-item{
+    padding:1%;
   }
   
   .header-card {
