@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const toggleMenu = () => {
@@ -26,8 +27,8 @@ const Header = () => {
                         <img src="https://finikelithium.com/static/media/finike-lithium-logo.90a3828be77a0d2e3a5a.png" alt="logo" />
                     </div>
                     <ul>
-                        <a href="/"><li>Home</li></a>
-                        <a href="/about"><li>About Us</li></a>
+                        <Link to={'/'}><li>Home</li></Link>
+                        <Link to={'/About'}><li>About Us</li></Link>
                         <li className="dropdown">
                             Our Products
                             <ul className="submenu">
