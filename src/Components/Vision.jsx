@@ -1,10 +1,8 @@
-import React from 'react';
+import React from 'react'
 import "./Vision.css"
-
-
-
+const Vision = () => {
   return (
-    <section className="mission-vision-container">
+    <> <section className="mission-vision-container">
       {/* Floating background elements */}
       <div className="floating-orb orb-1"></div>
       <div className="floating-orb orb-2"></div>
@@ -36,11 +34,7 @@ import "./Vision.css"
               {/* Replace this div with your actual image */}
               <div className="placeholder-bg"> <img src="https://finikelithium.com/static/media/ourmission.e63469afab54507c70f0.jpeg"/></div>
             </div>
-            <div className="image-decoration">
-              <div className="decoration-dot dot-1"></div>
-              <div className="decoration-dot dot-2"></div>
-              <div className="decoration-dot dot-3"></div>
-            </div>
+            
           </div>
           
           <div className="text-container">
@@ -100,37 +94,26 @@ import "./Vision.css"
             </div>
           </div>
 
-          <div className="image-container vision-image">
+
+
+          <div className="image-container mission-image">
             <div className="image-placeholder">
               <div className="image-overlay">
-                <div className="overlay-icon">🔮</div>
-                <p className="overlay-text">Vision Image</p>
+                <div className="overlay-icon">🎯</div>
+                <p className="overlay-text">Mission Image</p>
               </div>
               {/* Replace this div with your actual image */}
               <div className="placeholder-bg"><img src="https://finikelithium.com/static/media/ourvision.0eea947e2277896076fd.jpeg"/> </div>
             </div>
-            <div className="image-decoration">
-              <div className="decoration-dot dot-1"></div>
-              <div className="decoration-dot dot-2"></div>
-              <div className="decoration-dot dot-3"></div>
-            </div>
+            
           </div>
         </div>
       </div>
 
 
-      {/* Bottom decorative elements */}
-      <div className="bottom-decoration">
-        <div className="floating-particles">
-          <div className="particle particle-1"></div>
-          <div className="particle particle-2"></div>
-          <div className="particle particle-3"></div>
-          <div className="particle particle-4"></div>
-          <div className="particle particle-5"></div>
-        </div>
-      </div>
     </section>
-  );
-};
+    </>
+  )
+}
 
-export default Vision;
+export default Vision

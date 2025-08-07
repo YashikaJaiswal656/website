@@ -45,8 +45,8 @@ const Header = () => {
 
             <div className="nav_side_bar">
                 <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="/about"><li>About Us</li></a>
+                        <Link to={'/'}><li>Home</li></Link>
+                        <Link to={'/About'}><li>About Us</li></Link>
                     <li>
                         Our Products
                         <ul className="submenu">
