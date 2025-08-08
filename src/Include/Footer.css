@@ -276,7 +276,7 @@ align-items:baseline;
 }
 
 @media (max-width: 768px) {
-  .footer-container {
+ .footer-container {
     padding: 40px 20px;
   }
 
@@ -286,7 +286,7 @@ align-items:baseline;
   }
 
   .footer-section h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Already small enough */
   }
 
   .footer-links li {
@@ -294,22 +294,46 @@ align-items:baseline;
   }
 
   .company-logo {
-    font-size: 22px;
+    font-size: 1.25rem; /* smaller for mobile */
+  }
+
+  .company-description {
+    font-size: 0.8rem;
+  }
+
+  .contact-item span,
+  .contact-item a {
+    font-size: 0.8rem;
+  }
+
+  .working-hours {
+    font-size: 0.85rem;
   }
 
   .social-icon {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     font-size: 0.9rem;
   }
-  .footer-section{
-    font-size: 1.25rem;
+
+  .unit-title {
+    font-size: 0.9rem;
   }
-  .working-hours{
-    font-size: 16px;
+
+  .unit-address {
+    font-size: 0.8rem;
   }
-  .company-description{
-    font-size: 14px;
+
+  .footer-section {
+    font-size: 1rem;
+  }
+
+  .policy-links a {
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
   }
 }
 
@@ -333,7 +357,7 @@ align-items:baseline;
   .company-logo {
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .contact-item {
@@ -346,6 +370,34 @@ align-items:baseline;
   }
 
   .working-hours {
+    font-size: 0.8rem;
+  }
+
+  .unit-title {
     font-size: 0.85rem;
+  }
+
+  .unit-address {
+    font-size: 0.75rem;
+  }
+
+  .footer-links li {
+    font-size: 12px;
+  }
+
+  .footer-section h3 {
+    font-size: 0.95rem;
+  }
+
+  .footer-section {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+
+  .policy-links a {
+    font-size: 0.75rem;
   }
 }
