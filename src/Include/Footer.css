@@ -1,12 +1,9 @@
-
-        .footer {
+.footer {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: #ffffff;
             position: relative;
             overflow: hidden;
         }
-
-        
 
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
@@ -27,12 +24,11 @@
         }
 
         .footer-section h3 {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-            font-size: 1rem;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.1rem;
             margin-bottom: 25px;
             font-weight: 600;
             position: relative;
@@ -56,12 +52,10 @@
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 20px;
-            
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -75,7 +69,7 @@
             line-height: 1.7;
             color: #b8c5d1;
             margin-bottom: 25px;
-            font-size: 14px;
+            font-size: 0.95rem;
         }
 
         .contact-item {
@@ -86,11 +80,10 @@
         }
 
         .contact-item i {
-
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             width: 18px;
             margin-top: 2px;
             flex-shrink: 0;
@@ -99,35 +92,35 @@
         .contact-item span {
             color: #b8c5d1;
             line-height: 1.6;
+            font-size: 0.9rem;
         }
 
         .contact-item a {
             color: #b8c5d1;
             text-decoration: none;
             transition: color 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .contact-item a:hover {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .footer-links {
             list-style: none;
-align-items:baseline;
-            gap:0;
-            display:flex;
-
-            flex-direction:column;
+            align-items: baseline;
+            gap: 0;
+            display: flex;
+            flex-direction: column;
         }
 
         .footer-links li {
             margin-bottom: 12px;
-            padding:0;
-            font-size:14px;
+            padding: 0;
+            font-size: 0.9rem;
         }
 
         .footer-links a {
@@ -141,11 +134,10 @@ align-items:baseline;
         }
 
         .footer-links a:hover {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             transform: translateX(5px);
         }
 
@@ -164,7 +156,7 @@ align-items:baseline;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 15px;
-            border-left: 3px solid  #ff758c;
+            border-left: 3px solid #ff758c;
             transition: transform 0.3s ease;
         }
 
@@ -173,13 +165,13 @@ align-items:baseline;
         }
 
         .unit-title {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: 600;
             margin-bottom: 8px;
+            font-size: 0.95rem;
         }
 
         .unit-address {
@@ -209,9 +201,7 @@ align-items:baseline;
         }
 
         .social-icon:hover {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
             color: #1a1a2e;
             transform: translateY(-3px);
         }
@@ -228,7 +218,7 @@ align-items:baseline;
 
         .copyright {
             color: #b8c5d1;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .policy-links {
@@ -240,16 +230,15 @@ align-items:baseline;
         .policy-links a {
             color: #b8c5d1;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: color 0.3s ease;
         }
 
         .policy-links a:hover {
-  
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .working-hours {
@@ -258,152 +247,215 @@ align-items:baseline;
             border-radius: 8px;
             margin-top: 20px;
             border: 1px solid rgba(0, 212, 255, 0.2);
-            font-size: 1.1rem;
+            font-size: 0.9rem;
         }
 
         .working-hours strong {
-            
-  background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+            background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-@media (max-width: 1200px) {
-  .footer-content {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-  }
-}
-@media (min-width: 769px) {
-  html {
-    font-size: 16px !important;
-  }
-}
 
-@media (max-width: 768px) {
- .footer-container {
-    padding: 40px 20px;
-  }
+        /* Tablet and Large Mobile */
+        @media (max-width: 1200px) {
+            .footer-content {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 40px;
+            }
+        }
 
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
+        /* Medium screens - maintain readable sizes */
+        @media (max-width: 1024px) {
+            .footer-section h3 {
+                font-size: 1rem;
+            }
+            
+            .company-logo {
+                font-size: 1.6rem;
+            }
+            
+            .company-description {
+                font-size: 0.9rem;
+            }
+            
+            .footer-links li {
+                font-size: 0.85rem;
+            }
+            
+            .contact-item span,
+            .contact-item a {
+                font-size: 0.85rem;
+            }
+        }
 
-  .footer-section h3 {
-    font-size: 1rem; /* Already small enough */
-  }
+        /* Standard Mobile */
+        @media (max-width: 768px) {
+            .footer-container {
+                padding: 40px 20px;
+            }
 
-  .footer-links li {
-    font-size: 13px;
-  }
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
 
-  .company-logo {
-    font-size: 1.25rem; /* smaller for mobile */
-  }
+            .footer-section h3 {
+                font-size: 1rem;
+            }
 
-  .company-description {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
+            .footer-links li {
+                font-size: 0.85rem;
+            }
 
-  .contact-item span,
-  .contact-item a {
-    font-size: 0.8rem;
-  }
+            .company-logo {
+                font-size: 1.4rem;
+            }
 
-  .working-hours {
-    font-size: 0.8rem;
-  }
+            .company-description {
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
 
-  .social-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 0.9rem;
-  }
+            .contact-item span,
+            .contact-item a {
+                font-size: 0.85rem;
+            }
 
-  .unit-title {
-    font-size: 0.9rem;
-  }
+            .working-hours {
+                font-size: 0.85rem;
+            }
 
-  .unit-address {
-    font-size: 0.8rem;
-  }
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 0.95rem;
+            }
 
-  .footer-section {
-    font-size: 1rem;
-  }
+            .unit-title {
+                font-size: 0.9rem;
+            }
 
-  .policy-links a {
-    font-size: 0.8rem;
-  }
+            .unit-address {
+                font-size: 0.8rem;
+            }
 
-  .copyright {
-    font-size: 0.8rem;
-  }
-}
+            .policy-links a {
+                font-size: 0.8rem;
+            }
 
-@media (max-width: 480px) {
-  .footer-container {
-    padding: 30px 15px;
-  }
+            .copyright {
+                font-size: 0.8rem;
+            }
+        }
 
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
+        /* Small Mobile */
+        @media (max-width: 480px) {
+            .footer-container {
+                padding: 30px 15px;
+            }
 
-  .policy-links {
-    flex-direction: column;
-    gap: 10px;
-  }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 10px;
+                padding-top: 20px;
+                text-align: center;
+            }
 
-  .company-logo {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.2rem;
-  }
+            .policy-links {
+                flex-direction: column;
+                gap: 10px;
+            }
 
-  .contact-item {
-    flex-direction: row;
-    align-items: center;
-  }
+            .company-logo {
+                font-size: 1.25rem;
+            }
 
-  .contact-item i {
-    font-size: 1rem;
-  }
+            .footer-section h3 {
+                font-size: 0.95rem;
+            }
 
-  .working-hours {
-    font-size: 0.8rem;
-  }
+            .footer-links li {
+                font-size: 0.8rem;
+            }
 
-  .unit-title {
-    font-size: 0.85rem;
-  }
+            .company-description {
+                font-size: 0.8rem;
+            }
 
-  .unit-address {
-    font-size: 0.75rem;
-  }
+            .contact-item span,
+            .contact-item a {
+                font-size: 0.8rem;
+            }
 
-  .footer-links li {
-    font-size: 12px;
-  }
+            .working-hours {
+                font-size: 0.8rem;
+            }
 
-  .footer-section h3 {
-    font-size: 0.95rem;
-  }
+            .unit-title {
+                font-size: 0.85rem;
+            }
 
-  .footer-section {
-    font-size: 0.9rem;
-  }
+            .unit-address {
+                font-size: 0.75rem;
+            }
 
-  .copyright {
-    font-size: 0.75rem;
-  }
+            .copyright {
+                font-size: 0.75rem;
+            }
 
-  .policy-links a {
-    font-size: 0.75rem;
-  }
-}
+            .policy-links a {
+                font-size: 0.75rem;
+            }
+
+            .social-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Desktop View on Mobile Device - Specific adjustments */
+        @media (max-width: 768px) and (min-width: 1px) {
+            .footer-container.desktop-view {
+                padding: 50px 25px 25px;
+            }
+            
+            .footer-content.desktop-view {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+                gap: 35px;
+            }
+            
+            .footer-section.desktop-view h3 {
+                font-size: 0.95rem;
+            }
+            
+            .company-logo.desktop-view {
+                font-size: 1.5rem;
+            }
+            
+            .company-description.desktop-view {
+                font-size: 0.8rem;
+            }
+            
+            .footer-links.desktop-view li {
+                font-size: 0.8rem;
+            }
+            
+            .contact-item.desktop-view span,
+            .contact-item.desktop-view a {
+                font-size: 0.8rem;
+            }
+            
+            .working-hours.desktop-view {
+                font-size: 0.8rem;
+            }
+            
+            .unit-title.desktop-view {
+                font-size: 0.85rem;
+            }
+            
+            .unit-address.desktop-view {
+                font-size: 0.75rem;
+            }
+        }
