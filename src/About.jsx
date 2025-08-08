@@ -3,7 +3,7 @@ import Header from './Include/header'
 import Footer from './Include/Footer'
 import Slider from './Components/Slider'
 import Vision from './Components/Vision'
-
+import Choose from './Components/Choose'
 const About = () => {
   return (
     <>
@@ -45,7 +45,9 @@ const About = () => {
         
       </section>
       <Vision/>   
+      <Choose/>
     <Footer/>
+    
     </>
   )
 }

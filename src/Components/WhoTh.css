@@ -28,21 +28,6 @@
         .circle-3 { bottom: 25%; left: 20%; width: 180px; height: 180px; background: linear-gradient(45deg, #667eea, #764ba2); }
         .circle-4 { bottom: 15%; right: 10%; width: 220px; height: 220px; background: linear-gradient(45deg, #ff9a9e, #fecfef); }
 
-        .section-border-top, .section-border-bottom {
-          position: absolute;
-          left: 0; width: 100%; height: 4px;
-          z-index: 3;
-        }
-        
-        .section-border-top {
-          top: 0;
-          background: linear-gradient(90deg, #ff758c, #ffb347, #ff758c);
-        }
-        
-        .section-border-bottom {
-          bottom: 0;
-          background: linear-gradient(90deg, #6f86d6, #48c6ef, #6f86d6);
-        }
 
         .section-header {
           text-align: center;

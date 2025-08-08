@@ -433,7 +433,11 @@
   background: linear-gradient(45deg, #ff6b7d, #ff9f43);
 }
 
-/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .features-header{
+    margin-bottom:0px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .products-grid {
     grid-template-columns: 1fr;
@@ -443,6 +447,9 @@
   .gradient-title {
     font-size: 2rem;
   }
+  .features-card{
+    padding:32px 32px 0px 32px ;
+  }
 }
 @media screen and (max-width: 900px) {
   .feature-item{
@@ -450,7 +457,17 @@
     padding: 2%;
   }
 }
+@media screen and (max-width: 887px) {
+  .features-card{
+    padding:32px;
+  }
+}
 
+@media screen and (max-width: 807px) {
+  .features-card{
+    padding:32px 32px 0px 32px ;
+  }
+}
 @media screen and (max-width: 768px) {
   .our-products-section {
     padding: 60px 16px;

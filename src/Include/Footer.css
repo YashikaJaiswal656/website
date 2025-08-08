@@ -6,17 +6,7 @@
             overflow: hidden;
         }
 
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #00d4ff, #0099cc, #006bb3, #00d4ff);
-            background-size: 300% 300%;
-            animation: gradientShift 3s ease infinite;
-        }
+        
 
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
