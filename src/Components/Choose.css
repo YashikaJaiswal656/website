@@ -175,10 +175,10 @@
 }
 
 .finike-gradient-icon-bg {
-  width: 60px;
-  height: 60px;
+  width: 60px !important;
+  height: 60px !important;
   background: linear-gradient(45deg, #ff758c, #ffb347);
-  border-radius: 50%;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
