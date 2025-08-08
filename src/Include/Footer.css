@@ -302,6 +302,15 @@ align-items:baseline;
     height: 38px;
     font-size: 0.9rem;
   }
+  .footer-section{
+    font-size: 1.25rem;
+  }
+  .working-hours{
+    font-size: 16px;
+  }
+  .company-description{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
