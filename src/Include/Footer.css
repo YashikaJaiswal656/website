@@ -415,47 +415,145 @@
             }
         }
 
-        /* Desktop View on Mobile Device - Specific adjustments */
-        @media (max-width: 768px) and (min-width: 1px) {
-            .footer-container.desktop-view {
-                padding: 50px 25px 25px;
+        /* Mobile Device with Desktop Viewport - Override for better scaling */
+        @media screen and (max-device-width: 768px) {
+            .footer-container {
+                padding: 40px 20px 20px !important;
             }
             
-            .footer-content.desktop-view {
-                grid-template-columns: 2fr 1fr 1fr 1fr;
-                gap: 35px;
+            .footer-content {
+                gap: 25px !important;
             }
             
-            .footer-section.desktop-view h3 {
-                font-size: 0.95rem;
+            .footer-section h3 {
+                font-size: 0.85rem !important;
+                margin-bottom: 15px !important;
             }
             
-            .company-logo.desktop-view {
-                font-size: 1.5rem;
+            .company-logo {
+                font-size: 1.3rem !important;
+                margin-bottom: 15px !important;
             }
             
-            .company-description.desktop-view {
-                font-size: 0.8rem;
+            .company-description {
+                font-size: 0.75rem !important;
+                line-height: 1.4 !important;
+                margin-bottom: 15px !important;
             }
             
-            .footer-links.desktop-view li {
-                font-size: 0.8rem;
+            .footer-links li {
+                font-size: 0.75rem !important;
+                margin-bottom: 8px !important;
             }
             
-            .contact-item.desktop-view span,
-            .contact-item.desktop-view a {
-                font-size: 0.8rem;
+            .contact-item {
+                margin-bottom: 10px !important;
             }
             
-            .working-hours.desktop-view {
-                font-size: 0.8rem;
+            .contact-item span,
+            .contact-item a {
+                font-size: 0.75rem !important;
+                line-height: 1.3 !important;
             }
             
-            .unit-title.desktop-view {
-                font-size: 0.85rem;
+            .working-hours {
+                font-size: 0.75rem !important;
+                padding: 12px !important;
+                margin-top: 15px !important;
             }
             
-            .unit-address.desktop-view {
-                font-size: 0.75rem;
+            .unit-title {
+                font-size: 0.8rem !important;
+                margin-bottom: 6px !important;
+            }
+            
+            .unit-address {
+                font-size: 0.7rem !important;
+                line-height: 1.3 !important;
+            }
+            
+            .manufacturing-unit {
+                padding: 15px !important;
+                margin-bottom: 12px !important;
+            }
+            
+            .social-icon {
+                width: 35px !important;
+                height: 35px !important;
+                font-size: 0.85rem !important;
+            }
+            
+            .social-icons {
+                gap: 10px !important;
+                margin-top: 15px !important;
+            }
+            
+            .footer-bottom {
+                padding-top: 20px !important;
+                gap: 15px !important;
+            }
+            
+            .copyright {
+                font-size: 0.7rem !important;
+            }
+            
+            .policy-links a {
+                font-size: 0.7rem !important;
+            }
+            
+            .policy-links {
+                gap: 15px !important;
+            }
+        }
+
+        /* Additional mobile desktop view optimization */
+        @media screen and (max-device-width: 480px) {
+            .footer-container {
+                padding: 30px 15px 15px !important;
+            }
+            
+            .footer-content {
+                gap: 20px !important;
+            }
+            
+            .footer-section h3 {
+                font-size: 0.8rem !important;
+                margin-bottom: 12px !important;
+            }
+            
+            .company-logo {
+                font-size: 1.2rem !important;
+            }
+            
+            .company-description {
+                font-size: 0.7rem !important;
+            }
+            
+            .footer-links li {
+                font-size: 0.7rem !important;
+                margin-bottom: 6px !important;
+            }
+            
+            .contact-item span,
+            .contact-item a {
+                font-size: 0.7rem !important;
+            }
+            
+            .working-hours {
+                font-size: 0.7rem !important;
+                padding: 10px !important;
+            }
+            
+            .unit-title {
+                font-size: 0.75rem !important;
+            }
+            
+            .unit-address {
+                font-size: 0.65rem !important;
+            }
+            
+            .manufacturing-unit {
+                padding: 12px !important;
+                margin-bottom: 10px !important;
             }
         }
