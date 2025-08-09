@@ -299,27 +299,68 @@
     transform: scale(1.4); 
   }
 }
+/* Add these mobile responsive fixes to your Wrap.css file */
 
-/* Responsive Design */
+/* Responsive Design - Updated */
 @media (max-width: 768px) {
   .hero-wrapper { 
-    padding: 40px 20px; 
+    padding: 40px 15px; 
+    min-height: 100vh;
   }
   
   .content-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
-    padding: 40px 30px;
+    gap: 40px;
+    padding: 30px 20px;
     border-radius: 25px;
+    max-width: calc(100% - 20px);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   
-  .primary-heading { 
-    font-size: 2.5rem; 
-    letter-spacing: -2px; 
+  .content-panel {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+  
+  .main-title, .primary-heading { 
+    font-size: 2.2rem; 
+    letter-spacing: -1px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
   }
   
   .narrative-text { 
-    font-size: 1rem; 
+    font-size: 1rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .story-block {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .paragraph-marker {
+    width: 4px;
+    height: 4px;
+    margin-top: 8px;
+    flex-shrink: 0;
   }
   
   .side-indicators { 
@@ -329,51 +370,106 @@
   .brand-showcase {
     order: 2;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
   }
   
   .content-panel { 
-    order: 1; 
+    order: 1;
+    width: 100%;
+  }
+  
+  .section-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 480px) {
-  .content-grid { 
-    padding: 30px 20px; 
+  .hero-wrapper {
+    padding: 20px 10px;
   }
   
-  .primary-heading { 
-    font-size: 2rem; 
+  .content-grid { 
+    padding: 25px 15px;
+    gap: 30px;
+    border-radius: 20px;
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  
+  .main-title, .primary-heading { 
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
   }
   
   .narrative-text { 
-    font-size: 0.95rem; 
-    line-height: 1.6; 
+    font-size: 0.9rem; 
+    line-height: 1.5;
+  }
+  
+  .story-block {
+    gap: 12px;
+    margin: 12px 0;
   }
   
   .logo-frame { 
-    width: 80px; 
-    height: 80px; 
-  }
-  
-  .brand-symbol { 
-    width: 50px; 
-    height: 50px; 
-    font-size: 20px; 
-  }
-  
-  .ring-primary { 
-    width: 60px; 
-    height: 60px; 
-  }
-  
-  .ring-secondary { 
     width: 70px; 
     height: 70px; 
   }
   
-  .ring-tertiary { 
-    width: 80px; 
-    height: 80px; 
+  .brand-symbol { 
+    width: 45px; 
+    height: 45px; 
+    font-size: 18px; 
+  }
+  
+  .company-badge {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+  
+  .badge-text, .badge-location {
+    font-size: 0.8rem;
+  }
+  
+  .section-tag {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  
+  .tag-label {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-wrapper {
+    padding: 15px 8px;
+  }
+  
+  .content-grid {
+    padding: 20px 12px;
+    max-width: calc(100% - 5px);
+  }
+  
+  .main-title, .primary-heading {
+    font-size: 1.6rem;
+  }
+  
+  .narrative-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .story-block {
+    gap: 10px;
   }
 }

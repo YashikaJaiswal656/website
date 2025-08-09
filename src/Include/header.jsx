@@ -43,7 +43,6 @@ const Header = () => {
         const submenu = dropdown.querySelector('.sidebar-submenu');
         const isActive = dropdown.classList.contains('active');
         
-        // Close all other dropdowns first
         document.querySelectorAll('.sidebar-dropdown').forEach(item => {
             if (item !== dropdown) {
                 item.classList.remove('active');
@@ -76,7 +75,7 @@ const Header = () => {
                                 <a href="/solar"><li>Solar Batteries</li></a>
                             </ul>
                         </li>
-                        <a href="/payment"><li>Customer Support</li></a>
+                        <Link to={"/Customer"}><li>Customer Support</li></Link>
                         <a href="/contact"><li>Shop Online</li></a>
                     </ul>
                     <i className="fas fa-bars menu_icon" onClick={toggleMenu}></i>
@@ -104,7 +103,7 @@ const Header = () => {
                             <a href="/solar" onClick={closeMenu}><li>Solar Batteries</li></a>
                         </ul>
                     </li>
-                    <a href="/payment" onClick={closeMenu}><li>Customer Support</li></a>
+                    <Link to={"/Customer"} onClick={closeMenu}><li>Customer Support</li></Link>
                     <a href="/contact" onClick={closeMenu}><li>Shop Online</li></a>
                 </ul>
             </div>
