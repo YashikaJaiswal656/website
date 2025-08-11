@@ -64,7 +64,7 @@ const ChooseFinike = () => {
       <style jsx>{`
         .innovation-showcase {
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
-          min-height: 100vh;
+          height: fit-content;
           position: relative;
           overflow: hidden;
           display: flex;
