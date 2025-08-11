@@ -150,14 +150,14 @@ const Warranty = () => {
                   <p className="service-description">{service.description}</p>
                   
                   {/* Features List */}
-                  <div className="features-list">
+                  {/* <div className="features-list">
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="feature-item">
                         <div className="feature-dot"></div>
                         <span>{feature}</span>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Action Button */}
