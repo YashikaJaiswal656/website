@@ -71,7 +71,7 @@ const Header = () => {
                         <li className="dropdown">
                             Our Products
                             <ul className="submenu">
-                                <a href="/lithium"><li>Lithium Batteries</li></a>
+                                <Link to={"/Lithium"} onClick={closeMenu}><li>Lithium Batteries</li></Link>
                                 <a href="/solar"><li>Solar Batteries</li></a>
                             </ul>
                         </li>
@@ -99,7 +99,7 @@ const Header = () => {
                     <li className="sidebar-dropdown" onClick={toggleDropdown}>
                         Our Products
                         <ul className="sidebar-submenu">
-                            <a href="/lithium" onClick={closeMenu}><li>Lithium Batteries</li></a>
+                            <Link to={"/Lithium"} onClick={closeMenu}><li>Lithium Batteries</li></Link>
                             <a href="/solar" onClick={closeMenu}><li>Solar Batteries</li></a>
                         </ul>
                     </li>

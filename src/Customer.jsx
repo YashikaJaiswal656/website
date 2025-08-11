@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Include/header'
 import Footer from './Include/Footer'
-
+import Warranty from './Components/Warranty'
 const Customer = () => {
   return (
     <>
@@ -74,6 +74,7 @@ We pride ourselves on offering top-notch pre and post-sales support to all our c
       </div>
       
     </div>
+    <Warranty/>
     <Footer/>
     
     </>
