@@ -107,9 +107,7 @@ const Card = () => {
             </div>
             <h2 className="gradient-title">Advanced Infrastructure</h2>
           </div>
-          <p className="header-subtitle">
-            State-of-the-art facilities and precision engineering driving innovation in lithium battery technology
-          </p>
+          
         </div>
 
         {/* Infrastructure Grid */}

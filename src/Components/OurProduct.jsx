@@ -35,9 +35,7 @@ const OurProduct = () => {
             </div>
             <h2 className="gradient-title">Our Products</h2>
           </div>
-          <p className="header-subtitle">
-            Revolutionary lithium battery solutions engineered for reliability, sustainability, and peak performance
-          </p>
+          
         </div>
 
         {/* Main Content Layout */}

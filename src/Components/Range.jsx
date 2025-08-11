@@ -112,9 +112,7 @@ const Range = () => {
           </div>
           <h2 className="gradient-title">Product Range</h2>
         </div>
-        <p className="header-subtitle">
-          Comprehensive lithium battery solutions engineered for every application
-        </p>
+        
       </div>
 
         {/* Infrastructure Grid */}

@@ -47,9 +47,7 @@ const WhoTh = () => {
             </div>
             <h2 className="gradient-title">Why Choose Finike</h2>
           </div>
-          <p className="header-subtitle">
-            Innovative solutions that power your world with cutting-edge technology
-          </p>
+          
         </div>
       <div className="finike-gradient-wrapper-bg">
         {cards.map((card, index) => (
