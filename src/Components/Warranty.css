@@ -3,7 +3,7 @@
 
 .warranty-support-section {
   position: relative;
-  min-height: 100vh;
+  height: fit-content;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
@@ -102,6 +102,8 @@
   z-index: 10;
   max-width: 1400px;
   margin: 0 auto;
+  /* Add horizontal padding for small viewports */
+  padding: 0 10px;
 }
 
 /* Header Section */
@@ -139,7 +141,7 @@
 }
 
 .main-title {
-  font-size: 4rem;
+  font-size: clamp(2rem, 8vw, 4rem); /* Responsive font size */
   font-weight: 800;
   color: #1e293b;
   margin: 0 0 30px 0;
@@ -162,7 +164,7 @@
 }
 
 .header-description {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size */
   color: #64748b;
   max-width: 600px;
   margin: 0 auto;
@@ -173,10 +175,13 @@
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); /* Better responsive grid */
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto 80px;
+  /* Ensure grid doesn't overflow */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Service Cards */
@@ -194,6 +199,10 @@
   opacity: 0;
   transform: translateY(30px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  /* Prevent horizontal overflow */
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0; /* Allow cards to shrink */
 }
 
 .service-card:hover {
@@ -324,18 +333,27 @@
 }
 
 .service-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
   font-weight: 700;
   color: #1e293b;
   margin: 0 0 15px 0;
 }
 
 .service-description {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* Responsive font size */
   color: #64748b;
   line-height: 1.7;
   margin: 0 0 25px 0;
   font-weight: 500;
+}
+
+/* Mobile/Desktop Title Display */
+.mobile-title {
+  display: none;
+}
+
+.desktop-title {
+  display: inline;
 }
 
 /* Features List */
@@ -351,7 +369,7 @@
   align-items: center;
   gap: 12px;
   color: #475569;
-  font-size: 14px;
+  font-size: clamp(12px, 3vw, 14px); /* Responsive font size */
   font-weight: 500;
 }
 
@@ -379,7 +397,7 @@
   padding: 16px 24px;
   border: none;
   border-radius: 16px;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* Responsive font size */
   font-weight: 600;
   color: #fff;
   cursor: pointer;
@@ -412,7 +430,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: clamp(11px, 2.5vw, 12px); /* Responsive font size */
   color: #64748b;
 }
 
@@ -463,17 +481,20 @@
   overflow: hidden;
   animation: fadeInUp 0.8s ease-out 0.5s both;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  /* Ensure proper sizing */
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .cta-content h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive font size */
   font-weight: 700;
   color: #1e293b;
   margin: 0 0 15px 0;
 }
 
 .cta-content p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 3vw, 1.1rem); /* Responsive font size */
   color: #64748b;
   margin: 0 0 35px 0;
   max-width: 500px;
@@ -495,7 +516,7 @@
   gap: 10px;
   padding: 18px 32px;
   border-radius: 16px;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* Responsive font size */
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -581,28 +602,34 @@
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
+/* Responsive Design - Enhanced for Desktop View on Mobile */
+@media (max-width: 1200px) and (min-width: 769px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 769px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
+/* Mobile Specific Styles */
 @media (max-width: 768px) {
   .warranty-support-section {
-    padding: 80px 16px;
+    padding: 60px 16px;
+  }
+
+  .support-container {
+    padding: 0 5px;
   }
 
   .main-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    letter-spacing: -1px;
   }
 
   .header-description {
@@ -632,6 +659,15 @@
     font-size: 1.3rem;
   }
 
+  /* Show mobile title, hide desktop title */
+  .mobile-title {
+    display: inline;
+  }
+
+  .desktop-title {
+    display: none;
+  }
+
   .cta-card {
     padding: 40px 25px;
     margin: 0;
@@ -650,9 +686,18 @@
     width: 100%;
     max-width: 280px;
   }
+
+  .floating-orb {
+    filter: blur(80px);
+  }
 }
 
+/* Extra Small Mobile */
 @media (max-width: 480px) {
+  .warranty-support-section {
+    padding: 50px 12px;
+  }
+
   .main-title {
     font-size: 2rem;
     letter-spacing: -1px;
@@ -672,6 +717,30 @@
   }
 
   .floating-orb {
-    filter: blur(80px);
+    filter: blur(100px);
+    opacity: 0.2;
+  }
+}
+
+/* Desktop View on Mobile Fix */
+@media (max-width: 768px) {
+  /* When desktop site is requested on mobile, prevent extreme scaling */
+  .warranty-support-section {
+    min-width: 0;
+    overflow-x: auto;
+  }
+  
+  .support-container {
+    min-width: 320px;
+    max-width: 100%;
+  }
+  
+  .services-grid {
+    min-width: 0;
+  }
+  
+  .service-card {
+    min-width: 280px;
+    max-width: 100%;
   }
 }
