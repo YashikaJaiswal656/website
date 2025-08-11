@@ -1,8 +1,9 @@
-
+/* Warranty Support Section Styles - Light Theme */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 .warranty-support-section {
   position: relative;
-  height:fit-content;
+  min-height: 100vh;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
@@ -137,8 +138,14 @@
   50% { transform: scale(1.2) rotate(180deg); }
 }
 
-
-
+.main-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
 
 .gradient-text {
   background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
@@ -238,10 +245,32 @@
   margin-bottom: 30px;
 }
 
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(255, 117, 140, 0.4);
+}
 
+.icon-wrapper i {
+  font-size: 32px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
 
+.service-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 35px rgba(255, 117, 140, 0.6);
+}
 
-
+.service-card:hover .icon-wrapper i {
+  transform: scale(1.1);
+}
 
 /* Floating Particles */
 .floating-particles {
@@ -334,6 +363,66 @@
   flex-shrink: 0;
 }
 
+/* Card Footer */
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.action-button:hover::before {
+  left: 100%;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff88;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
 
 @keyframes pulse {
   0%, 100% { opacity: 1; }
@@ -511,7 +600,10 @@
     padding: 80px 16px;
   }
 
-  
+  .main-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
 
   .header-description {
     font-size: 1rem;
@@ -525,6 +617,15 @@
   .service-card {
     padding: 30px 25px;
     margin: 0;
+  }
+
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-wrapper i {
+    font-size: 28px;
   }
 
   .service-title {
@@ -552,6 +653,10 @@
 }
 
 @media (max-width: 480px) {
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
 
   .services-grid {
     gap: 15px;

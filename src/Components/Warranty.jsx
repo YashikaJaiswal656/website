@@ -8,50 +8,55 @@ const Warranty = () => {
       id: 1,
       icon: 'fas fa-shield-alt',
       title: 'Warranty Registration',
+      shortTitle: 'Warranty',
       description: 'Register your Finike product for comprehensive warranty coverage and protection',
       buttonText: 'Register Now',
-      gradient: 'from-blue-500 to-purple-600',
-      glowColor: 'rgba(59, 130, 246, 0.4)',
+      gradient: 'linear-gradient(45deg, #6f86d6, #48c6ef)',
+      glowColor: 'rgba(111, 134, 214, 0.4)',
       features: ['5 Year Warranty', 'Free Replacement', '24/7 Support']
     },
     {
       id: 2,
       icon: 'fas fa-tools',
       title: 'Register Complaint',
+      shortTitle: 'Complaint',
       description: 'Quick and easy complaint registration with real-time tracking and updates',
       buttonText: 'File Complaint',
-      gradient: 'from-red-500 to-pink-600',
-      glowColor: 'rgba(239, 68, 68, 0.4)',
+      gradient: 'linear-gradient(45deg, #ff758c, #ffb347)',
+      glowColor: 'rgba(255, 117, 140, 0.4)',
       features: ['Instant Tracking', 'Quick Response', 'Expert Support']
     },
     {
       id: 3,
       icon: 'fas fa-headset',
       title: 'Contact Us',
+      shortTitle: 'Contact',
       description: 'Connect with our expert team for personalized assistance and guidance',
       buttonText: 'Get in Touch',
-      gradient: 'from-green-500 to-emerald-600',
-      glowColor: 'rgba(34, 197, 94, 0.4)',
+      gradient: 'linear-gradient(45deg, #667eea, #764ba2)',
+      glowColor: 'rgba(102, 126, 234, 0.4)',
       features: ['Live Chat', 'Phone Support', 'Email Help']
     },
     {
       id: 4,
       icon: 'fas fa-calculator',
       title: 'Get a Quote',
+      shortTitle: 'Quote',
       description: 'Receive instant, customized quotes for your energy storage requirements',
       buttonText: 'Request Quote',
-      gradient: 'from-orange-500 to-red-500',
-      glowColor: 'rgba(249, 115, 22, 0.4)',
+      gradient: 'linear-gradient(45deg, #ff9a9e, #fecfef)',
+      glowColor: 'rgba(255, 154, 158, 0.4)',
       features: ['Instant Quotes', 'Custom Solutions', 'Best Prices']
     },
     {
       id: 5,
       icon: 'fas fa-credit-card',
       title: 'Online Payment',
+      shortTitle: 'Payment',
       description: 'Secure and convenient online payment gateway for all your transactions',
       buttonText: 'Make Payment',
-      gradient: 'from-indigo-500 to-blue-600',
-      glowColor: 'rgba(99, 102, 241, 0.4)',
+      gradient: 'linear-gradient(45deg, #ffecd2, #fcb69f)',
+      glowColor: 'rgba(255, 236, 210, 0.4)',
       features: ['Secure Payments', 'Multiple Methods', 'Instant Receipt']
     }
   ];
@@ -73,7 +78,10 @@ const Warranty = () => {
       <div className="support-container">
         {/* Header Section */}
         <div className="support-header">
-          
+          <div className="header-badge">
+            <i className="fas fa-star"></i>
+            <span>Premium Support Services</span>
+          </div>
           
           <h1 className="main-title">
             Your <span className="gradient-text">Complete</span> Support
@@ -111,17 +119,30 @@ const Warranty = () => {
               <div className="card-content">
                 {/* Icon Section */}
                 <div className="icon-container">
-                  <div className="logo-frame">
-            <div className="brand-symbol">
-              <i className={service.icon}></i>
-            </div>
-          </div>
+                  <div 
+                    className="icon-wrapper"
+                    style={{
+                      background: service.gradient,
+                      boxShadow: `0 10px 30px ${service.glowColor}`
+                    }}
+                  >
+                    <i className={service.icon}></i>
+                  </div>
                   
+                  {/* Floating particles */}
+                  <div className="floating-particles">
+                    <div className="particle particle-1"></div>
+                    <div className="particle particle-2"></div>
+                    <div className="particle particle-3"></div>
+                  </div>
                 </div>
 
                 {/* Text Content */}
                 <div className="text-content">
-                  <h3 className="service-title">{service.title}</h3>
+                  <h3 className="service-title">
+                    <span className="mobile-title">{service.shortTitle}</span>
+                    <span className="desktop-title">{service.title}</span>
+                  </h3>
                   <p className="service-description">{service.description}</p>
                   
                   {/* Features List */}
@@ -135,13 +156,25 @@ const Warranty = () => {
                   </div>
                 </div>
 
+                {/* Action Button */}
                 <div className="card-footer">
-              <div className="feature-badge">{service.buttonText}
-                <i className="fas fa-arrow-right"></i>
-                
-              </div>
-            </div>
-                
+                  <button 
+                    className="action-button"
+                    style={{
+                      background: service.gradient,
+                      boxShadow: `0 8px 25px ${service.glowColor}`
+                    }}
+                  >
+                    <span>{service.buttonText}</span>
+                    <i className="fas fa-arrow-right"></i>
+                  </button>
+                  
+                  {/* Status indicator */}
+                  <div className="status-indicator">
+                    <div className="status-dot"></div>
+                    <span>Available 24/7</span>
+                  </div>
+                </div>
               </div>
 
               {/* Hover Effects */}
@@ -159,7 +192,7 @@ const Warranty = () => {
               <div className="cta-buttons">
                 <button className="cta-primary">
                   <i className="fas fa-phone"></i>
-                  Call Now: +91 97787-44000
+                  Call Now: +1-800-FINIKE
                 </button>
                 <button className="cta-secondary">
                   <i className="fas fa-comments"></i>
