@@ -4,8 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './About.jsx';
 import App from './App.jsx'
 import Customer from './Customer.jsx';
-import Lithium from './Lithium.jsx'
-
+import Lithium from './Lithium.jsx';
+import Register from './Register.jsx'
+import Contact from './Contact.jsx'
+import Complaint from './Complaint.jsx'
+import Payement from './Payement.jsx'
+import Quote from './Quote.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -14,6 +18,11 @@ createRoot(document.getElementById('root')).render(
   <Route path="/About" element={<About />} />
   <Route path="/Customer" element={<Customer/>} />
   <Route path="/Lithium" element={<Lithium/>} />
+  <Route path="/Register" element={<Register/>} />
+  <Route path="/Contact" element={<Contact/>} />
+  <Route path="/Complaint" element={<Complaint/>} />
+  <Route path="/Payement" element={<Payement/>} />
+  <Route path="/Quote" element={<Quote/>} />
 </Routes>
 </BrowserRouter>
   </StrictMode>,

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Warranty.css'
+import { Link } from 'react-router-dom';
 const Warranty = () => {
   const [activeCard, setActiveCard] = useState(null);
 
@@ -13,7 +14,8 @@ const Warranty = () => {
       buttonText: 'Register Now',
       gradient: 'linear-gradient(45deg, #6f86d6, #48c6ef)',
       glowColor: 'rgba(111, 134, 214, 0.4)',
-      features: ['5 Year Warranty', 'Free Replacement', '24/7 Support']
+      features: ['5 Year Warranty', 'Free Replacement', '24/7 Support'],
+      to:"/Register"
     },
     {
       id: 2,
@@ -24,7 +26,8 @@ const Warranty = () => {
       buttonText: 'File Complaint',
       gradient: 'linear-gradient(45deg, #ff758c, #ffb347)',
       glowColor: 'rgba(255, 117, 140, 0.4)',
-      features: ['Instant Tracking', 'Quick Response', 'Expert Support']
+      features: ['Instant Tracking', 'Quick Response', 'Expert Support'],
+      to:"/Complaint"
     },
     {
       id: 3,
@@ -35,7 +38,8 @@ const Warranty = () => {
       buttonText: 'Get in Touch',
       gradient: 'linear-gradient(45deg, #667eea, #764ba2)',
       glowColor: 'rgba(102, 126, 234, 0.4)',
-      features: ['Live Chat', 'Phone Support', 'Email Help']
+      features: ['Live Chat', 'Phone Support', 'Email Help'],
+      to:"/Contact"
     },
     {
       id: 4,
@@ -46,7 +50,9 @@ const Warranty = () => {
       buttonText: 'Request Quote',
       gradient: 'linear-gradient(45deg, #ff9a9e, #fecfef)',
       glowColor: 'rgba(255, 154, 158, 0.4)',
-      features: ['Instant Quotes', 'Custom Solutions', 'Best Prices']
+      features: ['Instant Quotes', 'Custom Solutions', 'Best Prices'],
+      to:"/Quote"
+
     },
     {
       id: 5,
@@ -57,7 +63,8 @@ const Warranty = () => {
       buttonText: 'Make Payment',
       gradient: 'linear-gradient(45deg, #ffecd2, #fcb69f)',
       glowColor: 'rgba(255, 236, 210, 0.4)',
-      features: ['Secure Payments', 'Multiple Methods', 'Instant Receipt']
+      features: ['Secure Payments', 'Multiple Methods', 'Instant Receipt'],
+      to:"/Payement"
     }
   ];
 
@@ -78,10 +85,7 @@ const Warranty = () => {
       <div className="support-container">
         {/* Header Section */}
         <div className="support-header">
-          <div className="header-badge">
-            <i className="fas fa-star"></i>
-            <span>Premium Support Services</span>
-          </div>
+          
           
           <h1 className="main-title">
             Your <span className="gradient-text">Complete</span> Support
@@ -158,6 +162,7 @@ const Warranty = () => {
 
                 {/* Action Button */}
                 <div className="card-footer">
+<Link to={service.to}>
                   <button 
                     className="action-button"
                     style={{
@@ -168,7 +173,7 @@ const Warranty = () => {
                     <span>{service.buttonText}</span>
                     <i className="fas fa-arrow-right"></i>
                   </button>
-                  
+                  </Link>
                   {/* Status indicator */}
                   <div className="status-indicator">
                     <div className="status-dot"></div>
@@ -194,9 +199,9 @@ const Warranty = () => {
                   <i className="fas fa-phone"></i>
                   Call Now: +1-800-FINIKE
                 </button>
-                <button className="cta-secondary">
-                  <i className="fas fa-comments"></i>
-                  Live Chat
+                <button className="cta-primary">
+                  <i className="fas fa-envelope"></i>
+                  Mail Now: customercare@spinoff.in
                 </button>
               </div>
             </div>

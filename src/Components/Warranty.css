@@ -142,7 +142,7 @@
 }
 
 .main-title {
-  font-size: clamp(1.5rem, 5vw, 4rem); /* More conservative responsive font size */
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* More conservative responsive font size */
   font-weight: 800;
   color: #1e293b;
   margin: 0 0 20px 0;
@@ -165,7 +165,7 @@
 }
 
 .header-description {
-  font-size: clamp(0.875rem, 2.5vw, 1.2rem); /* More conservative responsive font size */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* More conservative responsive font size */
   color: #64748b;
   max-width: 600px;
   margin: 0 auto;
@@ -173,7 +173,9 @@
   font-weight: 500;
   padding: 0 10px; /* Add horizontal padding */
 }
-
+a{
+  text-decoration:none;
+}
 /* Services Grid */
 .services-grid {
   display: grid;
@@ -641,7 +643,7 @@
   }
 
   .header-description {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     padding: 0 15px;
     max-width: 90%;
   }
