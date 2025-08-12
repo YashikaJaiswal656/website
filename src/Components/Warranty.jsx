@@ -197,7 +197,7 @@ const Warranty = () => {
               <div className="cta-buttons">
                 <button className="cta-primary">
                   <i className="fas fa-phone"></i>
-                  Call Now: +1-800-FINIKE
+                  Call Now: +919778044000
                 </button>
                 <button className="cta-primary">
                   <i className="fas fa-envelope"></i>
