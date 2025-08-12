@@ -11,14 +11,11 @@ const Header = () => {
         if (sideMenu.classList.contains("showw")) {
             sideMenu.classList.remove("showw");
             overlay.classList.remove("showw");
-            menuIcon.classList.remove("fa-close");
-            menuIcon.classList.add("fa-bars");
+
             document.body.style.overflow = "auto";
         } else {
             sideMenu.classList.add("showw");
             overlay.classList.add("showw");
-            menuIcon.classList.remove("fa-bars");
-            menuIcon.classList.add("fa-close");
             document.body.style.overflow = "hidden";
         }
     };
@@ -30,8 +27,7 @@ const Header = () => {
         
         sideMenu.classList.remove("showw");
         overlay.classList.remove("showw");
-        menuIcon.classList.remove("fa-close");
-        menuIcon.classList.add("fa-bars");
+        
         document.body.style.overflow = "auto";
     };
 
@@ -78,7 +74,8 @@ const Header = () => {
                         <Link to={"/Customer"}><li>Customer Support</li></Link>
                         <a href="/contact"><li>Shop Online</li></a>
                     </ul>
-                    <i className="fas fa-bars menu_icon" onClick={toggleMenu}></i>
+                    
+                    <span className="menu_icon"  onClick={toggleMenu}>☰</span>
                 </div>
             </div>
 

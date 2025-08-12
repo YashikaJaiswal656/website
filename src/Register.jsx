@@ -64,7 +64,7 @@ const Register = () => {
             <div className="header-icon">
               <i className="fas fa-award"></i>
             </div>
-            <h2 className="gradient-title">            Register Your Product</h2>
+            <h2 className="main-title">            Register Your Warranty</h2>
             
           </div>
           
@@ -76,7 +76,7 @@ const Register = () => {
           <div className="form-wrapper">
             <div className="form-header">
               
-              <h2>Product Registration</h2>
+              <h2>WarrantyRegistration</h2>
               <p>Fill out the details below to activate your warranty coverage</p>
             </div>
 
@@ -145,6 +145,37 @@ const Register = () => {
                   </div>
                 </div>
 
+                {/* Invoice Number */}
+                <div className="input-group">
+                  <label>Invoice Number</label>
+                  <div className="input-wrapper">
+                    <input
+                      type="text"
+                      name="invoiceNumber"
+                      value={formData.invoiceNumber}
+                      onChange={handleInputChange}
+                      placeholder="INV-2024-001"
+                      required
+                    />
+                    <div className="input-icon">🧾</div>
+                  </div>
+                </div>
+                {/* Seller Name */}
+                <div className="input-group">
+                  <label>Seller/Store Name</label>
+                  <div className="input-wrapper">
+                    <input
+                      type="text"
+                      name="sellerName"
+                      value={formData.sellerName}
+                      onChange={handleInputChange}
+                      placeholder="Electronics Store XYZ"
+                      required
+                    />
+                    <div className="input-icon">🏪</div>
+                  </div>
+                </div>
+
                 {/* File Upload */}
                 <div className="input-group file-upload">
                   <label>Upload Invoice</label>
@@ -168,37 +199,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Invoice Number */}
-                <div className="input-group">
-                  <label>Invoice Number</label>
-                  <div className="input-wrapper">
-                    <input
-                      type="text"
-                      name="invoiceNumber"
-                      value={formData.invoiceNumber}
-                      onChange={handleInputChange}
-                      placeholder="INV-2024-001"
-                      required
-                    />
-                    <div className="input-icon">🧾</div>
-                  </div>
-                </div>
-
-                {/* Seller Name */}
-                <div className="input-group">
-                  <label>Seller/Store Name</label>
-                  <div className="input-wrapper">
-                    <input
-                      type="text"
-                      name="sellerName"
-                      value={formData.sellerName}
-                      onChange={handleInputChange}
-                      placeholder="Electronics Store XYZ"
-                      required
-                    />
-                    <div className="input-icon">🏪</div>
-                  </div>
-                </div>
 
                 {/* Pincode */}
                 <div className="input-group">

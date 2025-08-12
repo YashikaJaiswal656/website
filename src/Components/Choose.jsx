@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ChooseFinike = () => {
+const Choose = () => {
   const [activeFeature, setActiveFeature] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -64,14 +64,15 @@ const ChooseFinike = () => {
       <style jsx>{`
         .innovation-showcase {
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
-          height: fit-content;
+          min-height: 100vh;
+          max-height: 100vh;
           position: relative;
           overflow: hidden;
           display: flex;
           align-items: center;
           justify-content: center;
           font-family: 'Segoe UI', sans-serif;
-          padding: 60px 20px;
+          padding: 20px;
         }
 
         .atmospheric-bubbles {
@@ -95,8 +96,8 @@ const ChooseFinike = () => {
         .bubble-1 {
           top: 20%;
           left: 10%;
-          width: 400px;
-          height: 400px;
+          width: 300px;
+          height: 300px;
           background: linear-gradient(45deg, #ff758c, #ffb347);
           animation-delay: 0s;
         }
@@ -104,8 +105,8 @@ const ChooseFinike = () => {
         .bubble-2 {
           bottom: 30%;
           right: 15%;
-          width: 300px;
-          height: 300px;
+          width: 250px;
+          height: 250px;
           background: linear-gradient(45deg, #6f86d6, #48c6ef);
           animation-delay: 8s;
         }
@@ -113,172 +114,106 @@ const ChooseFinike = () => {
         .bubble-3 {
           top: 60%;
           left: 70%;
-          width: 250px;
-          height: 250px;
+          width: 200px;
+          height: 200px;
           background: linear-gradient(45deg, #a8edea, #fed6e3);
           animation-delay: 16s;
         }
 
         .mastery-container {
-          max-width: 1600px;
+          max-width: 1400px;
           width: 100%;
           position: relative;
           z-index: 10;
           display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 80px;
+          grid-template-columns: 1fr 1.5fr;
+          gap: 40px;
           align-items: center;
+          height: 90vh;
         }
 
         .brand-identity {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          gap: 40px;
-          position: sticky;
-          
-        }
-
-        .power-core {
-          width: 150px;
-          height: 150px;
-          position: relative;
-          margin-bottom: 20px;
-        }
-
-        .core-rings {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          height: 100%;
-        }
-
-        .power-ring {
-          position: absolute;
-          border-radius: 50%;
-          border: 4px solid;
-          opacity: 0.3;
-          animation: ring-rotation 8s linear infinite;
-        }
-
-        .ring-outer {
-          width: 150px;
-          height: 150px;
-          border-color: #ff758c;
-          animation-delay: 0s;
-        }
-
-        .ring-middle {
-          width: 120px;
-          height: 120px;
-          top: 15px;
-          left: 15px;
-          border-color: #6f86d6;
-          animation-delay: -2s;
-        }
-
-        .ring-inner {
-          width: 90px;
-          height: 90px;
-          top: 30px;
-          left: 30px;
-          border-color: #ffb347;
-          animation-delay: -4s;
-        }
-
-        .core-center {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 80px;
-          height: 80px;
-          background: linear-gradient(45deg, #ff758c, #ffb347);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 32px;
-          box-shadow: 0 20px 40px rgba(255, 117, 140, 0.5);
-          z-index: 5;
+          gap: 25px;
         }
 
         .brand-statement {
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(30px);
-          border-radius: 30px;
-          padding: 50px 40px;
+          border-radius: 25px;
+          padding: 35px 30px;
           border: 1px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
-        .statement-title {
-          font-size: 3.8rem;
+        .main-title {
+          font-size: 2.8rem;
           font-weight: 900;
           background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          margin: 0 0 25px 0;
-          letter-spacing: -3px;
+          margin: 0 0 20px 0;
+          letter-spacing: -2px;
           line-height: 1.1;
         }
 
         .statement-subtitle {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           color: #64748b;
           font-weight: 500;
           line-height: 1.6;
-          margin-bottom: 35px;
+          margin-bottom: 25px;
         }
 
         .excellence-metrics {
           display: flex;
-          gap: 30px;
+          gap: 15px;
           flex-wrap: wrap;
         }
 
         .metric-badge {
           background: linear-gradient(45deg, #6f86d6, #48c6ef);
           color: white;
-          padding: 15px 25px;
+          padding: 12px 20px;
           border-radius: 50px;
           font-weight: 600;
-          font-size: 0.95rem;
+          font-size: 0.85rem;
           box-shadow: 0 10px 25px rgba(111, 134, 214, 0.3);
           white-space: nowrap;
         }
 
         .interactive-showcase {
           position: relative;
-          height: 600px;
+          height: 100%;
           display: flex;
           flex-direction: column;
+          justify-content: center;
         }
 
         .feature-navigation {
           display: flex;
           justify-content: center;
-          gap: 15px;
-          margin-bottom: 50px;
+          gap: 12px;
+          margin-bottom: 30px;
           flex-wrap: wrap;
         }
 
         .nav-orb {
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 24px;
+          font-size: 20px;
           cursor: pointer;
           transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(20px);
           border: 2px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
           position: relative;
           overflow: hidden;
         }
@@ -300,13 +235,13 @@ const ChooseFinike = () => {
 
         .nav-orb.active {
           background: ${features[activeFeature]?.gradient};
-          transform: scale(1.2);
-          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+          transform: scale(1.15);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
           border-color: rgba(255, 255, 255, 0.4);
         }
 
         .nav-orb:not(.active):hover {
-          transform: scale(1.1);
+          transform: scale(1.05);
           background: rgba(255, 255, 255, 0.15);
         }
 
@@ -315,10 +250,11 @@ const ChooseFinike = () => {
           position: relative;
           background: rgba(255, 255, 255, 0.08);
           backdrop-filter: blur(25px);
-          border-radius: 40px;
+          border-radius: 30px;
           border: 1px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
           overflow: hidden;
+          max-height: 400px;
         }
 
         .theater-stage {
@@ -330,44 +266,44 @@ const ChooseFinike = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 60px;
+          padding: 40px 30px;
           opacity: ${isAnimating ? 0 : 1};
-          transform: ${isAnimating ? 'translateY(30px)' : 'translateY(0)'};
+          transform: ${isAnimating ? 'translateY(20px)' : 'translateY(0)'};
           transition: all 0.3s ease;
         }
 
         .feature-spotlight {
           text-align: center;
-          max-width: 500px;
+          max-width: 400px;
         }
 
         .spotlight-icon {
-          width: 120px;
-          height: 120px;
+          width: 80px;
+          height: 80px;
           background: ${features[activeFeature]?.gradient};
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 48px;
-          margin: 0 auto 40px;
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+          font-size: 32px;
+          margin: 0 auto 25px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
           animation: spotlight-glow 2s ease-in-out infinite;
         }
 
         .spotlight-title {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
           font-weight: 800;
           color: #1e293b;
-          margin: 0 0 25px 0;
+          margin: 0 0 15px 0;
           line-height: 1.2;
         }
 
         .spotlight-description {
-          font-size: 1.2rem;
-          line-height: 1.8;
+          font-size: 1rem;
+          line-height: 1.6;
           color: #64748b;
-          margin-bottom: 35px;
+          margin-bottom: 25px;
           font-weight: 500;
         }
 
@@ -375,17 +311,17 @@ const ChooseFinike = () => {
           display: inline-block;
           background: ${features[activeFeature]?.gradient};
           color: white;
-          padding: 15px 35px;
-          border-radius: 30px;
+          padding: 12px 25px;
+          border-radius: 25px;
           font-weight: 700;
-          font-size: 1.1rem;
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+          font-size: 0.9rem;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           transform: translateY(0);
           transition: transform 0.3s ease;
         }
 
         .spotlight-badge:hover {
-          transform: translateY(-5px);
+          transform: translateY(-3px);
         }
 
         .background-pattern {
@@ -396,44 +332,7 @@ const ChooseFinike = () => {
           bottom: 0;
           background: ${features[activeFeature]?.gradient};
           opacity: 0.05;
-          border-radius: 40px;
-        }
-
-        .achievement-showcase {
-          position: absolute;
-          bottom: -40px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          gap: 40px;
-          z-index: 20;
-        }
-
-        .achievement-crystal {
-          background: rgba(255, 255, 255, 0.95);
-          backdrop-filter: blur(20px);
-          border-radius: 20px;
-          padding: 25px 20px;
-          text-align: center;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          min-width: 120px;
-        }
-
-        .crystal-number {
-          font-size: 2rem;
-          font-weight: 900;
-          background: linear-gradient(45deg, #ff758c, #ffb347);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin-bottom: 5px;
-          line-height: 1;
-        }
-
-        .crystal-label {
-          font-size: 0.9rem;
-          color: #64748b;
-          font-weight: 600;
+          border-radius: 30px;
         }
 
         @keyframes bubble-float {
@@ -448,85 +347,86 @@ const ChooseFinike = () => {
           }
         }
 
-        @keyframes ring-rotation {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
-        }
-
         @keyframes spotlight-glow {
           0%, 100% {
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
           }
           50% {
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3), 0 0 50px ${features[activeFeature]?.color}40;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3), 0 0 30px ${features[activeFeature]?.color}40;
           }
         }
 
         @media (max-width: 1200px) {
           .mastery-container {
             grid-template-columns: 1fr;
-            gap: 60px;
+            gap: 30px;
             text-align: center;
+            height: auto;
+            max-height: 90vh;
           }
 
           .brand-identity {
-            position: static;
-            transform: none;
             align-items: center;
           }
 
-          .statement-title {
-            font-size: 3.2rem;
+          .main-title {
+            font-size: 2.4rem;
+          }
+
+          .feature-theater {
+            max-height: 350px;
           }
         }
 
         @media (max-width: 768px) {
           .innovation-showcase {
-            padding: 40px 15px;
+            padding: 15px;
+            min-height: 100vh;
+          }
+
+          .mastery-container {
+            gap: 20px;
           }
 
           .brand-statement {
-            padding: 40px 30px;
+            padding: 25px 20px;
           }
 
-          .statement-title {
-            font-size: 2.8rem;
-            letter-spacing: -2px;
+          .main-title {
+            font-size: 2rem;
+            letter-spacing: -1px;
           }
 
           .statement-subtitle {
-            font-size: 1.1rem;
+            font-size: 1rem;
           }
 
-          .interactive-showcase {
-            height: 500px;
+          .feature-theater {
+            max-height: 300px;
           }
 
           .theater-stage {
-            padding: 40px 30px;
+            padding: 30px 20px;
           }
 
           .spotlight-title {
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
 
           .spotlight-description {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
           }
 
           .nav-orb {
-            width: 60px;
-            height: 60px;
-            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
           }
 
-          .achievement-showcase {
-            flex-direction: column;
-            gap: 20px;
+          .spotlight-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
           }
 
           .excellence-metrics {
@@ -534,60 +434,38 @@ const ChooseFinike = () => {
           }
 
           .bubble {
-            width: 200px !important;
-            height: 200px !important;
+            width: 150px !important;
+            height: 150px !important;
           }
         }
 
         @media (max-width: 480px) {
-          .statement-title {
-            font-size: 2.2rem;
-          }
-
-          .power-core {
-            width: 120px;
-            height: 120px;
-          }
-
-          .ring-outer {
-            width: 120px;
-            height: 120px;
-          }
-
-          .ring-middle {
-            width: 90px;
-            height: 90px;
-            top: 15px;
-            left: 15px;
-          }
-
-          .ring-inner {
-            width: 60px;
-            height: 60px;
-            top: 30px;
-            left: 30px;
-          }
-
-          .core-center {
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
+          .main-title {
+            font-size: 1.8rem;
           }
 
           .spotlight-icon {
-            width: 100px;
-            height: 100px;
-            font-size: 36px;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
           }
 
           .feature-navigation {
-            gap: 10px;
+            gap: 8px;
           }
 
           .nav-orb {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             font-size: 16px;
+          }
+
+          .feature-theater {
+            max-height: 280px;
+          }
+
+          .theater-stage {
+            padding: 20px 15px;
           }
         }
       `}</style>
@@ -603,10 +481,6 @@ const ChooseFinike = () => {
         <div className="mastery-container">
           {/* Left side - Brand Identity */}
           <div className="brand-identity">
-            {/* Rotating power core */}
-            
-
-            {/* Brand statement */}
             <div className="brand-statement">
               <h1 className="main-title">Why Choose Finike?</h1>
               <p className="statement-subtitle">
@@ -660,7 +534,6 @@ const ChooseFinike = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -669,4 +542,4 @@ const ChooseFinike = () => {
   );
 };
 
-export default ChooseFinike;
+export default Choose;

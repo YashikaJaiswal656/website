@@ -315,7 +315,7 @@ li:hover {
   color: #0066cc;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
   .nav .contt .desktop-nav {
     display: none;
   }
@@ -323,7 +323,6 @@ li:hover {
     display: block;
   }
 }
-
 @media screen and (max-width: 480px) {
   .nav_side_bar {
     width: 280px;
