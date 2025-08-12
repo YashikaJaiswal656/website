@@ -65,7 +65,6 @@ const Choose = () => {
         .innovation-showcase {
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
           min-height: 100vh;
-          max-height: 100vh;
           position: relative;
           overflow: hidden;
           display: flex;
@@ -73,6 +72,22 @@ const Choose = () => {
           justify-content: center;
           font-family: 'Segoe UI', sans-serif;
           padding: 20px;
+        }
+
+        /* Desktop compact form */
+        @media (min-width: 1201px) {
+          .innovation-showcase {
+            max-height: 100vh;
+            padding: 20px;
+          }
+          
+          .mastery-container {
+            height: 90vh;
+          }
+          
+          .feature-theater {
+            max-height: 400px;
+          }
         }
 
         .atmospheric-bubbles {
@@ -129,7 +144,6 @@ const Choose = () => {
           grid-template-columns: 1fr 1.5fr;
           gap: 40px;
           align-items: center;
-          height: 90vh;
         }
 
         .brand-identity {
@@ -143,28 +157,28 @@ const Choose = () => {
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(30px);
           border-radius: 25px;
-          padding: 35px 30px;
+          padding: 50px 40px;
           border: 1px solid rgba(255, 255, 255, 0.2);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
         .main-title {
-          font-size: 2.8rem;
+          font-size: 3.5rem;
           font-weight: 900;
           background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          margin: 0 0 20px 0;
+          margin: 0 0 25px 0;
           letter-spacing: -2px;
           line-height: 1.1;
         }
 
         .statement-subtitle {
-          font-size: 1.1rem;
+          font-size: 1.25rem;
           color: #64748b;
           font-weight: 500;
           line-height: 1.6;
-          margin-bottom: 25px;
+          margin-bottom: 35px;
         }
 
         .excellence-metrics {
@@ -201,13 +215,13 @@ const Choose = () => {
         }
 
         .nav-orb {
-          width: 60px;
-          height: 60px;
+          width: 80px;
+          height: 80px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 20px;
+          font-size: 24px;
           cursor: pointer;
           transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
           background: rgba(255, 255, 255, 0.1);
@@ -254,7 +268,7 @@ const Choose = () => {
           border: 1px solid rgba(255, 255, 255, 0.2);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
           overflow: hidden;
-          max-height: 400px;
+          min-height: 450px;
         }
 
         .theater-stage {
@@ -266,7 +280,7 @@ const Choose = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 40px 30px;
+          padding: 60px 40px;
           opacity: ${isAnimating ? 0 : 1};
           transform: ${isAnimating ? 'translateY(20px)' : 'translateY(0)'};
           transition: all 0.3s ease;
@@ -278,32 +292,32 @@ const Choose = () => {
         }
 
         .spotlight-icon {
-          width: 80px;
-          height: 80px;
+          width: 120px;
+          height: 120px;
           background: ${features[activeFeature]?.gradient};
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 32px;
-          margin: 0 auto 25px;
+          font-size: 48px;
+          margin: 0 auto 40px;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
           animation: spotlight-glow 2s ease-in-out infinite;
         }
 
         .spotlight-title {
-          font-size: 1.8rem;
+          font-size: 2.5rem;
           font-weight: 800;
           color: #1e293b;
-          margin: 0 0 15px 0;
+          margin: 0 0 25px 0;
           line-height: 1.2;
         }
 
         .spotlight-description {
-          font-size: 1rem;
-          line-height: 1.6;
+          font-size: 1.2rem;
+          line-height: 1.8;
           color: #64748b;
-          margin-bottom: 25px;
+          margin-bottom: 35px;
           font-weight: 500;
         }
 
@@ -311,11 +325,11 @@ const Choose = () => {
           display: inline-block;
           background: ${features[activeFeature]?.gradient};
           color: white;
-          padding: 12px 25px;
-          border-radius: 25px;
+          padding: 15px 35px;
+          border-radius: 30px;
           font-weight: 700;
-          font-size: 0.9rem;
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          font-size: 1.1rem;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
           transform: translateY(0);
           transition: transform 0.3s ease;
         }
@@ -359,10 +373,9 @@ const Choose = () => {
         @media (max-width: 1200px) {
           .mastery-container {
             grid-template-columns: 1fr;
-            gap: 30px;
+            gap: 60px;
             text-align: center;
             height: auto;
-            max-height: 90vh;
           }
 
           .brand-identity {
@@ -370,63 +383,68 @@ const Choose = () => {
           }
 
           .main-title {
-            font-size: 2.4rem;
+            font-size: 3.2rem;
           }
 
           .feature-theater {
-            max-height: 350px;
+            min-height: 500px;
           }
         }
 
         @media (max-width: 768px) {
           .innovation-showcase {
-            padding: 15px;
-            min-height: 100vh;
+            padding: 40px 15px;
           }
 
           .mastery-container {
-            gap: 20px;
+            gap: 40px;
+            height: auto;
           }
 
           .brand-statement {
-            padding: 25px 20px;
+            padding: 40px 30px;
           }
 
           .main-title {
-            font-size: 2rem;
+            font-size: 2.8rem;
             letter-spacing: -1px;
           }
 
           .statement-subtitle {
-            font-size: 1rem;
+            font-size: 1.15rem;
+          }
+
+          .interactive-showcase {
+            height: auto;
+            min-height: auto;
           }
 
           .feature-theater {
-            max-height: 300px;
+            min-height: 420px;
           }
 
           .theater-stage {
-            padding: 30px 20px;
+            padding: 50px 30px;
           }
 
           .spotlight-title {
-            font-size: 1.5rem;
+            font-size: 2rem;
           }
 
           .spotlight-description {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
           }
 
           .nav-orb {
-            width: 50px;
-            height: 50px;
-            font-size: 18px;
+            width: 70px;
+            height: 70px;
+            font-size: 22px;
           }
 
           .spotlight-icon {
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
           }
 
           .excellence-metrics {
@@ -434,38 +452,52 @@ const Choose = () => {
           }
 
           .bubble {
-            width: 150px !important;
-            height: 150px !important;
+            width: 200px !important;
+            height: 200px !important;
           }
         }
 
         @media (max-width: 480px) {
           .main-title {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
           }
 
           .spotlight-icon {
-            width: 50px;
-            height: 50px;
-            font-size: 20px;
+            width: 80px;
+            height: 80px;
+            font-size: 32px;
           }
 
           .feature-navigation {
-            gap: 8px;
+            gap: 10px;
           }
 
           .nav-orb {
-            width: 45px;
-            height: 45px;
-            font-size: 16px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
           }
 
           .feature-theater {
-            max-height: 280px;
+            min-height: 380px;
           }
 
           .theater-stage {
-            padding: 20px 15px;
+            padding: 40px 20px;
+          }
+
+          .spotlight-title {
+            font-size: 1.8rem;
+          }
+
+          .spotlight-description {
+            font-size: 1rem;
+            line-height: 1.6;
+          }
+
+          .spotlight-badge {
+            font-size: 1rem;
+            padding: 12px 25px;
           }
         }
       `}</style>
