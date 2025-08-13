@@ -3,14 +3,13 @@ import './Wrap.css'
 const Wrap = () => {
   return (
     <div className="hero-wrapper">
-      {/* Floating background elements */}
+
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
       <div className="ambient-sphere sphere-gamma"></div>
       
-      {/* Main content grid */}
       <div className="content-grid">
-        {/* Left side - Brand identity */}
+        
         <div className="brand-showcase">
           <div className="logo-frame">
             <div className="brand-symbol">
@@ -25,7 +24,6 @@ const Wrap = () => {
           </div>
         </div>
         
-        {/* Right side - Content */}
         <div className="content-panel">
           <div className="section-tag">
             <span className="tag-icon">◆</span>

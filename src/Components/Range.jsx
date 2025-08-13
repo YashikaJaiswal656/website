@@ -97,7 +97,7 @@ const Range = () => {
   return (
     
     <section className="infrastructure-section">
-      {/* Decorative Background Elements */}
+      
       <div className="decorative-bg">
         <div className="bg-circle bg-circle-1"></div>
         <div className="bg-circle bg-circle-2"></div>
@@ -115,7 +115,6 @@ const Range = () => {
         
       </div>
 
-        {/* Infrastructure Grid */}
         <div className="infrastructure-grid">
           {ProductRange.map((item) => (
             <div key={item.id} className="infrastructure-card">
@@ -152,27 +151,23 @@ const Range = () => {
           ))}
         </div>
 
-      {/* Static decorative dots */}
       <div className="decorative-dot dot-1"></div>
       <div className="decorative-dot dot-2"></div>
       <div className="decorative-dot dot-3"></div>
       
-      {/* Image Modal */}
       {selectedImage && (
         <div className="modal-overlay">
-          {/* Backdrop */}
+          
           <div className="modal-backdrop" onClick={closeModal}></div>
           
-          {/* Modal Content */}
           <div className="modal-content">
-            {/* Close Button */}
+            
             <button className="modal-close-btn" onClick={closeModal}>
               <svg className="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
             
-            {/* Modal Image */}
             <div className="modal-image-container">
               <img
                 src={selectedImage.image}

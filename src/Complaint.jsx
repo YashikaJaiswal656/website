@@ -5,7 +5,7 @@ const Complaint = () => {
   return (
     <>
     <Header/>
-      {/* Hero Section */}
+      
       <div className="slider-container">
         <div className="slider-wrapper">
           <div className="slide" style={{ backgroundImage: `url("https://blog.ipleaders.in/wp-content/uploads/2016/08/before-you-file-a-complaint.jpg")` }}> 
@@ -17,9 +17,8 @@ const Complaint = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="hero-wrapper">
-        {/* Floating background elements */}
+        
         <div className="ambient-sphere sphere-alpha"></div>
         <div className="ambient-sphere sphere-beta"></div>
         <div className="ambient-sphere sphere-gamma"></div>
@@ -33,7 +32,6 @@ const Complaint = () => {
           </div>
         </div>
 
-        {/* Registration Form Section */}
         <section className="registration-section">
           <div className="container">
             <div className="form-wrapper">
@@ -48,7 +46,7 @@ const Complaint = () => {
 
               <div className="registration-form">
                 <div className="form-grid">
-                  {/* Full Name */}
+                  
                   <div className="input-group">
                     <label>Full Name</label>
                     <div className="input-wrapper">
@@ -61,7 +59,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Email */}
                   <div className="input-group">
                     <label>Email Address</label>
                     <div className="input-wrapper">
@@ -74,7 +71,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Mobile */}
                   <div className="input-group">
                     <label>Mobile Number</label>
                     <div className="input-wrapper">
@@ -87,7 +83,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Select Product */}
                   <div className="input-group">
                     <label>Select a Product</label>
                     <div className="select-wrapper">
@@ -109,7 +104,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Serial Number */}
                   <div className="input-group">
                     <label>Product Serial Number</label>
                     <div className="input-wrapper">
@@ -122,7 +116,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Issue Type */}
                   <div className="input-group">
                     <label>Choose an Issue</label>
                     <div className="select-wrapper">
@@ -142,7 +135,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Pincode */}
                   <div className="input-group">
                     <label>Pin Code</label>
                     <div className="input-wrapper">
@@ -155,7 +147,6 @@ const Complaint = () => {
                     </div>
                   </div>
 
-                  {/* Issue Description */}
                   <div className="input-group full-width">
                     <label>Describe the Issue in Detail</label>
                     <div className="input-wrapper">
@@ -176,7 +167,6 @@ const Complaint = () => {
           </div>
         </section>
 
-        {/* Bottom CTA */}
         <div className="bottom-cta">
           <div className="cta-card">
             <div className="cta-content">

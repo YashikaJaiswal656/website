@@ -28,7 +28,7 @@ const WhoTh = () => {
 
   return (
     <section className="who-we-are-finike-bg">
-      {/* Decorative Background Elements */}
+      
       <div className="decorative-background">
         <div className="floating-circle circle-1"></div>
         <div className="floating-circle circle-2"></div>
@@ -36,7 +36,6 @@ const WhoTh = () => {
         <div className="floating-circle circle-4"></div>
       </div>
 
-      {/* Gradient Borders */}
       <div className="section-border-top"></div>
       <div className="section-border-bottom"></div>
 
@@ -52,7 +51,6 @@ const WhoTh = () => {
       <div className="finike-gradient-wrapper-bg">
         {cards.map((card, index) => (
           <div key={index} className="finike-gradient-card-bg">
-            {/* Card Header with Icon and Title */}
             <div className="card-header">
               <div className="finike-gradient-icon-bg">
                 <i className={card.icon}></i>
@@ -63,16 +61,13 @@ const WhoTh = () => {
               </div>
             </div>
 
-            {/* Card Description */}
             <div className="finike-gradient-description-bg">{card.description}</div>
             
-            {/* Card Image */}
             <div className="image-container">
               <img src={card.image} alt={card.title} className="finike-gradient-image-bg" />
               <div className="image-overlay"></div>
             </div>
 
-            {/* Card Footer */}
             <div className="card-footer">
               <div className="feature-badge">Premium Quality</div>
             </div>

@@ -74,7 +74,7 @@ const Choose = () => {
           padding: 20px;
         }
 
-        /* Desktop compact form */
+        
         @media (min-width: 1201px) {
           .innovation-showcase {
             max-height: 100vh;
@@ -503,7 +503,7 @@ const Choose = () => {
       `}</style>
 
       <div className="innovation-showcase">
-        {/* Atmospheric bubbles */}
+        
         <div className="atmospheric-bubbles">
           <div className="bubble bubble-1"></div>
           <div className="bubble bubble-2"></div>
@@ -511,7 +511,7 @@ const Choose = () => {
         </div>
 
         <div className="mastery-container">
-          {/* Left side - Brand Identity */}
+          
           <div className="brand-identity">
             <div className="brand-statement">
               <h1 className="main-title">Why Choose Finike?</h1>
@@ -526,9 +526,9 @@ const Choose = () => {
             </div>
           </div>
 
-          {/* Right side - Interactive showcase */}
+          
           <div className="interactive-showcase">
-            {/* Feature navigation orbs */}
+            
             <div className="feature-navigation">
               {features.map((feature, index) => (
                 <button
@@ -547,7 +547,7 @@ const Choose = () => {
               ))}
             </div>
 
-            {/* Feature theater */}
+            
             <div className="feature-theater">
               <div className="background-pattern"></div>
               <div className="theater-stage">

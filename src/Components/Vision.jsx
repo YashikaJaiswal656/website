@@ -7,13 +7,12 @@ const Vision = () => {
     <>
       
       <div className="experience-hub">
-        {/* Floating background particles */}
+
         <div className="cosmic-particle particle-one"></div>
         <div className="cosmic-particle particle-two"></div>
         <div className="cosmic-particle particle-three"></div>
         <div className="cosmic-particle particle-four"></div>
         
-        {/* Title constellation */}
         <div className="title-constellation">
           <div className="energy-core">
             <div className="core-symbol">⚡</div>
@@ -26,7 +25,6 @@ const Vision = () => {
           </div>
         </div>
         
-        {/* Navigation spheres */}
         <div className="navigation-sphere">
           <button 
             className={`sphere-button ${activeTab === 'mission' ? 'active' : ''}`}
@@ -45,7 +43,6 @@ const Vision = () => {
           </button>
         </div>
         
-        {/* Content showcase */}
         <div className="dimensional-showcase">
           {activeTab === 'mission' && (
             <div className="reality-panel">
@@ -136,7 +133,6 @@ const Vision = () => {
           )}
         </div>
         
-        {/* Side navigation indicators */}
         <div className="dimension-indicators">
           <div className="dimension-dot current"></div>
           <div className="dimension-dot"></div>

@@ -273,7 +273,6 @@
   box-shadow: 0 0 20px rgba(255, 117, 140, 0.4);
 }
 
-/* Animations */
 @keyframes drift {
   0%, 100% { 
     transform: translate(0, 0) rotate(0deg); 
@@ -299,9 +298,6 @@
     transform: scale(1.4); 
   }
 }
-/* Add these mobile responsive fixes to your Wrap.css file */
-
-/* Responsive Design - Updated */
 @media (max-width: 768px) {
   .hero-wrapper { 
     padding: 40px 15px; 

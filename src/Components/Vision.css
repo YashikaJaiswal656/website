@@ -1,6 +1,6 @@
 .experience-hub {
-  height: 100vh; /* Changed from fit-content to viewport height */
-  min-height: 700px; /* Minimum height for content */
+  height: 100vh; 
+  min-height: 700px; 
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   overflow: hidden;
   font-family: 'Segoe UI', sans-serif;
   position: relative;
-  padding: 40px 20px; /* Reduced from 80px */
+  padding: 40px 20px; 
 }
 
 .cosmic-particle {
@@ -22,34 +22,34 @@
 
 .particle-one { 
   top: 8%; right: 12%; 
-  width: 200px; height: 200px; /* Reduced from 300px */
+  width: 200px; height: 200px; 
   background: linear-gradient(45deg, #ff758c, #ffb347); 
 }
 
 .particle-two { 
   bottom: 15%; left: 8%; 
-  width: 180px; height: 180px; /* Reduced from 250px */
+  width: 180px; height: 180px; 
   background: linear-gradient(45deg, #6f86d6, #48c6ef); 
   animation-delay: 5s; 
 }
 
 .particle-three { 
   top: 45%; right: 70%; 
-  width: 120px; height: 120px; /* Reduced from 180px */
+  width: 120px; height: 120px; 
   background: linear-gradient(45deg, #a8edea, #fed6e3); 
   animation-delay: 10s; 
 }
 
 .particle-four { 
   bottom: 60%; right: 20%; 
-  width: 150px; height: 150px; /* Reduced from 220px */
+  width: 150px; height: 150px; 
   background: linear-gradient(45deg, #ffecd2, #fcb69f); 
   animation-delay: 2s; 
 }
 
 .title-constellation {
   text-align: center;
-  margin-bottom: 40px; /* Reduced from 80px */
+  margin-bottom: 40px; 
   position: relative;
   z-index: 10;
 }
@@ -57,7 +57,7 @@
 .energy-core {
   position: relative;
   display: inline-block;
-  margin-bottom: 20px; /* Reduced from 40px */
+  margin-bottom: 20px; 
 }
 
 .orbital-ring {
@@ -71,28 +71,28 @@
 }
 
 .ring-alpha { 
-  width: 70px; height: 70px; /* Reduced from 90px */
+  width: 70px; height: 70px; 
   border-color: #ff758c;
   animation-delay: 0s; 
 }
 
 .ring-beta { 
-  width: 85px; height: 85px; /* Reduced from 110px */
+  width: 85px; height: 85px; 
   border-color: #6f86d6;
   animation-delay: 1.5s; 
 }
 
 .ring-gamma { 
-  width: 100px; height: 100px; /* Reduced from 130px */
+  width: 100px; height: 100px; 
   border-color: #ffb347;
   animation-delay: 3s; 
 }
 
 .core-symbol {
-  font-size: 28px; /* Reduced from 36px */
+  font-size: 28px; 
   color: white;
   background: linear-gradient(45deg, #ff758c, #ffb347);
-  width: 65px; height: 65px; /* Reduced from 85px */
+  width: 65px; height: 65px; 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -103,13 +103,13 @@
 }
 
 .cosmic-title {
-  font-size: 3rem; /* Reduced from 4rem */
+  font-size: 3rem; 
   font-weight: 900;
   background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 0 20px 0; /* Reduced from 30px */
-  letter-spacing: -3px; /* Reduced from -4px */
+  margin: 0 0 20px 0; 
+  letter-spacing: -3px; 
   line-height: 1.1;
 }
 
@@ -117,18 +117,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Reduced from 25px */
-  margin-top: 20px; /* Reduced from 30px */
+  gap: 20px;
+  margin-top: 20px; 
 }
 
 .divider-beam {
-  width: 50px; height: 3px; /* Reduced from 60px */
+  width: 50px; height: 3px; 
   background: linear-gradient(45deg, #ff758c, #ffb347);
   border-radius: 3px;
 }
 
 .divider-star {
-  width: 16px; height: 16px; /* Reduced from 20px */
+  width: 16px; height: 16px; 
   background: linear-gradient(45deg, #6f86d6, #48c6ef);
   border-radius: 50%;
   box-shadow: 0 0 25px rgba(111, 134, 214, 0.6);
@@ -137,8 +137,8 @@
 
 .navigation-sphere {
   display: flex;
-  gap: 25px; /* Reduced from 30px */
-  margin-bottom: 30px; /* Reduced from 60px */
+  gap: 25px; 
+  margin-bottom: 30px; 
   z-index: 20;
   position: relative;
 }
@@ -146,15 +146,15 @@
 .sphere-button {
   display: flex;
   align-items: center;
-  gap: 15px; /* Reduced from 18px */
-  padding: 12px 24px; /* Adjusted padding */
+  gap: 15px; 
+  padding: 12px 24px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(25px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 35px;
   color: #64748b;
   font-weight: 700;
-  font-size: 1rem; /* Reduced from 1.1rem */
+  font-size: 1rem; 
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -195,14 +195,14 @@
 }
 
 .button-emblem {
-  font-size: 1.6rem; /* Reduced from 1.8rem */
+  font-size: 1.6rem; 
 }
 
 .dimensional-showcase {
   width: 100%;
   max-width: 1300px;
   position: relative;
-  flex: 1; /* Allow it to take remaining space */
+  flex: 1; 
   display: flex;
   align-items: center;
 }
@@ -210,10 +210,10 @@
 .reality-panel {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(30px);
-  border-radius: 35px; /* Reduced from 45px */
+  border-radius: 35px; 
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
-  padding: 30px; /* Reduced from 40px */
+  padding: 30px; 
   position: relative;
   overflow: hidden;
   transform: translateY(20px);
@@ -235,7 +235,7 @@
 .content-matrix {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 50px; /* Reduced from 70px */
+  gap: 50px; 
   align-items: center;
 }
 
@@ -250,12 +250,12 @@
 .identity-chip {
   display: inline-flex;
   align-items: center;
-  gap: 12px; /* Reduced from 15px */
-  padding: 14px 24px; /* Reduced from 18px 30px */
+  gap: 12px; 
+  padding: 14px 24px; 
   border-radius: 60px;
-  margin-bottom: 25px; /* Reduced from 40px */
+  margin-bottom: 25px; 
   font-weight: 700;
-  font-size: 1.1rem; /* Reduced from 1.2rem */
+  font-size: 1.1rem; 
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -281,7 +281,7 @@
 }
 
 .chip-symbol {
-  font-size: 1.3rem; /* Reduced from 1.5rem */
+  font-size: 1.3rem; 
   position: relative;
   z-index: 2;
 }
@@ -293,11 +293,11 @@
 
 .quote-chamber {
   position: relative;
-  margin: 30px 0; /* Reduced from 50px */
+  margin: 30px 0; 
 }
 
 .quote-beacon {
-  font-size: 5rem; /* Reduced from 7rem */
+  font-size: 5rem; 
   font-weight: 900;
   position: absolute;
   opacity: 0.15;
@@ -305,15 +305,15 @@
 }
 
 .quote-beacon.start {
-  top: -30px; left: -25px; /* Adjusted positioning */
+  top: -30px; left: -25px; 
   background: linear-gradient(45deg, #ff758c, #ffb347);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .quote-beacon.end {
-  bottom: -45px; right: -25px; /* Adjusted positioning */
-  transform: rotate(180deg);
+  bottom: -45px; right: -25px; 
+    transform: rotate(180deg);
   background: linear-gradient(45deg, #6f86d6, #48c6ef);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -322,12 +322,12 @@
 .message-core {
   position: relative;
   z-index: 3;
-  padding: 20px 30px; /* Reduced from 25px 40px */
+  padding: 20px 30px; 
 }
 
 .message-core p {
-  font-size: 1.2rem; /* Reduced from 1.4rem */
-  line-height: 1.8; /* Reduced from 1.9 */
+  font-size: 1.2rem;
+  line-height: 1.8; 
   color: #64748b;
   font-weight: 500;
   margin: 0;
@@ -351,18 +351,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px; /* Reduced from 30px */
-  margin-top: 35px; /* Reduced from 50px */
+  gap: 25px; 
+  margin-top: 35px; 
 }
 
 .essence-line {
-  width: 60px; height: 3px; /* Reduced from 70px */
+  width: 60px; height: 3px; 
   background: linear-gradient(45deg, #ff758c, #ffb347);
   border-radius: 3px;
 }
 
 .essence-orb {
-  width: 16px; height: 16px; /* Reduced from 18px */
+  width: 16px; height: 16px; 
   background: linear-gradient(45deg, #6f86d6, #48c6ef);
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(111, 134, 214, 0.6);
@@ -371,7 +371,7 @@
 
 .visual-portal {
   position: relative;
-  height: 320px; /* Reduced from 450px */
+  height: 320px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,7 +380,7 @@
 .portal-frame {
   width: 100%;
   height: 100%;
-  border-radius: 25px; /* Reduced from 35px */
+  border-radius: 25px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
@@ -433,12 +433,12 @@
 }
 
 .aura-symbol {
-  font-size: 3rem; /* Reduced from 4rem */
-  margin-bottom: 15px; /* Reduced from 20px */
+  font-size: 3rem; 
+  margin-bottom: 15px;
 }
 
 .aura-caption {
-  font-size: 1.2rem; /* Reduced from 1.4rem */
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -449,12 +449,12 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Reduced from 25px */
+  gap: 20px; 
   z-index: 30;
 }
 
 .dimension-dot {
-  width: 14px; height: 14px; /* Reduced from 16px */
+  width: 14px; height: 14px; 
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
@@ -529,7 +529,6 @@
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .content-matrix, .content-matrix.reverse {
     gap: 40px;

@@ -102,9 +102,8 @@ const Lithium = () => {
           </div>
         </div>
 
-        {/* Features Grid */}
         <div className="features-gridd">
-          {/* High Efficiency */}
+          
           <div className="feature-card">
             <div className="card-glow"></div>
             <div className="feature-icon-wrapper">
@@ -127,7 +126,6 @@ const Lithium = () => {
             </div>
           </div>
 
-          {/* Eco-Friendly */}
           <div className="feature-card">
             <div className="card-glow"></div>
             <div className="feature-icon-wrapper">
@@ -146,7 +144,6 @@ const Lithium = () => {
             </div>
           </div>
 
-          {/* Durability */}
           <div className="feature-card">
             <div className="card-glow"></div>
             <div className="feature-icon-wrapper">
@@ -170,7 +167,6 @@ const Lithium = () => {
           </div>
         </div>
 
-        {/* Decorative Bottom Element */}
         <div className="bottom-decoration">
           <div className="deco-line"></div>
           <div className="deco-diamond"></div>
@@ -181,7 +177,7 @@ const Lithium = () => {
 </div>
 <Benefits/>
  <section className="infrastructure-section">
-      {/* Decorative Background Elements */}
+
       <div className="decorative-bg">
         <div className="bg-circle bg-circle-1"></div>
         <div className="bg-circle bg-circle-2"></div>
@@ -191,7 +187,7 @@ const Lithium = () => {
       
 
       <div className="infrastructure-container">
-        {/* Header Section */}
+        
         <div className="infrastructure-header">
           <div className="header-card">
             <div className="header-icon">
@@ -202,7 +198,6 @@ const Lithium = () => {
           
         </div>
 
-        {/* Infrastructure Grid */}
         <div className="infrastructure-grid">
           {Infrastructure.map((item) => (
             <div key={item.id} className="infrastructure-card">
@@ -236,22 +231,20 @@ const Lithium = () => {
         </div>
       </div>
 
-      {/* Image Modal */}
+      
       {selectedImage && (
         <div className="modal-overlay">
-          {/* Backdrop */}
+          
           <div className="modal-backdrop" onClick={closeModal}></div>
           
-          {/* Modal Content */}
           <div className="modal-content">
-            {/* Close Button */}
+            
             <button className="modal-close-btn" onClick={closeModal}>
               <svg className="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
             
-            {/* Modal Image */}
             <div className="modal-image-container">
               <img
                 src={selectedImage.image}

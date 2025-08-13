@@ -70,7 +70,7 @@ const Warranty = () => {
 
   return (
     <div className="warranty-support-section">
-      {/* Animated Background */}
+
       <div className="animated-background">
         <div className="floating-orb orb-1"></div>
         <div className="floating-orb orb-2"></div>
@@ -79,11 +79,10 @@ const Warranty = () => {
         <div className="floating-orb orb-5"></div>
       </div>
 
-      {/* Gradient Mesh */}
       <div className="gradient-mesh"></div>
 
       <div className="support-container">
-        {/* Header Section */}
+        
         <div className="support-header">
           
           
@@ -99,7 +98,6 @@ const Warranty = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="services-grid">
           {supportServices.map((service, index) => (
             <div 
@@ -111,7 +109,7 @@ const Warranty = () => {
                 animationDelay: `${index * 0.1}s`
               }}
             >
-              {/* Card Background Glow */}
+              
               <div 
                 className="card-glow"
                 style={{
@@ -119,9 +117,8 @@ const Warranty = () => {
                 }}
               ></div>
 
-              {/* Card Content */}
               <div className="card-content">
-                {/* Icon Section */}
+                
                 <div className="icon-container">
                   <div 
                     className="icon-wrapperr"
@@ -133,7 +130,6 @@ const Warranty = () => {
                     <i className={service.icon}></i>
                   </div>
                   
-                  {/* Floating particles */}
                   <div className="floating-particles">
                     <div className="particle particle-1"></div>
                     <div className="particle particle-2"></div>
@@ -141,7 +137,6 @@ const Warranty = () => {
                   </div>
                 </div>
 
-                {/* Text Content */}
                 <div className="text-content">
                   <h3 className="service-title">
                     <span className="mobile-title">{service.shortTitle}</span>
@@ -149,18 +144,8 @@ const Warranty = () => {
                   </h3>
                   <p className="service-description">{service.description}</p>
                   
-                  {/* Features List */}
-                  {/* <div className="features-list">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="feature-item">
-                        <div className="feature-dot"></div>
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div> */}
                 </div>
 
-                {/* Action Button */}
                 <div className="card-footer">
 <Link to={service.to}>
                   <button 
@@ -174,7 +159,7 @@ const Warranty = () => {
                     <i className="fas fa-arrow-right"></i>
                   </button>
                   </Link>
-                  {/* Status indicator */}
+                  
                   <div className="status-indicator">
                     <div className="status-dot"></div>
                     <span>Available 24/7</span>
@@ -182,13 +167,11 @@ const Warranty = () => {
                 </div>
               </div>
 
-              {/* Hover Effects */}
               <div className="hover-overlay"></div>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
         <div className="bottom-cta">
           <div className="cta-card">
             <div className="cta-content">

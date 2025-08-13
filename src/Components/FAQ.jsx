@@ -27,15 +27,15 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-      {/* Floating Orbs */}
+      
       <div className="floating-orb faq-orb-1"></div>
       <div className="floating-orb faq-orb-2"></div>
       <div className="floating-orb faq-orb-3"></div>
       <div className="floating-orb faq-orb-4"></div>
       
-      {/* Main Content */}
+    
       <div className="faq-content">
-        {/* Header Section */}
+        
         <div className="faq-header">
           <div className="pulse-container">
             <div className="header-icon">
@@ -51,13 +51,13 @@ const FAQ = () => {
           <p className="faq-subtitle">Everything you need to know about our lithium-ion inverters</p>
         </div>
 
-        {/* FAQ Items */}
+        
         <div className="faq-grid">
           {faqs.map((faq, index) => (
             <div key={index} className={`faq-item ${activeIndex === index ? 'active' : ''}`}>
               <div className="faq-card-glow"></div>
               
-              {/* Question Header */}
+              
               <div className="faq-question-header" onClick={() => toggleFAQ(index)}>
                 <div className="faq-question-left">
                   <div className="faq-icon-wrapper">
@@ -77,7 +77,7 @@ const FAQ = () => {
                 </div>
               </div>
 
-              {/* Answer Content */}
+              
               <div className={`faq-answer-wrapper ${activeIndex === index ? 'expanded' : ''}`}>
                 <div className="faq-answer-content">
                   <div className="faq-decorative-line"></div>
@@ -120,7 +120,7 @@ const FAQ = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        
         <div className="faq-bottom-cta">
           <div className="faq-cta-content">
             <h4 className="faq-cta-title">Still have questions?</h4>
@@ -139,7 +139,7 @@ const FAQ = () => {
           </div>
         </div>
 
-        {/* Decorative Bottom Element */}
+        
         <div className="faq-bottom-decoration">
           <div className="faq-deco-line"></div>
           <div className="faq-deco-circle">

@@ -17,7 +17,7 @@ const OurProduct = () => {
 
   return (
     <section className="our-products-section">
-      {/* Decorative Background Elements */}
+
       <div className="decorative-bg">
         <div className="bg-circle bg-circle-1"></div>
         <div className="bg-circle bg-circle-2"></div>
@@ -27,7 +27,7 @@ const OurProduct = () => {
       
 
       <div className="products-container">
-        {/* Header Section */}
+        
         <div className="products-header">
           <div className="header-card">
             <div className="header-icon">
@@ -38,9 +38,8 @@ const OurProduct = () => {
           
         </div>
 
-        {/* Main Content Layout */}
         <div className="products-grid">
-          {/* Product Showcase - Left Column */}
+          
           <div className="product-showcase">
             <div className="showcase-card">
               <div className="product-image-container">
@@ -54,7 +53,6 @@ const OurProduct = () => {
                 </div>
               </div>
               
-              {/* Key Stats */}
               <div className="stats-container">
                 <div className="stat-card stat-card-pink">
                   <div className="stat-icon stat-icon-pink">
@@ -86,7 +84,7 @@ const OurProduct = () => {
 </div>
                   </div>
                 </div>
-              {/* Call to Action */}
+              
               <div className="cta-section">
                 <div className="cta-card">
                   <h4 className="cta-title">Ready to Experience Superior Power?</h4>
@@ -100,7 +98,6 @@ const OurProduct = () => {
             </div>
           </div>
 
-          {/* Features List - Right Columns */}
           <div className="features-section">
             <div className="features-card">
               <div className="features-header">

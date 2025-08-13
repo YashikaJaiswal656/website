@@ -18,7 +18,7 @@ const Quote = () => {
         </div>
         </div>
           <div className="hero-wrapper">
-        {/* Floating background elements */}
+        
         <div className="ambient-sphere sphere-alpha"></div>
         <div className="ambient-sphere sphere-beta"></div>
         <div className="ambient-sphere sphere-gamma"></div>
@@ -32,7 +32,6 @@ const Quote = () => {
           </div>
         </div>
 
-        {/* Registration Form Section */}
         <section className="registration-section">
           <div className="container">
             <div className="form-wrapper">
@@ -44,7 +43,7 @@ const Quote = () => {
 
               <div className="registration-form">
                 <div className="form-grid">
-                  {/* Full Name */}
+                  
                   <div className="input-group">
                     <label>Full Name</label>
                     <div className="input-wrapper">
@@ -57,7 +56,6 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* Email */}
                   <div className="input-group">
                     <label>Email Address</label>
                     <div className="input-wrapper">
@@ -70,7 +68,6 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* Mobile */}
                   <div className="input-group">
                     <label>Mobile Number</label>
                     <div className="input-wrapper">
@@ -83,7 +80,6 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* Select Product */}
                   <div className="input-group">
                     <label>Select a Product</label>
                     <div className="select-wrapper">
@@ -106,8 +102,6 @@ const Quote = () => {
                   </div>
 
 
-                  {/* Issue Type */}
-                  {/* Issue Description */}
                   <div className="input-group full-width">
                     <label>Message</label>
                     <div className="input-wrapper">
@@ -128,7 +122,6 @@ const Quote = () => {
           </div>
         </section>
 
-        {/* Bottom CTA */}
         <div className="bottom-cta">
           <div className="cta-card">
             <div className="cta-content">

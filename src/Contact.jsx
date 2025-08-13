@@ -25,7 +25,7 @@ const Contact = () => {
 
         
     <div className="hero-wrapper">
-      {/* Floating background elements */}
+      
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
       <div className="ambient-sphere sphere-gamma"></div>
@@ -41,7 +41,7 @@ const Contact = () => {
           
         </div>
 
-      {/* Registration Form Section */}
+
       <section className="registration-section">
         <div className="container">
           <div className="form-wrapper">
@@ -53,7 +53,7 @@ const Contact = () => {
 
             <form className="registration-form" >
               <div className="form-grid">
-                {/* Full Name */}
+                
                 <div className="input-group">
                   <label>Full Name</label>
                   <div className="input-wrapper">
@@ -67,7 +67,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Mobile */}
+                
                 <div className="input-group">
                   <label>Mobile Number</label>
                   <div className="input-wrapper">
@@ -80,7 +80,7 @@ const Contact = () => {
                     <div className="input-icon">📱</div>
                   </div>
                 </div>
-                  {/* Email */}
+                  
                   <div className="input-group">
                     <label>Email Address</label>
                     <div className="input-wrapper">
@@ -93,7 +93,6 @@ const Contact = () => {
                     </div>
                   </div>
 
-                {/* Seller Name */}
                 <div className="input-group">
                   <label>Subject</label>
                   <div className="input-wrapper">
@@ -107,7 +106,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Additional Details */}
                 <div className="input-group full-width">
                   <label> Details</label>
                   <div className="input-wrapper">
@@ -124,7 +122,6 @@ const Contact = () => {
                 </button>
             </form>
 
-            {/* Info Cards */}
            
           </div>
         </div>

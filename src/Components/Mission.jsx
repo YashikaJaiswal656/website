@@ -4,14 +4,13 @@ const Mission = () => {
   return (
     <>
       <section className="mission-container">
-        {/* Animated background elements */}
+        
         <div className="floating-orb orb-1"></div>
         <div className="floating-orb orb-2"></div>
         <div className="floating-orb orb-3"></div>
         
-        {/* Main content with vertical layout */}
         <div className="mission-content">
-          {/* Top section with icon and title */}
+          
           <div className="mission-header">
             <div className="icon-wrapper">
               <i className="fas fa-bolt main-icon"></i>
@@ -19,7 +18,7 @@ const Mission = () => {
             <h1 className="main-title">Mission & Vision</h1>
           </div>
           
-          {/* Quote section with elegant typography */}
+          
           <div className="quote-section">
             <div className="quote-mark">"</div>
             <p className="mission-quote">
@@ -29,7 +28,6 @@ const Mission = () => {
             <div className="quote-mark closing">"</div>
           </div>
           
-          {/* Bottom decorative elements */}
           <div className="decorative-line">
             <div className="line-segment"></div>
             <div className="line-dot"></div>

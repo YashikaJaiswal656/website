@@ -36,7 +36,6 @@ const Register = () => {
     <>
       <Header />
 
-      {/* Slider Section */}
       <div className="slider-container">
         <div className="slider-wrapper">
           <div
@@ -54,7 +53,7 @@ const Register = () => {
       </div>
 
     <div className="hero-wrapper">
-      {/* Floating background elements */}
+      
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
       <div className="ambient-sphere sphere-gamma"></div>
@@ -70,7 +69,6 @@ const Register = () => {
           
         </div>
 
-      {/* Registration Form Section */}
       <section className="registration-section">
         <div className="container">
           <div className="form-wrapper">
@@ -82,7 +80,7 @@ const Register = () => {
 
             <form className="registration-form" onSubmit={handleSubmit}>
               <div className="form-grid">
-                {/* Full Name */}
+                
                 <div className="input-group">
                   <label>Full Name</label>
                   <div className="input-wrapper">
@@ -98,7 +96,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Mobile */}
                 <div className="input-group">
                   <label>Mobile Number</label>
                   <div className="input-wrapper">
@@ -114,7 +111,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Serial Number */}
                 <div className="input-group">
                   <label>Product Serial Number</label>
                   <div className="input-wrapper">
@@ -130,7 +126,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Invoice Date */}
                 <div className="input-group">
                   <label>Invoice Date</label>
                   <div className="input-wrapper">
@@ -145,7 +140,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Invoice Number */}
                 <div className="input-group">
                   <label>Invoice Number</label>
                   <div className="input-wrapper">
@@ -160,7 +154,6 @@ const Register = () => {
                     <div className="input-icon">🧾</div>
                   </div>
                 </div>
-                {/* Seller Name */}
                 <div className="input-group">
                   <label>Seller/Store Name</label>
                   <div className="input-wrapper">
@@ -176,7 +169,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* File Upload */}
                 <div className="input-group file-upload">
                   <label>Upload Invoice</label>
                   <div
@@ -200,7 +192,6 @@ const Register = () => {
                 </div>
 
 
-                {/* Pincode */}
                 <div className="input-group">
                   <label>Pincode</label>
                   <div className="input-wrapper">
@@ -216,7 +207,6 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Additional Details */}
                 <div className="input-group full-width">
                   <label>Additional Details (Optional)</label>
                   <div className="input-wrapper">
@@ -235,7 +225,6 @@ const Register = () => {
                 </button>
             </form>
 
-            {/* Info Cards */}
            
           </div>
         </div>

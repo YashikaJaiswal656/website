@@ -12,7 +12,7 @@ const Benefits = () => {
       
       
       <div className="benefits-content">
-        {/* Header Section */}
+        
         <div className="benefits-header">
           <div className="pulse-container">
             <div className="header-icon">
@@ -27,9 +27,8 @@ const Benefits = () => {
           </div>
         </div>
 
-        {/* Benefits Grid */}
         <div className="benefits-grid">
-          {/* Energy Savings */}
+          
           <div className="benefit-card energy-card">
             <div className="card-glow"></div>
             
@@ -52,7 +51,7 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Eco-Conscious Design */}
+          
           <div className="benefit-card eco-card">
             <div className="card-glow"></div>
             
@@ -78,7 +77,7 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Long Lifespan */}
+          
           <div className="benefit-card lifespan-card">
             <div className="card-glow"></div>
             <div className="time-spiral">
