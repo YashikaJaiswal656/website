@@ -5,6 +5,7 @@ import Slider from './Components/Slider'
 import './Lithium.css'
 import Benefits from './Components/Benefits'
 import FAQ from './Components/FAQ';
+import CataLog from './Components/CataLog';
 
 const Infrastructure = [
   {
@@ -258,6 +259,7 @@ const Lithium = () => {
       )}
     </section>
 <FAQ/>
+<CataLog/>
     <Footer/>
     </>
 
