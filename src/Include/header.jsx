@@ -45,7 +45,7 @@ const Header = () => {
             }
         });
         
-        // Toggle current dropdown
+        
         if (isActive) {
             dropdown.classList.remove('active');
         } else {
@@ -79,10 +79,10 @@ const Header = () => {
                 </div>
             </div>
 
-            {/* Sidebar Overlay */}
+            
             <div className="sidebar_overlay" onClick={closeMenu}></div>
 
-            {/* Mobile Sidebar */}
+            
             <div className="nav_side_bar">
                 <div className="sidebar_header">
                     <div className="sidebar_logo">

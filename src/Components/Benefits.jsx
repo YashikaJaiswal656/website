@@ -3,14 +3,14 @@ import './Benefits.css'
 const Benefits = () => {
   return (
     <div className="benefits-container">
-      {/* Floating Orbs */}
+      
       <div className="floating-orb orb-1"></div>
       <div className="floating-orb orb-2"></div>
       <div className="floating-orb orb-3"></div>
       <div className="floating-orb orb-4"></div>
       <div className="floating-orb orb-5"></div>
       
-      {/* Main Content */}
+      
       <div className="benefits-content">
         {/* Header Section */}
         <div className="benefits-header">
@@ -114,9 +114,6 @@ const Benefits = () => {
           </div>
         </div>
 
-        {/* Bottom Stats Bar */}
-
-        {/* Decorative Bottom Element */}
         <div className="bottom-decoration">
           <div className="deco-line"></div>
           <div className="deco-star">✨</div>

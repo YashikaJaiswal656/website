@@ -1,61 +1,62 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Header from './Include/header'
 import Footer from './Include/Footer'
 import Slider from './Components/Slider'
 import './Lithium.css'
 import Benefits from './Components/Benefits'
+import FAQ from './Components/FAQ';
 
 const Infrastructure = [
   {
     id: 1,
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 1100VA",
-    location: "Rajpura Facility",
+    location: "High-efficiency inverter with up to 98% conversion rate for small-scale applications.",
     icon: "🏭",
     capacity: "High Volume Production",
     status: "Active"
   },
   {
     id: 2,
-    image: "https://finikelithium.com/static/media/finike-lithium-3.070b0b162c7375a0a658.jpg",
-    title: "Battery Testing System",
-    location: "Rajpura Facility",
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 2100VA",
+    location: "Reliable power solution with 98% efficiency for medium-scale needs.",
     icon: "🔋",
     capacity: "Advanced Testing",
     status: "Operational"
   },
   {
     id: 3,
-    image: "https://finikelithium.com/static/media/finike-lithium-4.012dbfa66f6203334867.jpg",
-    title: "Module Testing System",
-    location: "Mohali Facility",
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 3500VA",
+    location: "Robust inverter delivering 98% efficiency for larger residential setups.",
     icon: "⚡",
     capacity: "Precision Testing",
     status: "Active"
   },
   {
     id: 4,
-    image: "https://finikelithium.com/static/media/finike-lithium-5.66f28c41035b75150f82.jpg",
-    title: "Pack Testing System",
-    location: "Rajpura Facility",
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 5000VA",
+    location: "High-capacity inverter with 98% efficiency for commercial applications.",
     icon: "📦",
     capacity: "Full Scale Testing",
     status: "Operational"
   },
   {
     id: 5,
-    image: "https://finikelithium.com/static/media/finike-lithium-6.400f90b7fb2177d33d10.jpeg",
-    title: "Battery Testing System",
-    location: "Rajpura Facility",
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 7500VA",
+    location: "Powerful inverter with 98% efficiency for heavy-duty industrial use.",
     icon: "🔬",
     capacity: "Quality Assurance",
     status: "Active"
   },
   {
     id: 6,
-    image: "https://finikelithium.com/static/media/finike-lithium-7.8ed3e041b40e3742a652.jpg",
-    title: "Auto Calibration",
-    location: "Mohali Facility",
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 10000VA",
+    location: "Top-tier inverter with 98% efficiency for large-scale industrial systems.",
     icon: "⚙️",
     capacity: "Automated Systems",
     status: "Operational"
@@ -63,20 +64,30 @@ const Infrastructure = [
 ];
 
 const Lithium = () => {
+    const [selectedImage, setSelectedImage] = useState(null);
+  
+    const openModal = (item) => {
+      setSelectedImage(item);
+    };
+  
+    const closeModal = () => {
+      setSelectedImage(null);
+    };
+  
   return (
     <>
     <Header/>
 <Slider/>
 <div className="features-container">
-      {/* Floating Orbs */}
+      
       <div className="floating-orb orb-1"></div>
       <div className="floating-orb orb-2"></div>
       <div className="floating-orb orb-3"></div>
       <div className="floating-orb orb-4"></div>
       
-      {/* Main Content */}
+      
       <div className="features-content">
-        {/* Header Section */}
+        
         <div className="features-headerr">
           <div className="pulse-container">
             <div className="header-icon">
@@ -169,7 +180,91 @@ const Lithium = () => {
 
 </div>
 <Benefits/>
+ <section className="infrastructure-section">
+      {/* Decorative Background Elements */}
+      <div className="decorative-bg">
+        <div className="bg-circle bg-circle-1"></div>
+        <div className="bg-circle bg-circle-2"></div>
+        <div className="bg-circle bg-circle-3"></div>
+      </div>
 
+      
+
+      <div className="infrastructure-container">
+        {/* Header Section */}
+        <div className="infrastructure-header">
+          <div className="header-card">
+            <div className="header-icon">
+              <i className="fas fa-building"></i>
+            </div>
+            <h2 className="gradient-title">Our Inverter Models</h2>
+          </div>
+          
+        </div>
+
+        {/* Infrastructure Grid */}
+        <div className="infrastructure-grid">
+          {Infrastructure.map((item) => (
+            <div key={item.id} className="infrastructure-card">
+              <div className="card-image-container">
+                <div className="image-glow"></div>
+                <div className="image-wrapper">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="infrastructure-image"
+                    onClick={() => openModal(item)}
+                  />
+                  
+                  <div className="facility-icon">{item.icon}</div>
+                </div>
+              </div>
+              
+              <div className="card-content">
+                <h3 className="facility-title">{item.title}</h3>
+                
+                <div className="location-info">
+                  <div className="location-dot"></div>
+                  <span className="location-text">{item.location}</span>
+                </div>
+                
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div className="modal-overlay">
+          {/* Backdrop */}
+          <div className="modal-backdrop" onClick={closeModal}></div>
+          
+          {/* Modal Content */}
+          <div className="modal-content">
+            {/* Close Button */}
+            <button className="modal-close-btn" onClick={closeModal}>
+              <svg className="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            {/* Modal Image */}
+            <div className="modal-image-container">
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                className="modal-image"
+              />
+              
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+<FAQ/>
     <Footer/>
     </>
 
