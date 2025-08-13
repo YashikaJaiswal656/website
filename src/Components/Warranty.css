@@ -258,7 +258,7 @@ a{
   margin-bottom: 30px;
 }
 
-.icon-wrapper {
+.icon-wrapperr {
   width: 80px;
   height: 80px;
   border-radius: 20px;
@@ -270,18 +270,18 @@ a{
   box-shadow: 0 8px 25px rgba(255, 117, 140, 0.4);
 }
 
-.icon-wrapper i {
+.icon-wrapperr i {
   font-size: 32px;
   color: #fff;
   transition: all 0.3s ease;
 }
 
-.service-card:hover .icon-wrapper {
+.service-card:hover .icon-wrapperr {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 12px 35px rgba(255, 117, 140, 0.6);
 }
 
-.service-card:hover .icon-wrapper i {
+.service-card:hover .icon-wrapperr i {
   transform: scale(1.1);
 }
 
@@ -664,12 +664,12 @@ a{
     margin: 0;
   }
 
-  .icon-wrapper {
+  .icon-wrapperr {
     width: 70px;
     height: 70px;
   }
 
-  .icon-wrapper i {
+  .icon-wrapperr i {
     font-size: 28px;
   }
 

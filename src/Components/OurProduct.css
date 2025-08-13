@@ -319,7 +319,7 @@
   gap: 10px;
 }
 
-.feature-icon {
+.feature-iconn {
   width: 24px;
   height: 24px;
   background: linear-gradient(45deg, #ff758c, #ffb347);
@@ -332,11 +332,11 @@
   transition: all 0.3s ease;
 }
 
-.feature-item:hover .feature-icon {
+.feature-item:hover .feature-iconn {
   transform: scale(1.1);
 }
 
-.feature-icon i {
+.feature-iconn i {
   color: #ffffff;
   font-size: 10px;
 }

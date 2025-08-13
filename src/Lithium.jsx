@@ -4,6 +4,64 @@ import Footer from './Include/Footer'
 import Slider from './Components/Slider'
 import './Lithium.css'
 import Benefits from './Components/Benefits'
+
+const Infrastructure = [
+  {
+    id: 1,
+    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
+    title: "Lithium-Ion Inverter 1100VA",
+    location: "Rajpura Facility",
+    icon: "🏭",
+    capacity: "High Volume Production",
+    status: "Active"
+  },
+  {
+    id: 2,
+    image: "https://finikelithium.com/static/media/finike-lithium-3.070b0b162c7375a0a658.jpg",
+    title: "Battery Testing System",
+    location: "Rajpura Facility",
+    icon: "🔋",
+    capacity: "Advanced Testing",
+    status: "Operational"
+  },
+  {
+    id: 3,
+    image: "https://finikelithium.com/static/media/finike-lithium-4.012dbfa66f6203334867.jpg",
+    title: "Module Testing System",
+    location: "Mohali Facility",
+    icon: "⚡",
+    capacity: "Precision Testing",
+    status: "Active"
+  },
+  {
+    id: 4,
+    image: "https://finikelithium.com/static/media/finike-lithium-5.66f28c41035b75150f82.jpg",
+    title: "Pack Testing System",
+    location: "Rajpura Facility",
+    icon: "📦",
+    capacity: "Full Scale Testing",
+    status: "Operational"
+  },
+  {
+    id: 5,
+    image: "https://finikelithium.com/static/media/finike-lithium-6.400f90b7fb2177d33d10.jpeg",
+    title: "Battery Testing System",
+    location: "Rajpura Facility",
+    icon: "🔬",
+    capacity: "Quality Assurance",
+    status: "Active"
+  },
+  {
+    id: 6,
+    image: "https://finikelithium.com/static/media/finike-lithium-7.8ed3e041b40e3742a652.jpg",
+    title: "Auto Calibration",
+    location: "Mohali Facility",
+    icon: "⚙️",
+    capacity: "Automated Systems",
+    status: "Operational"
+  }
+];
+
 const Lithium = () => {
   return (
     <>
@@ -19,7 +77,7 @@ const Lithium = () => {
       {/* Main Content */}
       <div className="features-content">
         {/* Header Section */}
-        <div className="features-header">
+        <div className="features-headerr">
           <div className="pulse-container">
             <div className="header-icon">
               ⭐
@@ -34,7 +92,7 @@ const Lithium = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="features-grid">
+        <div className="features-gridd">
           {/* High Efficiency */}
           <div className="feature-card">
             <div className="card-glow"></div>
@@ -65,10 +123,7 @@ const Lithium = () => {
               <div className="feature-icon eco">
                 🌍
               </div>
-              <div className="eco-rings">
-                <div className="eco-ring"></div>
-                <div className="eco-ring"></div>
-              </div>
+              
             </div>
             <h3 className="feature-title">Eco-Friendly</h3>
             <p className="feature-description">
@@ -87,7 +142,7 @@ const Lithium = () => {
               <div className="feature-icon durability">
                 🛡️
               </div>
-              <div className="shield-glow"></div>
+              
             </div>
             <h3 className="feature-title">Durability</h3>
             <p className="feature-description">
@@ -114,6 +169,7 @@ const Lithium = () => {
 
 </div>
 <Benefits/>
+
     <Footer/>
     </>
 

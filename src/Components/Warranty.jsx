@@ -124,7 +124,7 @@ const Warranty = () => {
                 {/* Icon Section */}
                 <div className="icon-container">
                   <div 
-                    className="icon-wrapper"
+                    className="icon-wrapperr"
                     style={{
                       background: service.gradient,
                       boxShadow: `0 10px 30px ${service.glowColor}`

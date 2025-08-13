@@ -112,7 +112,7 @@ const OurProduct = () => {
                 {features.map((feature, index) => (
                   <div key={index} className="feature-item">
                     <div className="feature-content">
-                      <div className="feature-icon">
+                      <div className="feature-iconn">
                         <i className="fas fa-check"></i>
                       </div>
                       <p className="feature-text">{feature}</p>
