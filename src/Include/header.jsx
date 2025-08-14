@@ -67,8 +67,10 @@ const Header = () => {
                         <li className="dropdown">
                             Our Products
                             <ul className="submenu">
-                                <Link to={"/Lithium"} onClick={closeMenu}><li>Lithium-Ion Inverter</li></Link>
-                                <a href="/solar"><li>Solar Batteries</li></a>
+                                <Link to={"/Lithium-inverter"} onClick={closeMenu}><li>Lithium-Ion Inverter</li></Link>
+                                
+                            <Link to={"/Solar-batteries"} onClick={closeMenu}><li>Solar Batteries</li></Link>
+                            <Link to={"/Lithium-batteries"} onClick={closeMenu}><li>Two/Three Wheelers Batteries</li></Link>
                             </ul>
                         </li>
                         <Link to={"/Customer"}><li>Customer Support</li></Link>
@@ -96,8 +98,9 @@ const Header = () => {
                     <li className="sidebar-dropdown" onClick={toggleDropdown}>
                         Our Products
                         <ul className="sidebar-submenu">
-                            <Link to={"/Lithium"} onClick={closeMenu}><li>Lithium-Ion Inverter</li></Link>
-                            <a href="/solar" onClick={closeMenu}><li>Solar Batteries</li></a>
+                            <Link to={"/Lithium-inverter"} onClick={closeMenu}><li>Lithium-Ion Inverter</li></Link>
+                            <Link to={"/Solar-batteries"} onClick={closeMenu}><li>Solar Batteries</li></Link>
+                            <Link to={"/Lithium-batteries"} onClick={closeMenu}><li>Two/Three Wheelers Batteries</li></Link>
                         </ul>
                     </li>
                     <Link to={"/Customer"} onClick={closeMenu}><li>Customer Support</li></Link>

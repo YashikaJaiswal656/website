@@ -1,12 +1,7 @@
 import React from 'react';
 import './Catalog.css'
 const CataLog = () => {
-  const catalogFeatures = [
-    { icon: "📱", text: "Digital Catalog" },
-    { icon: "⚡", text: "High Efficiency" },
-    { icon: "🔋", text: "Lithium-Ion Tech" },
-    { icon: "📊", text: "Technical Specs" }
-  ];
+  
 
   return (
     <div className="catalog-container">
@@ -73,31 +68,6 @@ const CataLog = () => {
         </div>
 
         
-        <div className="catalog-bottom-features">
-          <div className="catalog-bottom-feature">
-            <div className="catalog-bottom-icon">🎯</div>
-            <div className="catalog-bottom-text">
-              <h4>Precise Specifications</h4>
-              <p>Detailed technical data for informed decisions</p>
-            </div>
-          </div>
-          
-          <div className="catalog-bottom-feature">
-            <div className="catalog-bottom-icon">🔧</div>
-            <div className="catalog-bottom-text">
-              <h4>Installation Guide</h4>
-              <p>Step-by-step setup instructions included</p>
-            </div>
-          </div>
-          
-          <div className="catalog-bottom-feature">
-            <div className="catalog-bottom-icon">📞</div>
-            <div className="catalog-bottom-text">
-              <h4>Expert Support</h4>
-              <p>Professional assistance for product selection</p>
-            </div>
-          </div>
-        </div>
 
         
         <div className="catalog-bottom-decoration">
