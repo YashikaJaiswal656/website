@@ -27,7 +27,7 @@ const CataLog = () => {
               📋
             </div>
           </div>
-          <h2 className="main-title">Lithium-Ion Inverter/UPS Catalog</h2>
+          <h2 className="catalog-main-title">Lithium-Ion Inverter/UPS Catalog</h2>
           <div className="catalog-title-underline">
             <div className="catalog-line-segment"></div>
             <div className="catalog-line-dot"></div>
@@ -55,7 +55,7 @@ const CataLog = () => {
               >
                 <div className="catalog-button-bg"></div>
                 <div className="catalog-button-content">
-                  <span className="catalog-button-icon">📥</span>
+                  
                   <span className="catalog-button-text">View Catalog</span>
                   <div className="catalog-button-arrow">→</div>
                 </div>
@@ -70,13 +70,6 @@ const CataLog = () => {
         
 
         
-        <div className="catalog-bottom-decoration">
-          <div className="catalog-deco-line"></div>
-          <div className="catalog-deco-diamond">
-            <div className="catalog-inner-diamond"></div>
-          </div>
-          <div className="catalog-deco-line"></div>
-        </div>
       </div>
 
     </div>

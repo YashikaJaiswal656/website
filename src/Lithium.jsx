@@ -13,7 +13,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 1100VA",
     location: "High-efficiency inverter with up to 98% conversion rate for small-scale applications.",
-    icon: "🏭",
+
     capacity: "High Volume Production",
     status: "Active"
   },
@@ -22,7 +22,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 2100VA",
     location: "Reliable power solution with 98% efficiency for medium-scale needs.",
-    icon: "🔋",
+    
     capacity: "Advanced Testing",
     status: "Operational"
   },
@@ -31,7 +31,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 3500VA",
     location: "Robust inverter delivering 98% efficiency for larger residential setups.",
-    icon: "⚡",
+    
     capacity: "Precision Testing",
     status: "Active"
   },
@@ -40,7 +40,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 5000VA",
     location: "High-capacity inverter with 98% efficiency for commercial applications.",
-    icon: "📦",
+    
     capacity: "Full Scale Testing",
     status: "Operational"
   },
@@ -49,7 +49,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 7500VA",
     location: "Powerful inverter with 98% efficiency for heavy-duty industrial use.",
-    icon: "🔬",
+    
     capacity: "Quality Assurance",
     status: "Active"
   },
@@ -58,7 +58,7 @@ const Infrastructure = [
     image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
     title: "Lithium-Ion Inverter 10000VA",
     location: "Top-tier inverter with 98% efficiency for large-scale industrial systems.",
-    icon: "⚙️",
+    
     capacity: "Automated Systems",
     status: "Operational"
   }
@@ -91,15 +91,15 @@ const Lithium = () => {
         
         <div className="features-headerr">
           <div className="pulse-container">
-            <div className="header-icon">
+            <div className="faq-header-icon">
               ⭐
             </div>
           </div>
-          <h2 className="main-title">Why Choose Our Inverters?</h2>
+          <h2 className="faq-main-title">Why Choose Our Inverters?</h2>
           <div className="title-underline">
-            <div className="line-segment"></div>
-            <div className="line-dot"></div>
-            <div className="line-segment"></div>
+            <div className="faq-line-segment"></div>
+            <div className="faq-line-dot"></div>
+            <div className="faq-line-segment"></div>
           </div>
         </div>
 
@@ -107,16 +107,7 @@ const Lithium = () => {
           
           <div className="feature-card">
             <div className="card-glow"></div>
-            <div className="feature-icon-wrapper">
-              <div className="feature-icon efficiency">
-                ⚡
-              </div>
-              <div className="icon-particles">
-                <div className="particle"></div>
-                <div className="particle"></div>
-                <div className="particle"></div>
-              </div>
-            </div>
+            
             <h3 className="feature-title">High Efficiency</h3>
             <p className="feature-description">
               Up to <span className="highlight-number">98%</span> conversion efficiency to reduce energy costs and emissions.
@@ -129,12 +120,7 @@ const Lithium = () => {
 
           <div className="feature-card">
             <div className="card-glow"></div>
-            <div className="feature-icon-wrapper">
-              <div className="feature-icon eco">
-                🌍
-              </div>
-              
-            </div>
+            
             <h3 className="feature-title">Eco-Friendly</h3>
             <p className="feature-description">
               Built with <span className="highlight-text">recyclable materials</span> to minimize environmental impact.
@@ -147,12 +133,7 @@ const Lithium = () => {
 
           <div className="feature-card">
             <div className="card-glow"></div>
-            <div className="feature-icon-wrapper">
-              <div className="feature-icon durability">
-                🛡️
-              </div>
-              
-            </div>
+            
             <h3 className="feature-title">Durability</h3>
             <p className="feature-description">
               Designed for <span className="highlight-number">15+</span> years of reliable, low-maintenance performance.
@@ -164,15 +145,11 @@ const Lithium = () => {
               <div className="timeline-line"></div>
               <div className="timeline-dot active"></div>
               <span className="timeline-label">15+ Years</span>
-            </div>
+            </div>  
           </div>
         </div>
 
-        <div className="bottom-decoration">
-          <div className="deco-line"></div>
-          <div className="deco-diamond"></div>
-          <div className="deco-line"></div>
-        </div>
+        
       </div>
 
 </div>
@@ -191,10 +168,10 @@ const Lithium = () => {
         
         <div className="infrastructure-header">
           <div className="header-card">
-            <div className="header-icon">
+            <div className="faq-header-icon">
               <i className="fas fa-building"></i>
             </div>
-            <h2 className="gradient-title">Our Inverter Models</h2>
+            <h2 className="faq-main-title">Our Inverter Models</h2>
           </div>
           
         </div>
@@ -214,7 +191,6 @@ const Lithium = () => {
                     onClick={() => openModal(item)}
                   />
                   
-                  <div className="facility-icon">{item.icon}</div>
                 </div>
               </div>
               
@@ -222,7 +198,7 @@ const Lithium = () => {
                 <h3 className="facility-title">{item.title}</h3>
                 
                 <div className="location-info">
-                  <div className="location-dot"></div>
+                  
                   <span className="location-text">{item.location}</span>
                 </div>
                 

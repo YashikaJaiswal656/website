@@ -88,10 +88,10 @@ const Solar = () => {
         
         <div className="infrastructure-header">
           <div className="header-card">
-            <div className="header-icon">
+            <div className="faq-header-icon">
               <i className="fas fa-building"></i>
             </div>
-            <h2 className="gradient-title">Our Product Range</h2>
+            <h2 className="faq-main-title">Our Product Range</h2>
           </div>
           
         </div>
@@ -145,7 +145,7 @@ const Solar = () => {
               📋
             </div>
           </div>
-          <h2 className="main-title">Product Catalogs</h2>
+          <h2 className="catalog-main-title">Product Catalogs</h2>
           <div className="catalog-title-underline">
             <div className="catalog-line-segment"></div>
             <div className="catalog-line-dot"></div>
@@ -173,7 +173,7 @@ const Solar = () => {
               >
                 <div className="catalog-button-bg"></div>
                 <div className="catalog-button-content">
-                  <span className="catalog-button-icon">📥</span>
+                  <span className="catalog-button-icon"></span>
                   <span className="catalog-button-text"> Catalog 1</span>
                   <div className="catalog-button-arrow">→</div>
                 </div>
@@ -187,7 +187,7 @@ const Solar = () => {
               >
                 <div className="catalog-button-bg"></div>
                 <div className="catalog-button-content">
-                  <span className="catalog-button-icon">📥</span>
+                  <span className="catalog-button-icon"></span>
                   <span className="catalog-button-text">Catalog 2</span>
                   <div className="catalog-button-arrow">→</div>
                 </div>
@@ -201,14 +201,6 @@ const Solar = () => {
 
         
 
-        
-        <div className="catalog-bottom-decoration">
-          <div className="catalog-deco-line"></div>
-          <div className="catalog-deco-diamond">
-            <div className="catalog-inner-diamond"></div>
-          </div>
-          <div className="catalog-deco-line"></div>
-        </div>
       </div>
 
     </div>

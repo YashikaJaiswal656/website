@@ -6,18 +6,15 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is a lithium-ion inverter?",
-      answer: "A lithium-ion inverter converts DC from a lithium-ion battery to AC, efficiently powering appliances and devices.",
-      icon: "🔋"
+      answer: "A lithium-ion inverter converts DC from a lithium-ion battery to AC, efficiently powering appliances and devices."
     },
     {
       question: "Why choose a lithium-ion inverter?",
-      answer: "They provide higher efficiency, longer lifespan, and a compact design compared to lead-acid inverters.",
-      icon: "⭐"
+      answer: "They provide higher efficiency, longer lifespan, and a compact design compared to lead-acid inverters."
     },
     {
       question: "How long does a lithium-ion inverter last?",
-      answer: "Our inverters offer 10–15 years of reliable performance with proper maintenance.",
-      icon: "⏳"
+      answer: "Our inverters offer 10–15 years of reliable performance with proper maintenance."
     }
   ];
 
@@ -38,15 +35,15 @@ const FAQ = () => {
         
         <div className="faq-header">
           <div className="pulse-container">
-            <div className="header-icon">
+            <div className="faq-header-icon">
               ❓
             </div>
           </div>
-          <h2 className="main-title">Frequently Asked Questions</h2>
+          <h2 className="faq-main-title">Frequently Asked Questions</h2>
           <div className="faq-title-underline">
-            <div className="line-segment"></div>
-            <div className="line-dot"></div>
-            <div className="line-segment"></div>
+            <div className="faq-line-segment"></div>
+            <div className="faq-line-dot"></div>
+            <div className="faq-line-segment"></div>
           </div>
           <p className="faq-subtitle">Everything you need to know about our lithium-ion inverters</p>
         </div>
@@ -60,12 +57,7 @@ const FAQ = () => {
               
               <div className="faq-question-header" onClick={() => toggleFAQ(index)}>
                 <div className="faq-question-left">
-                  <div className="faq-icon-wrapper">
-                    <div className="faq-icon">
-                      {faq.icon}
-                    </div>
-                    
-                  </div>
+                  
                   <h3 className="faq-question">{faq.question}</h3>
                 </div>
                 
@@ -121,32 +113,9 @@ const FAQ = () => {
         </div>
 
         
-        <div className="faq-bottom-cta">
-          <div className="faq-cta-content">
-            <h4 className="faq-cta-title">Still have questions?</h4>
-            <p className="faq-cta-text">Our experts are here to help you find the perfect solution</p>
-            <div className="faq-contact-options">
-              <div className="faq-contact-item">
-                <div className="faq-contact-icon">📞</div>
-                <span>Call Us</span>
-              </div>
-              <div className="faq-contact-item">
-                <div className="faq-contact-icon">✉️</div>
-                <span>Email Us</span>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+        
 
         
-        <div className="faq-bottom-decoration">
-          <div className="faq-deco-line"></div>
-          <div className="faq-deco-circle">
-            <div className="faq-inner-circle"></div>
-          </div>
-          <div className="faq-deco-line"></div>
-        </div>
       </div>
 
       

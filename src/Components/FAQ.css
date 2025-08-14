@@ -95,7 +95,7 @@
         }
 
         .faq-main-title {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 900;
           background: linear-gradient(45deg, #8b5cf6, #06b6d4, #10b981);
           -webkit-background-clip: text;
@@ -262,7 +262,7 @@
         .faq-plus-horizontal,
         .faq-plus-vertical {
           position: absolute;
-background: linear-gradient(45deg, #ff758c, #ffb347);;
+background: linear-gradient(45deg, #8b5cf6, #06b6d4, #10b981);
           border-radius: 2px;
           transition: all 0.3s ease;
         }
@@ -293,7 +293,7 @@ background: linear-gradient(45deg, #ff758c, #ffb347);;
 
         .faq-decorative-line {
           width: 60px; height: 2px;
-        background: linear-gradient(45deg, #ff758c, #ffb347);;
+        background: linear-gradient(45deg, #8b5cf6, #06b6d4, #10b981);
           border-radius: 2px;
           margin-bottom: 20px;
         }
@@ -317,7 +317,7 @@ background: linear-gradient(45deg, #ff758c, #ffb347);;
           border-radius: 20px;
           font-size: 0.85rem;
           font-weight: 600;
-          background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
+          background: linear-gradient(45deg, #8b5cf6, #06b6d4, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
