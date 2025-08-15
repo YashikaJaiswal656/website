@@ -1,76 +1,166 @@
 import React from 'react';
-import './Benefits.css'
+import  './Benefits.css'
 const Benefits = () => {
   return (
-    <div className="benefits-container">
+    <div className="benefits-showcase">
+      {/* Ambient Background Elements */}
+      <div className="ambient-sphere sphere-alpha"></div>
+      <div className="ambient-sphere sphere-beta"></div>
+      <div className="ambient-sphere sphere-gamma"></div>
+      <div className="ambient-sphere sphere-delta"></div>
       
-      <div className="floating-orb orb-1"></div>
-      <div className="floating-orb orb-2"></div>
-      <div className="floating-orb orb-3"></div>
-      <div className="floating-orb orb-4"></div>
-      <div className="floating-orb orb-5"></div>
-      
-      
-      <div className="benefits-content">
+      {/* Main Container */}
+      <div className="showcase-main">
         
-        <div className="benefits-header">
-          <div className="pulse-container">
-            <div className="faq-header-icon">
-              💎
-            </div>
-          </div>
-          <h2 className="faq-main-title">Key Benefits</h2>
-          <div className="title-underline">
-            <div className="faq-line-segment"></div>
-            <div className="faq-line-dot"></div>
-            <div className="faq-line-segment"></div>
-          </div>
+        {/* Centered Title Section */}
+        <div className="title-section">
+          
+          <h1 className="main-title">
+            Transformative
+Benefits
+          </h1>
+          <p className="title-description">
+            Experience the advantages that set our solar inverters apart
+          </p>
         </div>
 
-        <div className="benefits-grid">
+        {/* Horizontal Flow Layout */}
+        <div className="benefits-flow">
           
-          <div className="benefit-card energy-card">
-            <div className="card-glow"></div>
-            
-            <h3 className="feature-title">Energy Savings</h3>
-            <p className="benefit-description">
-              Lower energy consumption, leading to <span className="highlight-savings">reduced electricity costs</span>.
-            </p>
-            <div className="savings-meter">
-              <div className="meter-fill"></div>
-              <div className="meter-indicator">
-                📉
-                <span>-40% Cost</span>
+          {/* Energy Savings - Left Panel */}
+          <div className="benefit-panel left-panel">
+            <div className="panel-background savings-bg"></div>
+            <div className="panel-content">
+              <div className="benefit-header">
+                <div className="benefit-indicator savings-indicator">
+                  <div className="indicator-core"></div>
+                </div>
+                <div className="header-text">
+                  <h3 className="benefit-title">Energy Savings</h3>
+                  <span className="benefit-subtitle">Smart Efficiency</span>
+                </div>
               </div>
+              
+              <div className="savings-visualization">
+                <div className="cost-reduction">
+                  <div className="reduction-display">
+                    <span className="reduction-number">40</span>
+                    <span className="reduction-symbol">%</span>
+                  </div>
+                  <p className="reduction-text">Lower Energy Costs</p>
+                </div>
+                
+                <div className="savings-chart">
+                  <div className="chart-bar current-bar">
+                    <div className="bar-fill current-fill"></div>
+                    <span className="bar-label">Current</span>
+                  </div>
+                  <div className="chart-bar optimized-bar">
+                    <div className="bar-fill optimized-fill"></div>
+                    <span className="bar-label">With Inverter</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="benefit-text">
+                Advanced power management reduces consumption while maximizing solar energy utilization, 
+                delivering substantial savings on your electricity bills.
+              </p>
             </div>
           </div>
 
-          
-          <div className="benefit-card eco-card">
-            <div className="card-glow"></div>
-            
-            <h3 className="feature-title">Eco-Conscious Design</h3>
-            <p className="benefit-description">
-              <span className="highlight-tech">LiFePO4/Lithium</span> technology that minimizes environmental impact.
-            </p>
-            
+        {/* Bottom Durability Section */}
+        <div className="durability-section">
+          <div className="durability-container">
+            <div className="durability-background"></div>
+            <div className="durability-content">
+              <div className="durability-header">
+                <div className="benefit-indicator durability-indicator">
+                  <div className="indicator-core"></div>
+                </div>
+                <div className="header-info">
+                  <h3 className="benefit-title">Long-Term Reliability</h3>
+                  <span className="benefit-subtitle">15+ Years of Performance</span>
+                </div>
+              </div>
+              
+              <div className="lifespan-display">
+                
+                
+                <div className="reliability-stats">
+                  <div className="reliability-item">
+                    <span className="stat-highlight">99.9%</span>
+                    <span className="stat-desc">Uptime Reliability</span>
+                  </div>
+                  <div className="reliability-item">
+                    <span className="stat-highlight">Minimal</span>
+                    <span className="stat-desc">Maintenance Required</span>
+                  </div>
+                  <div className="reliability-item">
+                    <span className="stat-highlight">Comprehensive</span>
+                    <span className="stat-desc">Warranty Coverage</span>
+                  </div>
+                </div>
+              </div>
+              
+              <p className="durability-text">
+                Engineered for longevity with premium components and rigorous testing, 
+                ensuring dependable operation for over 15 years with minimal intervention.
+              </p>
+            </div>
           </div>
-
-          
-          <div className="benefit-card lifespan-card">
-            <div className="card-glow"></div>
-            
-            <h3 className="feature-title">Long Lifespan</h3>
-            <p className="benefit-description">
-              Provides reliable power for up to <span className="highlight-years">15 years</span> with minimal maintenance.
-            </p>
-            
+        </div>
+          {/* Eco Design - Right Panel */}
+          <div className="benefit-panel right-panel">
+            <div className="panel-background eco-bg"></div>
+            <div className="panel-content">
+              <div className="benefit-header">
+                <div className="benefit-indicator eco-indicator">
+                  <div className="indicator-core"></div>
+                </div>
+                <div className="header-text">
+                  <h3 className="benefit-title">Eco-Conscious</h3>
+                  <span className="benefit-subtitle">Sustainable Design</span>
+                </div>
+              </div>
+              
+              <div className="eco-metrics">
+                <div className="metric-group">
+                  <div className="metric-item">
+                    <div className="metric-value">100</div>
+                    <div className="metric-unit">%</div>
+                    <div className="metric-label">Recyclable</div>
+                  </div>
+                  <div className="metric-divider"></div>
+                  <div className="metric-item">
+                    <div className="metric-value">0</div>
+                    <div className="metric-unit">g</div>
+                    <div className="metric-label">CO₂/kWh</div>
+                  </div>
+                </div>
+                
+                <div className="tech-badge">
+                  <span className="badge-label">LiFePO4 Technology</span>
+                </div>
+              </div>
+              
+              <p className="benefit-text">
+                Built with environmentally responsible materials and manufacturing processes, 
+                ensuring minimal ecological impact throughout the product lifecycle.
+              </p>
+            </div>
           </div>
         </div>
 
-        
-      </div>
 
+        {/* Elegant Footer */}
+        <div className="elegant-footer">
+          <div className="footer-line"></div>
+          <div className="footer-accent"></div>
+          <div className="footer-line"></div>
+        </div>
+      </div>
+      
     </div>
   );
 };

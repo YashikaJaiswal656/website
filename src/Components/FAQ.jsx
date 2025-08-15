@@ -34,11 +34,7 @@ const FAQ = () => {
       <div className="faq-content">
         
         <div className="faq-header">
-          <div className="pulse-container">
-            <div className="faq-header-icon">
-              ❓
-            </div>
-          </div>
+          
           <h2 className="faq-main-title">Frequently Asked Questions</h2>
           <div className="faq-title-underline">
             <div className="faq-line-segment"></div>

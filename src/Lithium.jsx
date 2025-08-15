@@ -6,234 +6,169 @@ import './Lithium.css'
 import Benefits from './Components/Benefits'
 import FAQ from './Components/FAQ';
 import CataLog from './Components/CataLog';
+import Modal from './Components/Modal'
 
-const Infrastructure = [
-  {
-    id: 1,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 1100VA",
-    location: "High-efficiency inverter with up to 98% conversion rate for small-scale applications.",
-
-    capacity: "High Volume Production",
-    status: "Active"
-  },
-  {
-    id: 2,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 2100VA",
-    location: "Reliable power solution with 98% efficiency for medium-scale needs.",
-    
-    capacity: "Advanced Testing",
-    status: "Operational"
-  },
-  {
-    id: 3,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 3500VA",
-    location: "Robust inverter delivering 98% efficiency for larger residential setups.",
-    
-    capacity: "Precision Testing",
-    status: "Active"
-  },
-  {
-    id: 4,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 5000VA",
-    location: "High-capacity inverter with 98% efficiency for commercial applications.",
-    
-    capacity: "Full Scale Testing",
-    status: "Operational"
-  },
-  {
-    id: 5,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 7500VA",
-    location: "Powerful inverter with 98% efficiency for heavy-duty industrial use.",
-    
-    capacity: "Quality Assurance",
-    status: "Active"
-  },
-  {
-    id: 6,
-    image: "https://finikelithium.com/static/media/lithiumintegratedinverter.b0205ecd2da92687afec.JPG",
-    title: "Lithium-Ion Inverter 10000VA",
-    location: "Top-tier inverter with 98% efficiency for large-scale industrial systems.",
-    
-    capacity: "Automated Systems",
-    status: "Operational"
-  }
-];
 
 const Lithium = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
-  
-    const openModal = (item) => {
-      setSelectedImage(item);
-    };
-  
-    const closeModal = () => {
-      setSelectedImage(null);
-    };
+    
   
   return (
     <>
     <Header/>
 <Slider/>
-<div className="features-container">
-      
-      <div className="floating-orb orb-1"></div>
-      <div className="floating-orb orb-2"></div>
-      <div className="floating-orb orb-3"></div>
-      <div className="floating-orb orb-4"></div>
-      
-      
-      <div className="features-content">
-        
-        <div className="features-headerr">
-          <div className="pulse-container">
-            <div className="faq-header-icon">
-              ⭐
-            </div>
-          </div>
-          <h2 className="faq-main-title">Why Choose Our Inverters?</h2>
-          <div className="title-underline">
-            <div className="faq-line-segment"></div>
-            <div className="faq-line-dot"></div>
-            <div className="faq-line-segment"></div>
-          </div>
-        </div>
 
-        <div className="features-gridd">
+    <div className="premium-showcase">
+
+      <div className="ambient-orb orb-primary"></div>
+      <div className="ambient-orb orb-secondary"></div>
+      <div className="ambient-orb orb-accent"></div>
+      <div className="ambient-orb orb-subtle"></div>
+      
+      
+      <div className="showcase-container">
+        
+        <div className="section-header">
           
-          <div className="feature-card">
-            <div className="card-glow"></div>
+          <h1 className="main-title">
+            Premium Solar Inverters
+          </h1>
+          <div className="heading-decoration">
+            <div className="deco-segment"></div>
+            <div className="deco-center"></div>
+            <div className="deco-segment"></div>
+          </div>
+          <p className="section-subtitle">
+            Engineered for excellence, designed for the future of renewable energy
+          </p>
+        </div>
+
+        {/* Asymmetric Feature Layout */}
+        <div className="features-layout">
+          
+          {/* Left Column - Stacked Cards */}
+          <div className="left-column">
             
-            <h3 className="feature-title">High Efficiency</h3>
-            <p className="feature-description">
-              Up to <span className="highlight-number">98%</span> conversion efficiency to reduce energy costs and emissions.
-            </p>
-            <div className="efficiency-bar">
-              <div className="efficiency-fill"></div>
-              <span className="efficiency-label">98%</span>
+            {/* Efficiency Card */}
+            <div className="feature-card card-efficiency">
+              <div className="card-overlay"></div>
+              <div className="card-content">
+                <div className="feature-icon-container">
+                  <div className="icon-background efficiency-bg"><div className="feature-icon">E</div></div>
+                  <h3 className="card-title">Maximum Efficiency</h3>
+                </div>
+                
+                <div className="efficiency-metrics">
+                  <div className="metric-display">
+                    <span className="metric-value">98</span>
+                    <span className="metric-unit">%</span>
+                  </div>
+                  <div className="metric-bar">
+                    <div className="bar-fill efficiency-fill"></div>
+                  </div>
+                  <p className="metric-label">Conversion Rate</p>
+                </div>
+                <p className="card-description">
+                   
+                  Maximizing energy harvest from every solar panel.
+                </p>
+              </div>
+            </div>
+
+            {/* Eco Card */}
+            <div className="feature-card card-eco">
+              <div className="card-overlay"></div>
+              <div className="card-content">
+                <div className="feature-icon-container">
+                  <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
+                  <h3 className="card-title">Sustainable Design</h3>
+                </div>
+                
+                
+                <div className="eco-indicators">
+                  <div className="eco-badge">
+                    <span className="badge-text">100% Recyclable Materials</span>
+                  </div>
+                  <div className="eco-badge">
+                    <span className="badge-text">Zero Waste Manufacturing</span>
+                  </div>
+                </div>
+                <p className="card-description">
+                  Constructed with fully recyclable components 
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="feature-card">
-            <div className="card-glow"></div>
-            
-            <h3 className="feature-title">Eco-Friendly</h3>
-            <p className="feature-description">
-              Built with <span className="highlight-text">recyclable materials</span> to minimize environmental impact.
-            </p>
-            <div className="eco-badge">
-              <div className="eco-icon">🌱</div>
-              <span>100% Recyclable</span>
-            </div>
-          </div>
+          {/* Right Column - Single Large Card */}
+          <div className="right-column">
+            <div className="feature-card card-durability">
+              <div className="card-overlay"></div>
+              <div className="card-content">
+                <div className="durability-header">
+                  <div className="feature-icon-container">
+                    <div className="icon-background durability-bg"><div className="feature-icon">D</div></div>
+                    
+                  </div>
+                  <div className="header-text">
+                    <h3 className="card-title">Built for Longevity</h3>
+                    <p className="card-subtitle">25+ Years of Reliable Performance</p>
+                  </div>
+                </div>
+                
+                <div className="durability-showcase">
+                  <div className="lifespan-visual">
+                    <div className="timeline-container">
+                      <div className="timeline-track"></div>
+                      <div className="timeline-progress"></div>
+                      <div className="timeline-points">
+                        <div className="time-point active" data-year="5Y"></div>
+                        <div className="time-point active" data-year="10Y"></div>
+                        <div className="time-point active" data-year="15Y"></div>
+                        <div className="time-point active" data-year="20Y"></div>
+                        <div className="time-point highlighted" data-year="25Y+"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="durability-stats">
+                    <div className="stat-group">
+                      <div className="stat-item">
+                        <span className="stat-number">25+</span>
+                        <span className="stat-label">Years Warranty</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-number">99.9%</span>
+                        <span className="stat-label">Reliability</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-number">IP67</span>
+                        <span className="stat-label">Protection Rating</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <div className="feature-card">
-            <div className="card-glow"></div>
-            
-            <h3 className="feature-title">Durability</h3>
-            <p className="feature-description">
-              Designed for <span className="highlight-number">15+</span> years of reliable, low-maintenance performance.
-            </p>
-            <div className="durability-timeline">
-              <div className="timeline-dot active"></div>
-              <div className="timeline-line"></div>
-              <div className="timeline-dot active"></div>
-              <div className="timeline-line"></div>
-              <div className="timeline-dot active"></div>
-              <span className="timeline-label">15+ Years</span>
-            </div>  
+                <p className="card-description">
+                  Rigorously tested for extreme weather conditions, featuring 
+                  premium-grade components and advanced protective systems 
+                  for unmatched long-term reliability.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        
+        {/* Bottom Accent Line */}
+        <div className="closing-accent">
+          <div className="accent-line"></div>
+          <div className="accent-dot"></div>
+          <div className="accent-line"></div>
+        </div>
       </div>
-
+      
 </div>
 <Benefits/>
- <section className="infrastructure-section">
-
-      <div className="decorative-bg">
-        <div className="bg-circle bg-circle-1"></div>
-        <div className="bg-circle bg-circle-2"></div>
-        <div className="bg-circle bg-circle-3"></div>
-      </div>
-
-      
-
-      <div className="infrastructure-container">
-        
-        <div className="infrastructure-header">
-          <div className="header-card">
-            <div className="faq-header-icon">
-              <i className="fas fa-building"></i>
-            </div>
-            <h2 className="faq-main-title">Our Inverter Models</h2>
-          </div>
-          
-        </div>
-
-        <div className="infrastructure-grid">
-          {Infrastructure.map((item) => (
-            <div key={item.id} className="infrastructure-card">
-              <div className="card-image-container">
-                <div className="image-glow"></div>
-                <div className="image-wrapper">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    loading="lazy"
-                    decoding="async"
-                    className="infrastructure-image"
-                    onClick={() => openModal(item)}
-                  />
-                  
-                </div>
-              </div>
-              
-              <div className="card-content">
-                <h3 className="facility-title">{item.title}</h3>
-                
-                <div className="location-info">
-                  
-                  <span className="location-text">{item.location}</span>
-                </div>
-                
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      
-      {selectedImage && (
-        <div className="modal-overlay">
-          
-          <div className="modal-backdrop" onClick={closeModal}></div>
-          
-          <div className="modal-content">
-            
-            <button className="modal-close-btn" onClick={closeModal}>
-              <svg className="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            
-            <div className="modal-image-container">
-              <img
-                src={selectedImage.image}
-                alt={selectedImage.title}
-                className="modal-image"
-              />
-              
-            </div>
-          </div>
-        </div>
-      )}
-    </section>
+ <Modal/>
 <FAQ/>
 <CataLog/>
     <Footer/>
