@@ -1,22 +1,10 @@
-import React, { useState } from 'react';
-import Header from './Include/header'
-import Footer from './Include/Footer'
-import Slider from './Components/Slider'
-import './Lithium.css'
-import Benefits from './Components/Benefits'
-import FAQ from './Components/FAQ';
-import CataLog from './Components/CataLog';
-import Modal from './Components/Modal'
+import React from 'react'
 
-
-const Lithium = () => {
-    
-  
+const Inverter = () => {
   return (
     <>
-    <Header/>
-<Slider/>
- <div className="premium-showcase">
+    
+    <div className="premium-showcase">
 
       <div className="ambient-orb orb-primary"></div>
       <div className="ambient-orb orb-secondary"></div>
@@ -29,7 +17,7 @@ const Lithium = () => {
         <div className="section-header">
           
           <h1 className="main-title">
-            Premium Solar Inverters
+            Why Choose Our Batteries?
           </h1>
           <div className="heading-decoration">
             <div className="deco-segment"></div>
@@ -52,8 +40,8 @@ const Lithium = () => {
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="feature-icon-container">
-                  <div className="icon-background efficiency-bg"><div className="feature-icon">E</div></div>
-                  <h3 className="card-title">Maximum Efficiency</h3>
+                  <div className="icon-background efficiency-bg"><div className="feature-icon">P</div></div>
+                  <h3 className="card-title">Superior Performance</h3>
                 </div>
                 
                 <div className="efficiency-metrics">
@@ -68,7 +56,7 @@ const Lithium = () => {
                 </div>
                 <p className="card-description">
                    
-                  Maximizing energy harvest from every solar panel.
+                  Fast acceleration and smooth operation for all types of EVs.
                 </p>
               </div>
             </div>
@@ -79,7 +67,7 @@ const Lithium = () => {
               <div className="card-content">
                 <div className="feature-icon-container">
                   <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
-                  <h3 className="card-title">Sustainable Design</h3>
+                  <h3 className="card-title">Sustainable Technology</h3>
                 </div>
                 
                 
@@ -92,7 +80,7 @@ const Lithium = () => {
                   </div>
                 </div>
                 <p className="card-description">
-                  Constructed with fully recyclable components 
+                  Sustainable technology that contributes to a greener future.
                 </p>
               </div>
             </div>
@@ -105,7 +93,7 @@ const Lithium = () => {
               <div className="card-content">
                 <div className="durability-header">
                   <div className="feature-icon-container">
-                    <div className="icon-background durability-bg"><div className="feature-icon">D</div></div>
+                    <div className="icon-background durability-bg"><div className="feature-icon">R</div></div>
                     
                   </div>
                   <div className="header-text">
@@ -148,9 +136,8 @@ const Lithium = () => {
                 </div>
 
                 <p className="card-description">
-                  Rigorously tested for extreme weather conditions, featuring 
-                  premium-grade components and advanced protective systems 
-                  for unmatched long-term reliability.
+                  Extended Range
+High-capacity batteries for fewer charging stops and more travel.
                 </p>
               </div>
             </div>
@@ -166,14 +153,8 @@ const Lithium = () => {
       </div>
       
 </div>
-<Benefits/>
- <Modal/>
-<FAQ/>
-<CataLog/>
-    <Footer/>
     </>
-
   )
 }
 
-export default Lithium
+export default Inverter

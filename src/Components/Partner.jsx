@@ -1,8 +1,8 @@
-import React from 'react';
-import  './Benefits.css'
-const Benefits = () => {
+import React from 'react'
+
+const Partner = () => {
   return (
-<div className="benefits-showcase">
+    <div className="benefits-showcase">
       {/* Ambient Background Elements */}
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
@@ -16,11 +16,10 @@ const Benefits = () => {
         <div className="title-section">
           
           <h1 className="main-title">
-            Transformative
-Benefits
+        Your Partner in Sustainable Mobility
           </h1>
           <p className="title-description">
-            Experience the advantages that set our solar inverters apart
+            Experience the advantages that set our Lithium Batteries apart
           </p>
         </div>
 
@@ -162,7 +161,8 @@ Benefits
       </div>
       
     </div>
-  );
-};
 
-export default Benefits;
+  )
+}
+
+export default Partner

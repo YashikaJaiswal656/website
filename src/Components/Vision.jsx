@@ -6,7 +6,7 @@ const Vision = () => {
   return (
     <>
       
-      <div className="experience-hub">
+<div className="experience-hub">
 
         <div className="cosmic-particle particle-one"></div>
         <div className="cosmic-particle particle-two"></div>
@@ -138,7 +138,7 @@ const Vision = () => {
           <div className="dimension-dot"></div>
           <div className="dimension-dot"></div>
         </div>
-      </div>
+</div>
     </>
   );
 };
