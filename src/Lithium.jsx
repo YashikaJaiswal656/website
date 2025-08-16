@@ -29,7 +29,7 @@ const Lithium = () => {
         <div className="section-header">
           
           <h1 className="main-title">
-            Premium Solar Inverters
+            Why Choose Finike Lithium?
           </h1>
           <div className="heading-decoration">
             <div className="deco-segment"></div>

@@ -42,11 +42,13 @@
         }
 
         .collection-container {
-          position: relative;
-          max-width: 1200px;
-          margin: 0 auto;
-          z-index: 10;
-        }
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+}
 
         .collection-header {
           text-align: center;
@@ -98,27 +100,30 @@
         }
 
         .power-inverter-grid {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 40px;
-          max-width: 900px;
-          margin: 0 auto;
-        }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-        .power-inverter-card {
-          display: grid;
-          grid-template-columns: 300px 1fr;
-          background: rgba(255, 255, 255, 0.95);
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          border-radius: 24px;
-          overflow: hidden;
-          cursor: pointer;
-          transition: all 0.4s ease;
-          backdrop-filter: blur(10px);
-          position: relative;
-          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
-
+ .power-inverter-card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+}
         .power-inverter-card:hover {
           transform: translateY(-8px);
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -351,6 +356,15 @@
           align-items: center;
           justify-content: center;
         }
+        .premium-inverter-collection {
+  height: fit-content;
+  padding: 60px 20px;
+  
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
 
         .modal-product-image {
           width: 100%;
@@ -403,55 +417,86 @@
           font-weight: 600;
         }
 
-        @media (max-width: 768px) {
-          .collection-title {
-            font-size: 2.5rem;
-          }
+     @media (max-width: 768px) {
+  .premium-inverter-collection {
+    padding: 40px 16px;
+    overflow-x: hidden;
+  }
+  
+  .collection-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .power-inverter-grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .collection-title {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
           
-          .collection-subtitle {
-            font-size: 1rem;
-          }
+  .collection-subtitle {
+    font-size: 1rem;
+  }
 
-          .power-inverter-card,
-          .card-layout-right {
-            grid-template-columns: 1fr;
-          }
+  .power-inverter-card,
+  .card-layout-right {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
 
-          .card-layout-right .product-image-section {
-            order: 1;
-          }
+  .card-layout-right .product-image-section {
+    order: 1;
+  }
 
-          .product-modal-content {
-            grid-template-columns: 1fr;
-          }
+  .product-modal-content {
+    grid-template-columns: 1fr;
+  }
 
-          .modal-product-image-wrapper {
-            order: 2;
-          }
-        }
+  .modal-product-image-wrapper {
+    order: 2;
+  }
+  
+  .product-modal-container {
+    margin: 0 16px;
+    max-width: calc(100vw - 32px);
+  }
+}
 
-        @media (max-width: 480px) {
-          .premium-inverter-collection {
-            padding: 40px 16px;
-          }
+@media (max-width: 480px) {
+  .premium-inverter-collection {
+    padding: 20px 12px;
+  }
 
-          .collection-header {
-            margin-bottom: 40px;
-          }
+  .collection-header {
+    margin-bottom: 40px;
+  }
 
-          .collection-title {
-            font-size: 2rem;
-          }
+  .collection-title {
+    font-size: 2rem;
+  }
 
-          .power-inverter-grid {
-            gap: 24px;
-          }
+  .power-inverter-grid {
+    gap: 24px;
+  }
 
-          .product-info-section {
-            padding: 24px;
-          }
+  .product-info-section {
+    padding: 20px;
+  }
 
-          .modal-product-details {
-            padding: 24px;
-          }
-        }
+  .modal-product-details {
+    padding: 20px;
+  }
+  
+  .product-modal-container {
+    margin: 0 12px;
+    max-width: calc(100vw - 24px);
+  }
+}

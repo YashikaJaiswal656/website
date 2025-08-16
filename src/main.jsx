@@ -13,6 +13,7 @@ import Quote from './Quote.jsx'
 import Solar from './Solar.jsx'
 import  Evbatteries from './Evbatteries.jsx' 
 import EssBatteries from './EssBatteries.jsx';
+import Telecom from './Telecom.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
   <Route path="/Solar-batteries" element={<Solar/>} />
   <Route path="/Lithium-batteries" element={<Evbatteries/>} />
   <Route path="/Ess-batteries" element={<EssBatteries/>} />
+  <Route path="/Telecom-batteries" element={<Telecom/>} />
 </Routes>
 </BrowserRouter>
   </StrictMode>,

@@ -72,6 +72,8 @@ const Header = () => {
                             <Link to={"/Solar-batteries"} onClick={closeMenu}><li>Solar Batteries</li></Link>
                             <Link to={"/Lithium-batteries"} onClick={closeMenu}><li>Two/Three Wheelers Batteries</li></Link>
                             <Link to={"/Ess-batteries"} onClick={closeMenu}><li>Ess Batteries</li></Link>
+                            
+                            <Link to={"/Telecom-batteries"} onClick={closeMenu}><li>Telecom batteries</li></Link>
                             </ul>
                         </li>
                         <Link to={"/Customer"}><li>Customer Support</li></Link>
@@ -103,6 +105,7 @@ const Header = () => {
                             <Link to={"/Solar-batteries"} onClick={closeMenu}><li>Solar Batteries</li></Link>
                             <Link to={"/Lithium-batteries"} onClick={closeMenu}><li>Two/Three Wheelers Batteries</li></Link>
                             <Link to={"/Ess-batteries"} onClick={closeMenu}><li>Ess Batteries</li></Link>
+                            <Link to={"/Telecom-batteries"} onClick={closeMenu}><li>Telecom batteries</li></Link>
                         </ul>
                     </li>
                     <Link to={"/Customer"} onClick={closeMenu}><li>Customer Support</li></Link>
