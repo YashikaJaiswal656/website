@@ -465,7 +465,7 @@
           align-items: center;
           gap: 25px;
           margin-bottom: 40px;
-          justify-content: center;
+          justify-content: flex-start;
         }
 
         .header-info {

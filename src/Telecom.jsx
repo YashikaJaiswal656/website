@@ -94,7 +94,7 @@ const Telecom = () => {
           <div className="dimension-dot"></div>
         </div>
 </div>
-<div className="premium-showcase">
+ <div className="premium-showcase">
 
       <div className="ambient-orb orb-primary"></div>
       <div className="ambient-orb orb-secondary"></div>
@@ -115,7 +115,7 @@ const Telecom = () => {
             <div className="deco-segment"></div>
           </div>
           <p className="section-subtitle">
-            Engineered for excellence, designed for the future of renewable energy
+            Engineered for excellence, designed for telecom and industrial applications
           </p>
         </div>
 
@@ -125,39 +125,38 @@ const Telecom = () => {
           {/* Left Column - Stacked Cards */}
           <div className="left-column">
             
-            {/* Efficiency Card */}
+            {/* High Power Output Card */}
             <div className="feature-card card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background efficiency-bg"><div className="feature-icon">E</div></div>
-                  <h3 className="card-title">Maximum Efficiency</h3>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background efficiency-bg"><div className="feature-icon">⚡</div></div>
+                  <h3 className="card-title">High Power Output</h3>
                 </div>
                 
                 <div className="efficiency-metrics">
                   <div className="metric-display">
-                    <span className="metric-value">98</span>
+                    <span className="metric-value">95</span>
                     <span className="metric-unit">%</span>
                   </div>
                   <div className="metric-bar">
                     <div className="bar-fill efficiency-fill"></div>
                   </div>
-                  <p className="metric-label">Conversion Rate</p>
+                  <p className="metric-label">Optimized Efficiency</p>
                 </div>
                 <p className="card-description">
-                   
-                  Maximizing energy harvest from every solar panel.
+                  Delivers fast, reliable performance for telecom systems with low energy loss for maximum output and performance.
                 </p>
               </div>
             </div>
 
-            {/* Eco Card */}
+            {/* Eco-Conscious Design Card */}
             <div className="feature-card card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
-                  <h3 className="card-title">Sustainable Design</h3>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background eco-bg"><div className="feature-icon">🌱</div></div>
+                  <h3 className="card-title">Eco-Conscious Design</h3>
                 </div>
                 
                 
@@ -166,11 +165,11 @@ const Telecom = () => {
                     <span className="badge-text">100% Recyclable Materials</span>
                   </div>
                   <div className="eco-badge">
-                    <span className="badge-text">Zero Waste Manufacturing</span>
+                    <span className="badge-text">Rapid Charging Technology</span>
                   </div>
                 </div>
                 <p className="card-description">
-                  Constructed with fully recyclable components 
+                  Sustainable technology that reduces environmental impact with rapid charging that minimizes downtime.
                 </p>
               </div>
             </div>
@@ -183,12 +182,12 @@ const Telecom = () => {
               <div className="card-content">
                 <div className="durability-header">
                   <div className="feature-icon-container">
-                    <div className="icon-background durability-bg"><div className="feature-icon">D</div></div>
+                    <div className="icon-background durability-bg"><div className="feature-icon">🔋</div></div>
                     
                   </div>
                   <div className="header-text">
-                    <h3 className="card-title">Built for Longevity</h3>
-                    <p className="card-subtitle">25+ Years of Reliable Performance</p>
+                    <h3 className="card-title">Extended Uptime</h3>
+                    <p className="card-subtitle">Reliable Performance Guaranteed</p>
                   </div>
                 </div>
                 
@@ -198,11 +197,11 @@ const Telecom = () => {
                       <div className="timeline-track"></div>
                       <div className="timeline-progress"></div>
                       <div className="timeline-points">
-                        <div className="time-point active" data-year="5Y"></div>
-                        <div className="time-point active" data-year="10Y"></div>
-                        <div className="time-point active" data-year="15Y"></div>
-                        <div className="time-point active" data-year="20Y"></div>
-                        <div className="time-point highlighted" data-year="25Y+"></div>
+                        <div className="time-point active" data-year="24H"></div>
+                        <div className="time-point active" data-year="72H"></div>
+                        <div className="time-point active" data-year="7D"></div>
+                        <div className="time-point active" data-year="30D"></div>
+                        <div className="time-point highlighted" data-year="365D+"></div>
                       </div>
                     </div>
                   </div>
@@ -210,25 +209,24 @@ const Telecom = () => {
                   <div className="durability-stats">
                     <div className="stat-group">
                       <div className="stat-item">
-                        <span className="stat-number">25+</span>
-                        <span className="stat-label">Years Warranty</span>
-                      </div>
-                      <div className="stat-item">
                         <span className="stat-number">99.9%</span>
-                        <span className="stat-label">Reliability</span>
+                        <span className="stat-label">Uptime Reliability</span>
                       </div>
                       <div className="stat-item">
-                        <span className="stat-number">IP67</span>
-                        <span className="stat-label">Protection Rating</span>
+                        <span className="stat-number">Fast</span>
+                        <span className="stat-label">Charge Cycles</span>
+                      </div>
+                      <div className="stat-item">
+                        <span className="stat-number">5000+</span>
+                        <span className="stat-label">Recharge Cycles</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <p className="card-description">
-                  Rigorously tested for extreme weather conditions, featuring 
-                  premium-grade components and advanced protective systems 
-                  for unmatched long-term reliability.
+                  Longer operational life with fewer recharges, ensuring consistent power delivery 
+                  in demanding conditions with reliable performance you can count on.
                 </p>
               </div>
             </div>
@@ -243,8 +241,8 @@ const Telecom = () => {
         </div>
       </div>
       
-</div>
-<div className="benefits-showcase">
+    </div>
+ <div className="benefits-showcase">
       {/* Ambient Background Elements */}
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
@@ -258,17 +256,17 @@ const Telecom = () => {
         <div className="title-section">
           
           <h1 className="main-title">
-        Cutting-Edge Features
+            Cutting-Edge Features
           </h1>
           <p className="title-description">
-            Experience the advantages that set our solar inverters apart
+            Experience the advantages that set our lithium batteries apart
           </p>
         </div>
 
         {/* Horizontal Flow Layout */}
         <div className="benefits-flow">
           
-          {/* Energy Savings - Left Panel */}
+          {/* Ultra-Fast Charging - Left Panel */}
           <div className="benefit-panel left-panel">
             <div className="panel-background savings-bg"></div>
             <div className="panel-content">
@@ -277,40 +275,40 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">Energy Savings</h3>
-                  <span className="benefit-subtitle">Smart Efficiency</span>
+                  <h3 className="benefit-title">Ultra-Fast Charging</h3>
+                  <span className="benefit-subtitle">Rapid Technology</span>
                 </div>
               </div>
               
               <div className="savings-visualization">
                 <div className="cost-reduction">
                   <div className="reduction-display">
-                    <span className="reduction-number">40</span>
+                    <span className="reduction-number">90</span>
                     <span className="reduction-symbol">%</span>
                   </div>
-                  <p className="reduction-text">Lower Energy Costs</p>
+                  <p className="reduction-text">Reduced Charging Time</p>
                 </div>
                 
                 <div className="savings-chart">
                   <div className="chart-bar current-bar">
                     <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Current</span>
+                    <span className="bar-label">Standard</span>
                   </div>
                   <div className="chart-bar optimized-bar">
                     <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">With Inverter</span>
+                    <span className="bar-label">Ultra-Fast</span>
                   </div>
                 </div>
               </div>
               
               <p className="benefit-text">
-                Advanced power management reduces consumption while maximizing solar energy utilization, 
-                delivering substantial savings on your electricity bills.
+                Reduces downtime with rapid charging technology, enabling quick power restoration 
+                and maintaining continuous operation for critical telecom applications.
               </p>
             </div>
           </div>
 
-        {/* Bottom Durability Section */}
+        {/* Bottom Extended Lifespan Section */}
         <div className="durability-section">
           <div className="durability-container">
             <div className="durability-background"></div>
@@ -320,8 +318,8 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-info">
-                  <h3 className="benefit-title">Long-Term Reliability</h3>
-                  <span className="benefit-subtitle">15+ Years of Performance</span>
+                  <h3 className="benefit-title">Extended Lifespan</h3>
+                  <span className="benefit-subtitle">Long-Term Reliability</span>
                 </div>
               </div>
               
@@ -330,28 +328,28 @@ const Telecom = () => {
                 
                 <div className="reliability-stats">
                   <div className="reliability-item">
-                    <span className="stat-highlight">99.9%</span>
-                    <span className="stat-desc">Uptime Reliability</span>
+                    <span className="stat-highlight">10+</span>
+                    <span className="stat-desc">Years Service Life</span>
                   </div>
                   <div className="reliability-item">
-                    <span className="stat-highlight">Minimal</span>
-                    <span className="stat-desc">Maintenance Required</span>
+                    <span className="stat-highlight">5000+</span>
+                    <span className="stat-desc">Charge Cycles</span>
                   </div>
                   <div className="reliability-item">
-                    <span className="stat-highlight">Comprehensive</span>
-                    <span className="stat-desc">Warranty Coverage</span>
+                    <span className="stat-highlight">24/7</span>
+                    <span className="stat-desc">Network Support</span>
                   </div>
                 </div>
               </div>
               
               <p className="durability-text">
-                Engineered for longevity with premium components and rigorous testing, 
-                ensuring dependable operation for over 15 years with minimal intervention.
+                Delivers years of reliable service for telecom networks with robust construction 
+                and proven durability in demanding operational environments.
               </p>
             </div>
           </div>
         </div>
-          {/* Eco Design - Right Panel */}
+          {/* High Efficiency - Right Panel */}
           <div className="benefit-panel right-panel">
             <div className="panel-background eco-bg"></div>
             <div className="panel-content">
@@ -360,34 +358,34 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">Eco-Conscious</h3>
-                  <span className="benefit-subtitle">Sustainable Design</span>
+                  <h3 className="benefit-title">High Efficiency</h3>
+                  <span className="benefit-subtitle">Optimal Performance</span>
                 </div>
               </div>
               
               <div className="eco-metrics">
                 <div className="metric-group">
                   <div className="metric-item">
-                    <div className="metric-value">100</div>
+                    <div className="metric-value">95</div>
                     <div className="metric-unit">%</div>
-                    <div className="metric-label">Recyclable</div>
+                    <div className="metric-label">Efficiency</div>
                   </div>
                   <div className="metric-divider"></div>
                   <div className="metric-item">
-                    <div className="metric-value">0</div>
-                    <div className="metric-unit">g</div>
-                    <div className="metric-label">CO₂/kWh</div>
+                    <div className="metric-value">5</div>
+                    <div className="metric-unit">%</div>
+                    <div className="metric-label">Energy Loss</div>
                   </div>
                 </div>
                 
                 <div className="tech-badge">
-                  <span className="badge-label">LiFePO4 Technology</span>
+                  <span className="badge-label">Advanced BMS Technology</span>
                 </div>
               </div>
               
               <p className="benefit-text">
-                Built with environmentally responsible materials and manufacturing processes, 
-                ensuring minimal ecological impact throughout the product lifecycle.
+                Minimizes energy loss for optimal performance with advanced battery management 
+                systems ensuring maximum power delivery and operational efficiency.
               </p>
             </div>
           </div>

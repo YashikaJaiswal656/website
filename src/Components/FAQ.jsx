@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 import './FAQ.css'
+
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
     {
       question: "What is a lithium-ion inverter?",
-      answer: "A lithium-ion inverter converts DC from a lithium-ion battery to AC, efficiently powering appliances and devices."
+      answer: "A lithium-ion inverter converts DC from a lithium-ion battery to AC, efficiently powering appliances and devices.",
+      icon: "⚡"
     },
     {
       question: "Why choose a lithium-ion inverter?",
-      answer: "They provide higher efficiency, longer lifespan, and a compact design compared to lead-acid inverters."
+      answer: "They provide higher efficiency, longer lifespan, and a compact design compared to lead-acid inverters.",
+      icon: "🔋"
     },
     {
       question: "How long does a lithium-ion inverter last?",
-      answer: "Our inverters offer 10–15 years of reliable performance with proper maintenance."
+      answer: "Our inverters offer 10–15 years of reliable performance with proper maintenance.",
+      icon: "📅"
     }
   ];
 
@@ -30,12 +34,11 @@ const FAQ = () => {
       <div className="floating-orb faq-orb-3"></div>
       <div className="floating-orb faq-orb-4"></div>
       
-    
       <div className="faq-content">
         
         <div className="faq-header">
           
-          <h2 className="faq-main-title">Frequently Asked Questions</h2>
+          <h2 className="main-title">Frequently Asked Questions</h2>
           <div className="faq-title-underline">
             <div className="faq-line-segment"></div>
             <div className="faq-line-dot"></div>
@@ -54,6 +57,10 @@ const FAQ = () => {
               <div className="faq-question-header" onClick={() => toggleFAQ(index)}>
                 <div className="faq-question-left">
                   
+                  <div className="faq-icon-wrapper">
+                    <div className="faq-icon">{faq.icon}</div>
+                    <div className="faq-icon-glow"></div>
+                  </div>
                   <h3 className="faq-question">{faq.question}</h3>
                 </div>
                 
@@ -108,8 +115,15 @@ const FAQ = () => {
           ))}
         </div>
 
+
         
-        
+        <div className="faq-bottom-decoration">
+          <div className="faq-deco-line"></div>
+          <div className="faq-deco-circle">
+            <div className="faq-inner-circle"></div>
+          </div>
+          <div className="faq-deco-line"></div>
+        </div>
 
         
       </div>

@@ -88,10 +88,10 @@ const Solar = () => {
         
         <div className="infrastructure-header">
           <div className="header-card">
-            <div className="faq-header-icon">
+            <div className="header-icon">
               <i className="fas fa-building"></i>
             </div>
-            <h2 className="faq-main-title">Our Product Range</h2>
+            <h2 className="main-title">Our Product Range</h2>
           </div>
           
         </div>

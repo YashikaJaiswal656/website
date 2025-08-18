@@ -98,7 +98,7 @@ const EssBatteries = () => {
           <div className="dimension-dot"></div>
         </div>
 </div>
-<div className="premium-showcase">
+  <div className="premium-showcase">
 
       <div className="ambient-orb orb-primary"></div>
       <div className="ambient-orb orb-secondary"></div>
@@ -119,7 +119,7 @@ const EssBatteries = () => {
             <div className="deco-segment"></div>
           </div>
           <p className="section-subtitle">
-            Engineered for excellence, designed for the future of renewable energy
+            Engineered for excellence, designed for the future of energy storage
           </p>
         </div>
 
@@ -133,48 +133,47 @@ const EssBatteries = () => {
             <div className="feature-card card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background efficiency-bg"><div className="feature-icon">E</div></div>
-                  <h3 className="card-title">Maximum Efficiency</h3>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background efficiency-bg"><div className="feature-icon">⚡</div></div>
+                  <h3 className="card-title">High Efficiency</h3>
                 </div>
                 
                 <div className="efficiency-metrics">
                   <div className="metric-display">
-                    <span className="metric-value">98</span>
+                    <span className="metric-value">95</span>
                     <span className="metric-unit">%</span>
                   </div>
                   <div className="metric-bar">
                     <div className="bar-fill efficiency-fill"></div>
                   </div>
-                  <p className="metric-label">Conversion Rate</p>
+                  <p className="metric-label">Charge-Discharge Rate</p>
                 </div>
                 <p className="card-description">
-                   
-                  Maximizing energy harvest from every solar panel.
+                  Optimize energy use with superior charge-discharge efficiency.
                 </p>
               </div>
             </div>
 
-            {/* Eco Card */}
+            {/* Scalability Card */}
             <div className="feature-card card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
-                  <h3 className="card-title">Sustainable Design</h3>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background eco-bg"><div className="feature-icon">📊</div></div>
+                  <h3 className="card-title">Scalability</h3>
                 </div>
                 
                 
                 <div className="eco-indicators">
                   <div className="eco-badge">
-                    <span className="badge-text">100% Recyclable Materials</span>
+                    <span className="badge-text">Residential Solutions</span>
                   </div>
                   <div className="eco-badge">
-                    <span className="badge-text">Zero Waste Manufacturing</span>
+                    <span className="badge-text">Commercial & Grid-Scale</span>
                   </div>
                 </div>
                 <p className="card-description">
-                  Constructed with fully recyclable components 
+                  Perfect for residential, commercial, and grid-scale applications.
                 </p>
               </div>
             </div>
@@ -187,11 +186,11 @@ const EssBatteries = () => {
               <div className="card-content">
                 <div className="durability-header">
                   <div className="feature-icon-container">
-                    <div className="icon-background durability-bg"><div className="feature-icon">D</div></div>
+                    <div className="icon-background durability-bg"><div className="feature-icon">🔧</div></div>
                     
                   </div>
                   <div className="header-text">
-                    <h3 className="card-title">Built for Longevity</h3>
+                    <h3 className="card-title">Longevity</h3>
                     <p className="card-subtitle">10+ Years of Reliable Performance</p>
                   </div>
                 </div>
@@ -202,11 +201,11 @@ const EssBatteries = () => {
                       <div className="timeline-track"></div>
                       <div className="timeline-progress"></div>
                       <div className="timeline-points">
+                        <div className="time-point active" data-year="2Y"></div>
                         <div className="time-point active" data-year="5Y"></div>
+                        <div className="time-point active" data-year="8Y"></div>
                         <div className="time-point active" data-year="10Y"></div>
-                        <div className="time-point active" data-year="15Y"></div>
-                        <div className="time-point active" data-year="20Y"></div>
-                        <div className="time-point highlighted" data-year="25Y+"></div>
+                        <div className="time-point highlighted" data-year="15Y+"></div>
                       </div>
                     </div>
                   </div>
@@ -214,25 +213,24 @@ const EssBatteries = () => {
                   <div className="durability-stats">
                     <div className="stat-group">
                       <div className="stat-item">
-                        <span className="stat-number">25+</span>
-                        <span className="stat-label">Years Warranty</span>
+                        <span className="stat-number">15+</span>
+                        <span className="stat-label">Years Lifespan</span>
                       </div>
                       <div className="stat-item">
-                        <span className="stat-number">99.9%</span>
-                        <span className="stat-label">Reliability</span>
+                        <span className="stat-number">Minimal</span>
+                        <span className="stat-label">Maintenance</span>
                       </div>
                       <div className="stat-item">
-                        <span className="stat-number">IP67</span>
-                        <span className="stat-label">Protection Rating</span>
+                        <span className="stat-number">6000+</span>
+                        <span className="stat-label">Charge Cycles</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <p className="card-description">
-                  Rigorously tested for extreme weather conditions, featuring 
-                  premium-grade components and advanced protective systems 
-                  for unmatched long-term reliability.
+                  Designed for over 10 years of reliable performance with minimal maintenance 
+                  requirements and exceptional durability.
                 </p>
               </div>
             </div>
@@ -247,8 +245,8 @@ const EssBatteries = () => {
         </div>
       </div>
       
-</div>
-<div className="benefits-showcase">
+    </div>
+  <div className="benefits-showcase">
       {/* Ambient Background Elements */}
       <div className="ambient-sphere sphere-alpha"></div>
       <div className="ambient-sphere sphere-beta"></div>
@@ -262,17 +260,17 @@ const EssBatteries = () => {
         <div className="title-section">
           
           <h1 className="main-title">
-        Benefits of Finike ESS Batteries
+            Benefits of Finike ESS Batteries
           </h1>
           <p className="title-description">
-            Experience the advantages that set our solar inverters apart
+            Experience the advantages that set our energy storage systems apart
           </p>
         </div>
 
         {/* Horizontal Flow Layout */}
         <div className="benefits-flow">
           
-          {/* Energy Savings - Left Panel */}
+          {/* Cost Savings - Left Panel */}
           <div className="benefit-panel left-panel">
             <div className="panel-background savings-bg"></div>
             <div className="panel-content">
@@ -281,40 +279,40 @@ const EssBatteries = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">Energy Savings</h3>
-                  <span className="benefit-subtitle">Smart Efficiency</span>
+                  <h3 className="benefit-title">Cost Savings</h3>
+                  <span className="benefit-subtitle">Grid Independence</span>
                 </div>
               </div>
               
               <div className="savings-visualization">
                 <div className="cost-reduction">
                   <div className="reduction-display">
-                    <span className="reduction-number">40</span>
+                    <span className="reduction-number">60</span>
                     <span className="reduction-symbol">%</span>
                   </div>
-                  <p className="reduction-text">Lower Energy Costs</p>
+                  <p className="reduction-text">Reduced Energy Costs</p>
                 </div>
                 
                 <div className="savings-chart">
                   <div className="chart-bar current-bar">
                     <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Current</span>
+                    <span className="bar-label">Grid Only</span>
                   </div>
                   <div className="chart-bar optimized-bar">
                     <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">With Inverter</span>
+                    <span className="bar-label">With ESS</span>
                   </div>
                 </div>
               </div>
               
               <p className="benefit-text">
-                Advanced power management reduces consumption while maximizing solar energy utilization, 
-                delivering substantial savings on your electricity bills.
+                Reduces energy costs through efficient storage and grid independence, 
+                maximizing your renewable energy investment and minimizing utility bills.
               </p>
             </div>
           </div>
 
-        {/* Bottom Durability Section */}
+        {/* Bottom Extended Lifespan Section */}
         <div className="durability-section">
           <div className="durability-container">
             <div className="durability-background"></div>
@@ -324,8 +322,8 @@ const EssBatteries = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-info">
-                  <h3 className="benefit-title">Long-Term Reliability</h3>
-                  <span className="benefit-subtitle">15+ Years of Performance</span>
+                  <h3 className="benefit-title">Extended Lifespan</h3>
+                  <span className="benefit-subtitle">10+ Years of Performance</span>
                 </div>
               </div>
               
@@ -334,28 +332,28 @@ const EssBatteries = () => {
                 
                 <div className="reliability-stats">
                   <div className="reliability-item">
-                    <span className="stat-highlight">99.9%</span>
-                    <span className="stat-desc">Uptime Reliability</span>
+                    <span className="stat-highlight">10+</span>
+                    <span className="stat-desc">Years Consistent Performance</span>
                   </div>
                   <div className="reliability-item">
                     <span className="stat-highlight">Minimal</span>
-                    <span className="stat-desc">Maintenance Required</span>
+                    <span className="stat-desc">Degradation</span>
                   </div>
                   <div className="reliability-item">
-                    <span className="stat-highlight">Comprehensive</span>
-                    <span className="stat-desc">Warranty Coverage</span>
+                    <span className="stat-highlight">6000+</span>
+                    <span className="stat-desc">Charge Cycles</span>
                   </div>
                 </div>
               </div>
               
               <p className="durability-text">
-                Engineered for longevity with premium components and rigorous testing, 
-                ensuring dependable operation for over 15 years with minimal intervention.
+                Offers 10+ years of consistent performance with minimal degradation, 
+                ensuring reliable energy storage throughout its extended operational life.
               </p>
             </div>
           </div>
         </div>
-          {/* Eco Design - Right Panel */}
+          {/* Sustainable - Right Panel */}
           <div className="benefit-panel right-panel">
             <div className="panel-background eco-bg"></div>
             <div className="panel-content">
@@ -364,8 +362,8 @@ const EssBatteries = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">Eco-Conscious</h3>
-                  <span className="benefit-subtitle">Sustainable Design</span>
+                  <h3 className="benefit-title">Sustainable</h3>
+                  <span className="benefit-subtitle">Clean Energy Storage</span>
                 </div>
               </div>
               
@@ -374,7 +372,7 @@ const EssBatteries = () => {
                   <div className="metric-item">
                     <div className="metric-value">100</div>
                     <div className="metric-unit">%</div>
-                    <div className="metric-label">Recyclable</div>
+                    <div className="metric-label">Renewable</div>
                   </div>
                   <div className="metric-divider"></div>
                   <div className="metric-item">
@@ -385,13 +383,13 @@ const EssBatteries = () => {
                 </div>
                 
                 <div className="tech-badge">
-                  <span className="badge-label">LiFePO4 Technology</span>
+                  <span className="badge-label">Advanced BMS Technology</span>
                 </div>
               </div>
               
               <p className="benefit-text">
-                Built with environmentally responsible materials and manufacturing processes, 
-                ensuring minimal ecological impact throughout the product lifecycle.
+                Supports clean energy by storing renewable power efficiently. Enhanced Safety 
+                features with advanced Battery Management System (BMS) prevent overcharging and thermal issues.
               </p>
             </div>
           </div>

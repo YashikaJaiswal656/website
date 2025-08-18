@@ -25,7 +25,7 @@ const Inverter = () => {
             <div className="deco-segment"></div>
           </div>
           <p className="section-subtitle">
-            Engineered for excellence, designed for the future of renewable energy
+            Engineered for excellence, designed for the future of electric mobility
           </p>
         </div>
 
@@ -35,12 +35,12 @@ const Inverter = () => {
           {/* Left Column - Stacked Cards */}
           <div className="left-column">
             
-            {/* Efficiency Card */}
+            {/* Performance Card */}
             <div className="feature-card card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background efficiency-bg"><div className="feature-icon">P</div></div>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background efficiency-bg"><div className="feature-icon">⚡</div></div>
                   <h3 className="card-title">Superior Performance</h3>
                 </div>
                 
@@ -52,10 +52,9 @@ const Inverter = () => {
                   <div className="metric-bar">
                     <div className="bar-fill efficiency-fill"></div>
                   </div>
-                  <p className="metric-label">Conversion Rate</p>
+                  <p className="metric-label">Energy Efficiency</p>
                 </div>
                 <p className="card-description">
-                   
                   Fast acceleration and smooth operation for all types of EVs.
                 </p>
               </div>
@@ -65,9 +64,9 @@ const Inverter = () => {
             <div className="feature-card card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
-                  <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
-                  <h3 className="card-title">Sustainable Technology</h3>
+                <div className="durability-header" style={{marginBottom:"1px"}}>
+                  <div className="icon-background eco-bg"><div className="feature-icon">🌱</div></div>
+                  <h3 className="card-title">Eco-Friendly</h3>
                 </div>
                 
                 
@@ -76,7 +75,7 @@ const Inverter = () => {
                     <span className="badge-text">100% Recyclable Materials</span>
                   </div>
                   <div className="eco-badge">
-                    <span className="badge-text">Zero Waste Manufacturing</span>
+                    <span className="badge-text">Zero Emission Operation</span>
                   </div>
                 </div>
                 <p className="card-description">
@@ -93,12 +92,12 @@ const Inverter = () => {
               <div className="card-content">
                 <div className="durability-header">
                   <div className="feature-icon-container">
-                    <div className="icon-background durability-bg"><div className="feature-icon">R</div></div>
+                    <div className="icon-background durability-bg"><div className="feature-icon">🔋</div></div>
                     
                   </div>
                   <div className="header-text">
-                    <h3 className="card-title">Built for Longevity</h3>
-                    <p className="card-subtitle">25+ Years of Reliable Performance</p>
+                    <h3 className="card-title">Extended Range</h3>
+                    <p className="card-subtitle">High-Capacity Performance</p>
                   </div>
                 </div>
                 
@@ -108,11 +107,11 @@ const Inverter = () => {
                       <div className="timeline-track"></div>
                       <div className="timeline-progress"></div>
                       <div className="timeline-points">
-                        <div className="time-point active" data-year="5Y"></div>
-                        <div className="time-point active" data-year="10Y"></div>
-                        <div className="time-point active" data-year="15Y"></div>
-                        <div className="time-point active" data-year="20Y"></div>
-                        <div className="time-point highlighted" data-year="25Y+"></div>
+                        <div className="time-point active" data-year="100km"></div>
+                        <div className="time-point active" data-year="200km"></div>
+                        <div className="time-point active" data-year="300km"></div>
+                        <div className="time-point active" data-year="400km"></div>
+                        <div className="time-point highlighted" data-year="500km+"></div>
                       </div>
                     </div>
                   </div>
@@ -120,24 +119,23 @@ const Inverter = () => {
                   <div className="durability-stats">
                     <div className="stat-group">
                       <div className="stat-item">
-                        <span className="stat-number">25+</span>
-                        <span className="stat-label">Years Warranty</span>
+                        <span className="stat-number">500+</span>
+                        <span className="stat-label">Kilometers Range</span>
                       </div>
                       <div className="stat-item">
-                        <span className="stat-number">99.9%</span>
-                        <span className="stat-label">Reliability</span>
+                        <span className="stat-number">80%</span>
+                        <span className="stat-label">Fast Charge</span>
                       </div>
                       <div className="stat-item">
-                        <span className="stat-number">IP67</span>
-                        <span className="stat-label">Protection Rating</span>
+                        <span className="stat-number">3000+</span>
+                        <span className="stat-label">Charge Cycles</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <p className="card-description">
-                  Extended Range
-High-capacity batteries for fewer charging stops and more travel.
+                  High-capacity batteries for fewer charging stops and more travel.
                 </p>
               </div>
             </div>

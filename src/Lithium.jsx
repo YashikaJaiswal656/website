@@ -51,7 +51,7 @@ const Lithium = () => {
             <div className="feature-card card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
+                <div className="durability-header" style={{marginBottom:"1px"}}>
                   <div className="icon-background efficiency-bg"><div className="feature-icon">E</div></div>
                   <h3 className="card-title">Maximum Efficiency</h3>
                 </div>
@@ -77,7 +77,7 @@ const Lithium = () => {
             <div className="feature-card card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
-                <div className="feature-icon-container">
+                <div className="durability-header" style={{marginBottom:"1px"}}>
                   <div className="icon-background eco-bg"><div className="feature-icon">R</div></div>
                   <h3 className="card-title">Sustainable Design</h3>
                 </div>
