@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Include/header'
 import Slider from './Components/Slider'
 import Footer from './Include/Footer'
+import Next from './Components/Next';
 
 const Telecom = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -28,72 +29,7 @@ const Telecom = () => {
     <>
     <Header/>
     <Slider/>
-    
-    <div className="experience-hub">
-
-        <div className="cosmic-particle particle-one"></div>
-        <div className="cosmic-particle particle-two"></div>
-        <div className="cosmic-particle particle-three"></div>
-        <div className="cosmic-particle particle-four"></div>
-        
-        <div className="title-constellation">
-          <div className="energy-core">
-            <div className="core-symbol">⚡</div>
-          </div>
-          <h1 className="main-title">Next-Generation Telecom Power</h1>
-          <div className="stellar-divider">
-            <div className="divider-beam"></div>
-            <div className="divider-star"></div>
-            <div className="divider-beam"></div>
-          </div>
-        </div>
-        
-        
-        <div className="dimensional-showcase">
-          
-            <div className="reality-panel">
-              <div className="content-matrix">
-                <div className="narrative-zone">
-                  
-                  
-                  <div className="quote-chamber">
-                    <div className="quote-beacon start">"</div>
-                    <div className="message-core">
-                      <p>
-                        Finike Lithium batteries offer superior power and efficiency, ensuring seamless performance for telecom applications. Embrace sustainable energy for a greener future.
-                      </p>
-                    </div>
-                    <div className="quote-beacon end">"</div>
-                  </div>
-                  
-                  <div className="essence-decoration">
-                    <div className="essence-line"></div>
-                    <div className="essence-orb"></div>
-                    <div className="essence-line"></div>
-                  </div>
-                </div>
-                
-                <div className="visual-portal">
-                  <div className="portal-frame">
-                    <div className="portal-canvas mission-canvas">
-                      <img src="https://finikelithium.com/static/media/telecomimage.16edfd792d28533ef465.jpeg" alt="Mission" />
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          
-          
-        </div>
-        
-        <div className="dimension-indicators">
-          <div className="dimension-dot current"></div>
-          <div className="dimension-dot"></div>
-          <div className="dimension-dot"></div>
-        </div>
-</div>
+    <Next/>
  <div className="premium-showcase">
 
       <div className="ambient-orb orb-primary"></div>
@@ -126,7 +62,7 @@ const Telecom = () => {
           <div className="left-column">
             
             {/* High Power Output Card */}
-            <div className="feature-card card-efficiency">
+            <div className="feature-cardd card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -145,13 +81,13 @@ const Telecom = () => {
                   <p className="metric-label">Optimized Efficiency</p>
                 </div>
                 <p className="card-description">
-                  Delivers fast, reliable performance for telecom systems with low energy loss for maximum output and performance.
+                  Delivers fast, reliable performance for telecom systems
                 </p>
               </div>
             </div>
 
             {/* Eco-Conscious Design Card */}
-            <div className="feature-card card-eco">
+            <div className="feature-cardd card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -177,7 +113,7 @@ const Telecom = () => {
 
           {/* Right Column - Single Large Card */}
           <div className="right-column">
-            <div className="feature-card card-durability">
+            <div className="feature-cardd card-durability">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header">
@@ -225,8 +161,7 @@ const Telecom = () => {
                 </div>
 
                 <p className="card-description">
-                  Longer operational life with fewer recharges, ensuring consistent power delivery 
-                  in demanding conditions with reliable performance you can count on.
+                  Longer operational life with fewer recharges, ensuring consistent power delivery in demanding conditions with reliable performance you can count on. From extreme weather events to high-demand applications, our batteries maintain consistent output without degradation 
                 </p>
               </div>
             </div>

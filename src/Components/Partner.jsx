@@ -49,16 +49,7 @@ const Partner = () => {
                   <p className="reduction-text">Years Performance</p>
                 </div>
                 
-                <div className="savings-chart">
-                  <div className="chart-bar current-bar">
-                    <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Standard</span>
-                  </div>
-                  <div className="chart-bar optimized-bar">
-                    <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">Our Quality</span>
-                  </div>
-                </div>
+                
               </div>
               
               <p className="benefit-text">
@@ -88,17 +79,11 @@ const Partner = () => {
                 
                 <div className="reliability-stats">
                   <div className="reliability-item">
-                    <span className="stat-highlight">Fast</span>
+                    <span className="stat-highlight" style={{fontSize:"3.5rem", fontWeight:"100"}}>Fast</span>
                     <span className="stat-desc">Charging Speed</span>
                   </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">High</span>
-                    <span className="stat-desc">Energy Output</span>
-                  </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">Optimized</span>
-                    <span className="stat-desc">Performance</span>
-                  </div>
+                  
+                  
                 </div>
               </div>
               
@@ -138,9 +123,7 @@ const Partner = () => {
                   </div>
                 </div>
                 
-                <div className="tech-badge">
-                  <span className="badge-label">Green Technology</span>
-                </div>
+                
               </div>
               
               <p className="benefit-text">

@@ -123,7 +123,7 @@
         }
 
         .benefit-panel:hover {
-          transform: translateY(-8px);
+
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
         }
 
@@ -441,7 +441,7 @@
         }
 
         .durability-container:hover {
-          transform: translateY(-5px);
+
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
         }
 

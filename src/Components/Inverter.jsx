@@ -36,7 +36,7 @@ const Inverter = () => {
           <div className="left-column">
             
             {/* Performance Card */}
-            <div className="feature-card card-efficiency">
+            <div className="feature-cardd card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -61,7 +61,7 @@ const Inverter = () => {
             </div>
 
             {/* Eco Card */}
-            <div className="feature-card card-eco">
+            <div className="feature-cardd card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -87,7 +87,7 @@ const Inverter = () => {
 
           {/* Right Column - Single Large Card */}
           <div className="right-column">
-            <div className="feature-card card-durability">
+            <div className="feature-cardd card-durability">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header">
@@ -135,7 +135,7 @@ const Inverter = () => {
                 </div>
 
                 <p className="card-description">
-                  High-capacity batteries for fewer charging stops and more travel.
+                  High-capacity batteries for fewer charging stops and more travel freedom. Experience the confidence of extended range with our premium energy storage solutions that keep you moving longer. Advanced power management ensures maximum efficiency.
                 </p>
               </div>
             </div>

@@ -68,7 +68,7 @@ const EssBatteries = () => {
           <div className="left-column">
             
             {/* Efficiency Card */}
-            <div className="feature-card card-efficiency">
+            <div className="feature-cardd card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -93,7 +93,7 @@ const EssBatteries = () => {
             </div>
 
             {/* Scalability Card */}
-            <div className="feature-card card-eco">
+            <div className="feature-cardd card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -119,7 +119,7 @@ const EssBatteries = () => {
 
           {/* Right Column - Single Large Card */}
           <div className="right-column">
-            <div className="feature-card card-durability">
+            <div className="feature-cardd card-durability">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header">
@@ -167,8 +167,7 @@ const EssBatteries = () => {
                 </div>
 
                 <p className="card-description">
-                  Designed for over 10 years of reliable performance with minimal maintenance 
-                  requirements and exceptional durability.
+                  Designed for over 10 years of reliable performance with minimal maintenance, giving you complete peace of mind. Once installed, our systems operate autonomously with self-diagnostic capabilities that prevent issues before they occur.
                 </p>
               </div>
             </div>
@@ -307,7 +306,7 @@ const EssBatteries = () => {
               
               <p className="benefit-text">
                 Supports clean energy by storing renewable power efficiently. Enhanced Safety 
-                features with advanced Battery Management System (BMS) prevent overcharging and thermal issues.
+                features with advanced Battery Management System (BMS) 
               </p>
             </div>
           </div>
