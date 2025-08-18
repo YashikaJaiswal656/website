@@ -275,7 +275,7 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">Ultra-Fast Charging</h3>
+                  <h3 className="benefit-title" style={{fontSize:"1.3rem"}}>Ultra-Fast Charging</h3>
                   <span className="benefit-subtitle">Rapid Technology</span>
                 </div>
               </div>
@@ -289,16 +289,7 @@ const Telecom = () => {
                   <p className="reduction-text">Reduced Charging Time</p>
                 </div>
                 
-                <div className="savings-chart">
-                  <div className="chart-bar current-bar">
-                    <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Standard</span>
-                  </div>
-                  <div className="chart-bar optimized-bar">
-                    <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">Ultra-Fast</span>
-                  </div>
-                </div>
+                
               </div>
               
               <p className="benefit-text">
@@ -318,7 +309,7 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-info">
-                  <h3 className="benefit-title">Extended Lifespan</h3>
+                  <h3 className="benefit-title" style={{fontSize:"1.3rem"}}>Extended Lifespan</h3>
                   <span className="benefit-subtitle">Long-Term Reliability</span>
                 </div>
               </div>
@@ -335,10 +326,7 @@ const Telecom = () => {
                     <span className="stat-highlight">5000+</span>
                     <span className="stat-desc">Charge Cycles</span>
                   </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">24/7</span>
-                    <span className="stat-desc">Network Support</span>
-                  </div>
+                  
                 </div>
               </div>
               
@@ -358,7 +346,7 @@ const Telecom = () => {
                   <div className="indicator-core"></div>
                 </div>
                 <div className="header-text">
-                  <h3 className="benefit-title">High Efficiency</h3>
+                  <h3 className="benefit-title" style={{fontSize:"1.3rem"}}>High Efficiency</h3>
                   <span className="benefit-subtitle">Optimal Performance</span>
                 </div>
               </div>
@@ -378,9 +366,6 @@ const Telecom = () => {
                   </div>
                 </div>
                 
-                <div className="tech-badge">
-                  <span className="badge-label">Advanced BMS Technology</span>
-                </div>
               </div>
               
               <p className="benefit-text">

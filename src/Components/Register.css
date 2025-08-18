@@ -8,6 +8,7 @@ html, body {
 .hero-wrapper {
   width: 100%;
   max-width: 100%;
+  padding:20px;
   overflow: hidden;
   position: relative;
 }
@@ -19,7 +20,7 @@ html, body {
 }
 
 .products-header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   position: relative;
   z-index: 2;

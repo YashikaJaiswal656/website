@@ -14,9 +14,7 @@ const Vision = () => {
         <div className="cosmic-particle particle-four"></div>
         
         <div className="title-constellation">
-          <div className="energy-core">
-            <div className="core-symbol">⚡</div>
-          </div>
+          
           <h1 className="main-title">Our Mission & Vision</h1>
           <div className="stellar-divider">
             <div className="divider-beam"></div>
@@ -133,11 +131,7 @@ const Vision = () => {
           )}
         </div>
         
-        <div className="dimension-indicators">
-          <div className="dimension-dot current"></div>
-          <div className="dimension-dot"></div>
-          <div className="dimension-dot"></div>
-        </div>
+        
 </div>
     </>
   );

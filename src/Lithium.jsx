@@ -48,7 +48,7 @@ const Lithium = () => {
           <div className="left-column">
             
             {/* Efficiency Card */}
-            <div className="feature-card card-efficiency">
+            <div className="feature-cardd card-efficiency">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -74,7 +74,7 @@ const Lithium = () => {
             </div>
 
             {/* Eco Card */}
-            <div className="feature-card card-eco">
+            <div className="feature-cardd card-eco">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header" style={{marginBottom:"1px"}}>
@@ -100,7 +100,7 @@ const Lithium = () => {
 
           {/* Right Column - Single Large Card */}
           <div className="right-column">
-            <div className="feature-card card-durability">
+            <div className="feature-cardd card-durability">
               <div className="card-overlay"></div>
               <div className="card-content">
                 <div className="durability-header">

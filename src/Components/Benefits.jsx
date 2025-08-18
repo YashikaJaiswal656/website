@@ -50,16 +50,7 @@ Benefits
                   <p className="reduction-text">Lower Energy Costs</p>
                 </div>
                 
-                <div className="savings-chart">
-                  <div className="chart-bar current-bar">
-                    <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Current</span>
-                  </div>
-                  <div className="chart-bar optimized-bar">
-                    <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">With Inverter</span>
-                  </div>
-                </div>
+                
               </div>
               
               <p className="benefit-text">
@@ -92,14 +83,8 @@ Benefits
                     <span className="stat-highlight">99.9%</span>
                     <span className="stat-desc">Uptime Reliability</span>
                   </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">Minimal</span>
-                    <span className="stat-desc">Maintenance Required</span>
-                  </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">Comprehensive</span>
-                    <span className="stat-desc">Warranty Coverage</span>
-                  </div>
+                  
+                  
                 </div>
               </div>
               
@@ -139,9 +124,6 @@ Benefits
                   </div>
                 </div>
                 
-                <div className="tech-badge">
-                  <span className="badge-label">LiFePO4 Technology</span>
-                </div>
               </div>
               
               <p className="benefit-text">

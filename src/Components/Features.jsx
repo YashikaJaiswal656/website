@@ -31,9 +31,7 @@ const Features = () => {
 
         <div className="features-intro">
           <div className="title-cluster">
-            <div className="spark-icon">
-              <div className="spark-core">⚡</div>
-            </div>
+            
             <h2 className="features-title">Key Features</h2>
             <div className="subtitle-badge">SALIENT FEATURES</div>
           </div>

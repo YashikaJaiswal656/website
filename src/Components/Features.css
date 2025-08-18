@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   font-family: 'Segoe UI', sans-serif;
-  padding: 80px 20px;
+  padding: 20px 20px;
 }
 
 .ambient-sphere {
@@ -44,7 +44,7 @@
 
 .features-intro {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .title-cluster {
@@ -95,7 +95,7 @@
 }
 
 .features-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
   -webkit-background-clip: text;

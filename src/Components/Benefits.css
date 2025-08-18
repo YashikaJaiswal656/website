@@ -4,7 +4,7 @@
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 30%, #e2e8f0 70%, #cbd5e1 100%);
           position: relative;
           overflow: hidden;
-          padding: 80px 20px;
+          padding:30px 20px;
           font-family: 'Inter', 'Segoe UI', sans-serif;
         }
 
@@ -52,7 +52,7 @@
 
         .title-section {
           text-align: center;
-          margin-bottom: 100px;
+          margin-bottom: 30px;
         }
 
         .title-accent {
@@ -72,8 +72,12 @@
         .main-title {
           font-size: 3rem;
           font-weight: 800;
-          color: #1e293b;
-          margin: 0 0 25px 0;
+          
+  background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+          
           line-height: 1.1;
           letter-spacing: -2px;
         }
@@ -104,8 +108,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           gap: 60px;
-          align-items: center;
-          margin-bottom: 100px;
+          
         }
 
         .benefit-panel {
@@ -116,6 +119,7 @@
           position: relative;
           overflow: hidden;
           transition: all 0.4s ease;
+          height: fit-content;
         }
 
         .benefit-panel:hover {
@@ -455,7 +459,7 @@
         }
 
         .durability-content {
-          padding: 50px 60px;
+          padding: 50px 40px;
           position: relative;
           z-index: 2;
         }
@@ -495,8 +499,7 @@
         .timeline-progress {
           position: absolute;
           top: 0; left: 0;
-          height: 100%;
-          width: 100%;
+
           background: linear-gradient(45deg, #3b82f6, #8b5cf6);
           border-radius: 6px;
           animation: timeline-fill 3s ease-out;
@@ -570,7 +573,7 @@
         }
 
         .durability-text {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           line-height: 1.7;
           color: #64748b;
           text-align: center;
@@ -663,7 +666,7 @@
           }
           
           .title-section {
-            margin-bottom: 80px;
+            margin-bottom: 15px;
           }
           
           .panel-content {

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from './Include/header'
 import Slider from './Components/Slider'
 import Footer from './Include/Footer'
+import Hub from './Components/Hub';
+import Power from './Components/Power';
 
 const EssBatteries = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -33,71 +35,7 @@ const EssBatteries = () => {
     <>
     <Header/>
 <Slider/>
- <div className="experience-hub">
-
-        <div className="cosmic-particle particle-one"></div>
-        <div className="cosmic-particle particle-two"></div>
-        <div className="cosmic-particle particle-three"></div>
-        <div className="cosmic-particle particle-four"></div>
-        
-        <div className="title-constellation">
-          <div className="energy-core">
-            <div className="core-symbol">⚡</div>
-          </div>
-          <h1 className="main-title">About ESS Batteries</h1>
-          <div className="stellar-divider">
-            <div className="divider-beam"></div>
-            <div className="divider-star"></div>
-            <div className="divider-beam"></div>
-          </div>
-        </div>
-        
-        
-        <div className="dimensional-showcase">
-          
-            <div className="reality-panel">
-              <div className="content-matrix">
-                <div className="narrative-zone">
-                  
-                  
-                  <div className="quote-chamber">
-                    <div className="quote-beacon start">"</div>
-                    <div className="message-core">
-                      <p>
-                        Energy Storage Systems (ESS) leverage advanced LiFePO4 lithium-ion technology to efficiently store excess energy from renewable sources like solar and wind. ESS enhance grid stability, offer reliable backup power, and optimize energy management for homes, businesses, and utilities.
-                      </p>
-                    </div>
-                    <div className="quote-beacon end">"</div>
-                  </div>
-                  
-                  <div className="essence-decoration">
-                    <div className="essence-line"></div>
-                    <div className="essence-orb"></div>
-                    <div className="essence-line"></div>
-                  </div>
-                </div>
-                
-                <div className="visual-portal">
-                  <div className="portal-frame">
-                    <div className="portal-canvas mission-canvas">
-                      <img src="https://finikelithium.com/static/media/essimage.1d90d0433dee34d35b82.jpeg" alt="Mission" />
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          
-          
-        </div>
-        
-        <div className="dimension-indicators">
-          <div className="dimension-dot current"></div>
-          <div className="dimension-dot"></div>
-          <div className="dimension-dot"></div>
-        </div>
-</div>
+ <Hub/>
   <div className="premium-showcase">
 
       <div className="ambient-orb orb-primary"></div>
@@ -293,16 +231,6 @@ const EssBatteries = () => {
                   <p className="reduction-text">Reduced Energy Costs</p>
                 </div>
                 
-                <div className="savings-chart">
-                  <div className="chart-bar current-bar">
-                    <div className="bar-fill current-fill"></div>
-                    <span className="bar-label">Grid Only</span>
-                  </div>
-                  <div className="chart-bar optimized-bar">
-                    <div className="bar-fill optimized-fill"></div>
-                    <span className="bar-label">With ESS</span>
-                  </div>
-                </div>
               </div>
               
               <p className="benefit-text">
@@ -335,14 +263,7 @@ const EssBatteries = () => {
                     <span className="stat-highlight">10+</span>
                     <span className="stat-desc">Years Consistent Performance</span>
                   </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">Minimal</span>
-                    <span className="stat-desc">Degradation</span>
-                  </div>
-                  <div className="reliability-item">
-                    <span className="stat-highlight">6000+</span>
-                    <span className="stat-desc">Charge Cycles</span>
-                  </div>
+                  
                 </div>
               </div>
               
@@ -382,9 +303,6 @@ const EssBatteries = () => {
                   </div>
                 </div>
                 
-                <div className="tech-badge">
-                  <span className="badge-label">Advanced BMS Technology</span>
-                </div>
               </div>
               
               <p className="benefit-text">
@@ -405,79 +323,7 @@ const EssBatteries = () => {
       </div>
       
     </div>
-      <div className="experience-hub">
-
-        <div className="cosmic-particle particle-one"></div>
-        <div className="cosmic-particle particle-two"></div>
-        <div className="cosmic-particle particle-three"></div>
-        <div className="cosmic-particle particle-four"></div>
-        
-        <div className="title-constellation">
-          <div className="energy-core">
-            <div className="core-symbol">⚡</div>
-          </div>
-          <h1 className="main-title">Powering Electric Mobility</h1>
-          <div className="stellar-divider">
-            <div className="divider-beam"></div>
-            <div className="divider-star"></div>
-            <div className="divider-beam"></div>
-          </div>
-        </div>
-        
-        
-        <div className="dimensional-showcase">
-          
-            <div className="reality-panel">
-              <div className="content-matrix">
-                <div className="narrative-zone">
-                  
-                  
-                  <div className="quote-chamber">
-                    <div className="quote-beacon start">"</div>
-                    <div className="message-core">
-                      <p>
-                        
-                        <span className="accent-blue">Energy Capture</span>
-Captures surplus energy from solar panels or wind turbines.
-
-<span className="accent-blue">Storage</span>
-Safely stores energy in advanced LiFePO4 lithium-ion cells for efficient use.
-
-<span className="accent-orange"> Distribution</span>
-Distributes stored energy on demand, ensuring reliable power whenever needed.
-                      </p>
-                    </div>
-                    <div className="quote-beacon end">"</div>
-                  </div>
-                  
-                  <div className="essence-decoration">
-                    <div className="essence-line"></div>
-                    <div className="essence-orb"></div>
-                    <div className="essence-line"></div>
-                  </div>
-                </div>
-                
-                <div className="visual-portal">
-                  <div className="portal-frame">
-                    <div className="portal-canvas mission-canvas">
-                      <img src="https://finikelithium.com/static/media/telecomimage.16edfd792d28533ef465.jpeg" alt="Mission" />
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-          
-          
-        </div>
-        
-        <div className="dimension-indicators">
-          <div className="dimension-dot current"></div>
-          <div className="dimension-dot"></div>
-          <div className="dimension-dot"></div>
-        </div>
-</div>
+      <Power/>
   <div className="faq-container">
       
       <div className="floating-orb faq-orb-1"></div>

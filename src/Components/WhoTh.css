@@ -1,6 +1,6 @@
 .who-we-are-finike-bg {
           position: relative;
-          padding: 100px 20px;
+          padding: 20px 20px;
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
           color: #333;
           font-family: 'Segoe UI', sans-serif;
@@ -170,7 +170,7 @@
         .card-title-section { flex: 1; }
 
         .finike-gradient-heading-bg {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           font-weight: 700;
           color: #1e293b;
           margin-bottom: 8px;
@@ -187,7 +187,7 @@
         }
 
         .finike-gradient-description-bg {
-          font-size: 1rem;
+          font-size: 0.925rem;
           line-height: 1.7;
           color: #64748b;
           margin-bottom: 25px;
@@ -202,7 +202,7 @@
         }
 
         .finike-gradient-image-bg {
-          width: 100%; height: 200px;
+          width: 100%; height: 150px;
           object-fit: cover;
           transition: all 0.4s ease;
         }

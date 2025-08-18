@@ -86,7 +86,7 @@ const Choose = () => {
           }
           
           .feature-theater {
-            max-height: 400px;
+            max-height: 300px;
           }
         }
 
@@ -163,12 +163,12 @@ const Choose = () => {
         }
 
         .main-title {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
           font-weight: 900;
           background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          margin: 0 0 25px 0;
+          
           letter-spacing: -2px;
           line-height: 1.1;
         }
@@ -215,13 +215,13 @@ const Choose = () => {
         }
 
         .nav-orb {
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 24px;
+          font-size: 20px;
           cursor: pointer;
           transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
           background: rgba(255, 255, 255, 0.1);
@@ -268,7 +268,7 @@ const Choose = () => {
           border: 1px solid rgba(255, 255, 255, 0.2);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
           overflow: hidden;
-          min-height: 450px;
+          min-height: 300px;
         }
 
         .theater-stage {
@@ -278,9 +278,9 @@ const Choose = () => {
           right: 0;
           bottom: 0;
           display: flex;
-          align-items: center;
+          
           justify-content: center;
-          padding: 60px 40px;
+          
           opacity: ${isAnimating ? 0 : 1};
           transform: ${isAnimating ? 'translateY(20px)' : 'translateY(0)'};
           transition: all 0.3s ease;
@@ -289,35 +289,36 @@ const Choose = () => {
         .feature-spotlight {
           text-align: center;
           max-width: 400px;
+          margin-top:10px;
         }
 
         .spotlight-icon {
-          width: 120px;
-          height: 120px;
+          width: 80px;
+          height: 80px;
           background: ${features[activeFeature]?.gradient};
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 48px;
+          font-size: 24px;
           margin: 0 auto 40px;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
           animation: spotlight-glow 2s ease-in-out infinite;
         }
 
         .spotlight-title {
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 800;
           color: #1e293b;
-          margin: 0 0 25px 0;
+          margin: 0 0 5px 0;
           line-height: 1.2;
         }
 
         .spotlight-description {
-          font-size: 1.2rem;
+          font-size: 1rem;
           line-height: 1.8;
           color: #64748b;
-          margin-bottom: 35px;
+          margin-bottom: 5px;
           font-weight: 500;
         }
 
@@ -383,7 +384,7 @@ const Choose = () => {
           }
 
           .main-title {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
           }
 
           .feature-theater {
@@ -423,9 +424,7 @@ const Choose = () => {
             min-height: 420px;
           }
 
-          .theater-stage {
-            padding: 50px 30px;
-          }
+          
 
           .spotlight-title {
             font-size: 2rem;
@@ -561,7 +560,7 @@ const Choose = () => {
                   <p className="spotlight-description">
                     {features[activeFeature].description}
                   </p>
-                  <div className="spotlight-badge">
+                  <div className="metric-badge">
                     {features[activeFeature].badge}
                   </div>
                 </div>
