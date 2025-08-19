@@ -1,96 +1,57 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Choose = () => {
   const [activeFeature, setActiveFeature] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const features = [
     {
-      icon: '🔋',
-      title: 'Battery Life',
-      description: 'High energy density for extended range and reliable performance in EVs and energy storage systems.',
-      badge: 'Extended Performance',
+      title: 'Extended Battery Life',
+      description: 'High energy density lithium-ion technology delivers exceptional range and reliable performance for electric vehicles and energy storage systems.',
+      metric: '30% Longer',
       color: '#ff758c',
-      gradient: 'linear-gradient(135deg, #ff758c, #ffb347)'
+      gradient: 'linear-gradient(135deg, #ff758c, #ffb347)',
+      icon: '🔋'
     },
     {
-      icon: '⚡',
-      title: 'Charging Time',
-      description: 'Fast-charging technology minimizes downtime and enhances efficiency.',
-      badge: 'Ultra Fast',
+      title: 'Ultra-Fast Charging',
+      description: 'Advanced fast-charging technology significantly reduces downtime and maximizes operational efficiency across all applications.',
+      metric: '3x Faster',
       color: '#6f86d6',
-      gradient: 'linear-gradient(135deg, #6f86d6, #48c6ef)'
+      gradient: 'linear-gradient(135deg, #6f86d6, #48c6ef)',
+      icon: '⚡'
     },
     {
-      icon: '🔧',
-      title: 'Maintenance',
-      description: 'Durable, recyclable batteries with minimal upkeep and eco-friendly benefits.',
-      badge: 'Eco-Friendly',
+      title: 'Low Maintenance',
+      description: 'Durable, eco-friendly battery design with minimal maintenance requirements and superior recyclability for sustainable operations.',
+      metric: '90% Less',
       color: '#a8edea',
-      gradient: 'linear-gradient(135deg, #a8edea, #fed6e3)'
+      gradient: 'linear-gradient(135deg, #a8edea, #fed6e3)',
+      icon: '🔧'
     },
     {
-      icon: '💰',
-      title: 'Charging Cost',
-      description: 'Efficient batteries reduce charging costs for both personal and commercial use.',
-      badge: 'Cost Effective',
-      color: '#ffb347',
-      gradient: 'linear-gradient(135deg, #ffb347, #ff758c)'
-    },
-    {
-      icon: '📈',
       title: 'Cost Efficiency',
-      description: 'Long-lasting batteries that lower replacement and maintenance costs.',
-      badge: 'Maximum ROI',
-      color: '#764ba2',
-      gradient: 'linear-gradient(135deg, #667eea, #764ba2)'
+      description: 'Optimized energy efficiency reduces operational costs while delivering maximum return on investment for long-term savings.',
+      metric: '40% Savings',
+      color: '#ffb347',
+      gradient: 'linear-gradient(135deg, #ffb347, #ff758c)',
+      icon: '💰'
     }
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setActiveFeature((prev) => (prev + 1) % features.length);
-        setIsAnimating(false);
-      }, 300);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>
       <style jsx>{`
-        .innovation-showcase {
-          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+        .choose-container {
           min-height: 100vh;
+          background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+          padding: 48px 16px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           position: relative;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: 'Segoe UI', sans-serif;
-          padding: 20px;
+          overflow-x: hidden;
         }
 
-        
-        @media (min-width: 1201px) {
-          .innovation-showcase {
-            max-height: 100vh;
-            padding: 20px;
-          }
-          
-          .mastery-container {
-            height: 90vh;
-          }
-          
-          .feature-theater {
-            max-height: 300px;
-          }
-        }
-
-        .atmospheric-bubbles {
+        /* Background Elements */
+        .background-elements {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -100,471 +61,374 @@ const Choose = () => {
           z-index: 1;
         }
 
-        .bubble {
+        .bg-orb {
           position: absolute;
           border-radius: 50%;
           filter: blur(100px);
-          opacity: 0.2;
-          animation: bubble-float 25s ease-in-out infinite;
+          opacity: 0.15;
         }
 
-        .bubble-1 {
-          top: 20%;
-          left: 10%;
-          width: 300px;
-          height: 300px;
+        .orb-1 {
+          top: 80px;
+          left: 40px;
+          width: 288px;
+          height: 288px;
           background: linear-gradient(45deg, #ff758c, #ffb347);
-          animation-delay: 0s;
         }
 
-        .bubble-2 {
-          bottom: 30%;
-          right: 15%;
-          width: 250px;
-          height: 250px;
+        .orb-2 {
+          bottom: 80px;
+          right: 40px;
+          width: 240px;
+          height: 240px;
           background: linear-gradient(45deg, #6f86d6, #48c6ef);
-          animation-delay: 8s;
         }
 
-        .bubble-3 {
-          top: 60%;
-          left: 70%;
-          width: 200px;
-          height: 200px;
+        .orb-3 {
+          top: 50%;
+          left: 60%;
+          width: 192px;
+          height: 192px;
           background: linear-gradient(45deg, #a8edea, #fed6e3);
-          animation-delay: 16s;
         }
 
-        .mastery-container {
+        .main-wrapper {
           max-width: 1400px;
-          width: 100%;
+          margin: 0 auto;
           position: relative;
           z-index: 10;
-          display: grid;
-          grid-template-columns: 1fr 1.5fr;
-          gap: 40px;
-          align-items: center;
+          gap: 80px;
+          align-items: start;
         }
 
-        .brand-identity {
+        .brand-section {
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          gap: 25px;
+          text-align:center;
         }
 
-        .brand-statement {
+        .brand-card {
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(30px);
-          border-radius: 25px;
-          padding: 50px 40px;
+          border-radius: 24px;
+          padding: 48px 32px;
           border: 1px solid rgba(255, 255, 255, 0.2);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
         .main-title {
-          font-size: 2.5rem;
+          font-size: 3rem;
           font-weight: 900;
           background: linear-gradient(45deg, #ff758c, #ffb347, #6f86d6);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          
-          letter-spacing: -2px;
+          background-clip: text;
+          margin-bottom: 24px;
           line-height: 1.1;
+          letter-spacing: -1.5px;
         }
 
-        .statement-subtitle {
-          font-size: 1.25rem;
+        .subtitle {
+          font-size: 1rem;
           color: #64748b;
           font-weight: 500;
           line-height: 1.6;
-          margin-bottom: 35px;
+          margin-bottom: 32px;
         }
 
-        .excellence-metrics {
+        .brand-highlights {
           display: flex;
-          gap: 15px;
+          gap: 12px;
           flex-wrap: wrap;
+          justify-content: center;
         }
 
-        .metric-badge {
+        .highlight-badge {
           background: linear-gradient(45deg, #6f86d6, #48c6ef);
           color: white;
           padding: 12px 20px;
           border-radius: 50px;
           font-weight: 600;
-          font-size: 0.85rem;
-          box-shadow: 0 10px 25px rgba(111, 134, 214, 0.3);
+          font-size: 0.875rem;
+          box-shadow: 0 8px 20px rgba(111, 134, 214, 0.3);
           white-space: nowrap;
         }
 
-        .interactive-showcase {
-          position: relative;
-          height: 100%;
+        .features-section {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          margin-top:30px;
         }
 
-        .feature-navigation {
-          display: flex;
-          justify-content: center;
-          gap: 12px;
-          margin-bottom: 30px;
-          flex-wrap: wrap;
+        .features-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 24px;
         }
 
-        .nav-orb {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-          cursor: pointer;
-          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        .feature-card {
           background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(20px);
-          border: 2px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          position: relative;
-          overflow: hidden;
-        }
-
-        .nav-orb::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-          transition: left 0.6s;
-        }
-
-        .nav-orb:hover::before {
-          left: 100%;
-        }
-
-        .nav-orb.active {
-          background: ${features[activeFeature]?.gradient};
-          transform: scale(1.15);
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-          border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .nav-orb:not(.active):hover {
-          transform: scale(1.05);
-          background: rgba(255, 255, 255, 0.15);
-        }
-
-        .feature-theater {
-          flex: 1;
-          position: relative;
-          background: rgba(255, 255, 255, 0.08);
           backdrop-filter: blur(25px);
-          border-radius: 30px;
+          border-radius: 16px;
+          padding: 32px 24px;
           border: 1px solid rgba(255, 255, 255, 0.2);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+          cursor: pointer;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          position: relative;
           overflow: hidden;
-          min-height: 300px;
-        }
-
-        .theater-stage {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
           display: flex;
-          
-          justify-content: center;
-          
-          opacity: ${isAnimating ? 0 : 1};
-          transform: ${isAnimating ? 'translateY(20px)' : 'translateY(0)'};
-          transition: all 0.3s ease;
+          flex-direction: column;
+          height: 100%;
         }
 
-        .feature-spotlight {
-          text-align: center;
-          max-width: 400px;
-          margin-top:10px;
+        .feature-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+          border-color: rgba(255, 255, 255, 0.3);
         }
 
-        .spotlight-icon {
-          width: 80px;
-          height: 80px;
-          background: ${features[activeFeature]?.gradient};
+        .feature-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .feature-icon {
+          width: 56px;
+          height: 56px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 24px;
-          margin: 0 auto 40px;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-          animation: spotlight-glow 2s ease-in-out infinite;
+          margin-bottom: 16px;
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
 
-        .spotlight-title {
-          font-size: 2rem;
-          font-weight: 800;
-          color: #1e293b;
-          margin: 0 0 5px 0;
-          line-height: 1.2;
+        .feature-card:nth-child(1) .feature-icon {
+          background: linear-gradient(135deg, #ff758c, #ffb347);
         }
 
-        .spotlight-description {
-          font-size: 1rem;
-          line-height: 1.8;
-          color: #64748b;
-          margin-bottom: 5px;
-          font-weight: 500;
+        .feature-card:nth-child(2) .feature-icon {
+          background: linear-gradient(135deg, #6f86d6, #48c6ef);
         }
 
-        .spotlight-badge {
-          display: inline-block;
-          background: ${features[activeFeature]?.gradient};
-          color: white;
-          padding: 15px 35px;
-          border-radius: 30px;
+        .feature-card:nth-child(3) .feature-icon {
+          background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+
+        .feature-card:nth-child(4) .feature-icon {
+          background: linear-gradient(135deg, #ffb347, #ff758c);
+        }
+
+        .feature-title {
+          font-size: 1.25rem;
           font-weight: 700;
-          font-size: 1.1rem;
-          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-          transform: translateY(0);
-          transition: transform 0.3s ease;
+          color: #1e293b;
+          margin-bottom: 12px;
+          line-height: 1.3;
         }
 
-        .spotlight-badge:hover {
-          transform: translateY(-3px);
+        .feature-description {
+          font-size: 0.875rem;
+          color: #64748b;
+          line-height: 1.6;
+          margin-bottom: 24px;
+          font-weight: 500;
+          flex: 1;
         }
 
-        .background-pattern {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: ${features[activeFeature]?.gradient};
-          opacity: 0.05;
-          border-radius: 30px;
+        .feature-metric {
+          color: white;
+          padding: 12px 20px;
+          border-radius: 25px;
+          font-weight: 700;
+          font-size: 0.875rem;
+          display: inline-block;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          transition: all 0.3s ease;
+          align-self: flex-start;
         }
 
-        @keyframes bubble-float {
-          0%, 100% {
-            transform: translate(0, 0) rotate(0deg);
-          }
-          33% {
-            transform: translate(-30px, -50px) rotate(120deg);
-          }
-          66% {
-            transform: translate(50px, -30px) rotate(240deg);
-          }
+        .feature-card:nth-child(1) .feature-metric {
+          background: linear-gradient(135deg, #ff758c, #ffb347);
         }
 
-        @keyframes spotlight-glow {
-          0%, 100% {
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-          }
-          50% {
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3), 0 0 30px ${features[activeFeature]?.color}40;
-          }
+        .feature-card:nth-child(2) .feature-metric {
+          background: linear-gradient(135deg, #6f86d6, #48c6ef);
         }
 
+        .feature-card:nth-child(3) .feature-metric {
+          background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+
+        .feature-card:nth-child(4) .feature-metric {
+          background: linear-gradient(135deg, #ffb347, #ff758c);
+        }
+
+        .feature-card:hover .feature-metric {
+          transform: translateY(-2px);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
         @media (max-width: 1200px) {
-          .mastery-container {
+          .main-wrapper {
             grid-template-columns: 1fr;
-            gap: 60px;
+            gap: 48px;
             text-align: center;
-            height: auto;
-          }
-
-          .brand-identity {
-            align-items: center;
           }
 
           .main-title {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
           }
 
-          .feature-theater {
-            min-height: 500px;
+          .brand-highlights {
+            justify-content: center;
           }
         }
 
         @media (max-width: 768px) {
-          .innovation-showcase {
-            padding: 40px 15px;
+          .choose-container {
+            padding: 32px 16px;
           }
 
-          .mastery-container {
-            gap: 40px;
-            height: auto;
+          .main-wrapper {
+            gap: 32px;
           }
 
-          .brand-statement {
-            padding: 40px 30px;
+          .brand-card {
+            padding: 40px 24px;
           }
 
           .main-title {
-            font-size: 2.8rem;
+            font-size: 2rem;
             letter-spacing: -1px;
           }
 
-          .statement-subtitle {
-            font-size: 1.15rem;
+          .subtitle {
+            font-size: 1.125rem;
           }
 
-          .interactive-showcase {
-            height: auto;
-            min-height: auto;
+          .features-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
           }
 
-          .feature-theater {
-            min-height: 420px;
+          .feature-card {
+            padding: 24px 20px;
           }
 
-          
-
-          .spotlight-title {
-            font-size: 2rem;
+          .feature-icon {
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
           }
 
-          .spotlight-description {
-            font-size: 1.1rem;
+          .feature-title {
+            font-size: 1.125rem;
           }
 
-          .nav-orb {
-            width: 70px;
-            height: 70px;
-            font-size: 22px;
-          }
-
-          .spotlight-icon {
-            width: 100px;
-            height: 100px;
-            font-size: 40px;
-          }
-
-          .excellence-metrics {
-            justify-content: center;
-          }
-
-          .bubble {
-            width: 200px !important;
-            height: 200px !important;
+          .bg-orb {
+            width: 160px !important;
+            height: 160px !important;
           }
         }
 
         @media (max-width: 480px) {
+          .choose-container {
+            padding: 24px 12px;
+          }
+
           .main-title {
-            font-size: 2.2rem;
+            font-size: 1.5rem;
           }
 
-          .spotlight-icon {
-            width: 80px;
-            height: 80px;
-            font-size: 32px;
-          }
-
-          .feature-navigation {
-            gap: 10px;
-          }
-
-          .nav-orb {
-            width: 60px;
-            height: 60px;
-            font-size: 20px;
-          }
-
-          .feature-theater {
-            min-height: 380px;
-          }
-
-          .theater-stage {
-            padding: 40px 20px;
-          }
-
-          .spotlight-title {
-            font-size: 1.8rem;
-          }
-
-          .spotlight-description {
+          .subtitle {
             font-size: 1rem;
-            line-height: 1.6;
           }
 
-          .spotlight-badge {
-            font-size: 1rem;
-            padding: 12px 25px;
+          .brand-highlights {
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .highlight-badge {
+            font-size: 0.8rem;
+            padding: 10px 16px;
+            text-align: center;
+          }
+
+          .feature-card {
+            padding: 20px 16px;
+          }
+
+          .feature-icon {
+            width: 44px;
+            height: 44px;
+            font-size: 18px;
+          }
+.features-grid {
+            grid-template-columns:  1fr;
+            gap: 20px;
+          }
+          .feature-metric {
+            font-size: 0.8rem;
+            padding: 10px 16px;
+          }
+
+          .bg-orb {
+            width: 120px !important;
+            height: 120px !important;
           }
         }
       `}</style>
 
-      <div className="innovation-showcase">
-        
-        <div className="atmospheric-bubbles">
-          <div className="bubble bubble-1"></div>
-          <div className="bubble bubble-2"></div>
-          <div className="bubble bubble-3"></div>
+      <div className="choose-container">
+        {/* Background Elements */}
+        <div className="background-elements">
+          <div className="bg-orb orb-1"></div>
+          <div className="bg-orb orb-2"></div>
+          <div className="bg-orb orb-3"></div>
         </div>
 
-        <div className="mastery-container">
-          
-          <div className="brand-identity">
-            <div className="brand-statement">
+        <div className="main-wrapper">
+          {/* Brand Section */}
+          <div className="brand-section">
+            <div className="brand-card">
               <h1 className="main-title">Why Choose Finike?</h1>
-              <p className="statement-subtitle">
-                Revolutionary lithium-ion technology that powers the future of clean energy storage
+              <p className="subtitle">
+                Revolutionary lithium-ion technology powering the future of sustainable energy storage solutions.
               </p>
-              <div className="excellence-metrics">
-                <div className="metric-badge">Industry Leading</div>
-                <div className="metric-badge">Premium Quality</div>
-                <div className="metric-badge">Eco-Friendly</div>
+              <div className="brand-highlights">
+                <div className="highlight-badge">Industry Leading</div>
+                <div className="highlight-badge">Premium Quality</div>
+                <div className="highlight-badge">Sustainable Future</div>
               </div>
             </div>
           </div>
 
-          
-          <div className="interactive-showcase">
-            
-            <div className="feature-navigation">
+          {/* Features Section */}
+          <div className="features-section">
+            <div className="features-grid">
               {features.map((feature, index) => (
-                <button
+                <div
                   key={index}
-                  className={`nav-orb ${activeFeature === index ? 'active' : ''}`}
-                  onClick={() => {
-                    setIsAnimating(true);
-                    setTimeout(() => {
-                      setActiveFeature(index);
-                      setIsAnimating(false);
-                    }, 300);
-                  }}
+                  className="feature-card"
                 >
-                  {feature.icon}
-                </button>
-              ))}
-            </div>
-
-            
-            <div className="feature-theater">
-              <div className="background-pattern"></div>
-              <div className="theater-stage">
-                <div className="feature-spotlight">
-                  <div className="spotlight-icon">
-                    {features[activeFeature].icon}
+                  <div className="feature-content">
+                    <div className="feature-icon">
+                      {feature.icon}
+                    </div>
+                    <h3 className="feature-title">{feature.title}</h3>
+                    <p className="feature-description">{feature.description}</p>
                   </div>
-                  <h2 className="spotlight-title">
-                    {features[activeFeature].title}
-                  </h2>
-                  <p className="spotlight-description">
-                    {features[activeFeature].description}
-                  </p>
-                  <div className="metric-badge">
-                    {features[activeFeature].badge}
+                  <div className="feature-metric">
+                    {feature.metric}
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

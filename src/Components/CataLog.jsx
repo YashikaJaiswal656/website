@@ -48,11 +48,18 @@ const CataLog = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="catalog-cta-button"
+    
               >
                 <div className="catalog-button-bg"></div>
                 <div className="catalog-button-content">
+
+
+
                   <span className="catalog-button-icon">📋</span>
                   <span className="catalog-button-text">View Catalog</span>
+
+
+                  
                   <div className="catalog-button-arrow">→</div>
                 </div>
                 <div className="catalog-button-glow"></div>

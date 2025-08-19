@@ -102,19 +102,14 @@ const Warranty = () => {
           {supportServices.map((service, index) => (
             <div 
               key={service.id}
-              className={`service-card ${activeCard === service.id ? 'active' : ''}`}
-              onMouseEnter={() => setActiveCard(service.id)}
-              onMouseLeave={() => setActiveCard(null)}
-              style={{
-                animationDelay: `${index * 0.1}s`
-              }}
+              className='service-card'          
+
+
             >
               
               <div 
                 className="card-glow"
-                style={{
-                  background: `radial-gradient(circle, ${service.glowColor} 0%, transparent 70%)`
-                }}
+                
               ></div>
 
               <div className="card-content">
@@ -160,14 +155,9 @@ const Warranty = () => {
                   </button>
                   </Link>
                   
-                  <div className="status-indicator">
-                    <div className="status-dot"></div>
-                    <span>Available 24/7</span>
-                  </div>
                 </div>
               </div>
 
-              <div className="hover-overlay"></div>
             </div>
           ))}
         </div>
