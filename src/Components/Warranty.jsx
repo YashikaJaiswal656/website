@@ -168,14 +168,16 @@ const Warranty = () => {
               <h3>Need Immediate Assistance?</h3>
               <p>Our expert support team is standing by to help you with any questions or concerns</p>
               <div className="cta-buttons">
-                <button className="cta-primary">
-                  <i className="fas fa-phone"></i>
-                  Call Now: +919778044000
-                </button>
-                <button className="cta-primary">
-                  <i className="fas fa-envelope"></i>
-                  Mail Now: customercare@spinoff.in
-                </button>
+                <a href="tel:+919778044000" class="cta-primary">
+  <i class="fas fa-phone"></i>
+  Call Now: +919778044000
+</a>
+
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=customercare@spinoff.in" target="_blank" class="cta-primary">
+  <i class="fas fa-envelope"></i>
+  Mail Now: customercare@spinoff.in
+</a>
+
               </div>
             </div>
             <div className="cta-decoration">
